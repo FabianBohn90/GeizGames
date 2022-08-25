@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
-// const val API_TOKEN = "bdef87e302ac46b782ce7ec3f473df30"
+const val API_TOKEN = "bdef87e302ac46b782ce7ec3f473df30"
 const val BASE_URL = "https://api.rawg.io/api/"
 
 private val moshi = Moshi.Builder()
@@ -20,7 +20,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface GameApiService {
-    @GET("games?key=bdef87e302ac46b782ce7ec3f473df30")
+    @GET("games?key=$API_TOKEN")
     suspend fun getGames(): GameList
 }
 

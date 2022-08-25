@@ -21,7 +21,7 @@ class GameAdapter(
         val ivGame: ImageView = itemView.findViewById(R.id.imageView)
         val tvTitle: TextView = itemView.findViewById(R.id.tv_game_titel)
 
-        val tvReleaseDate: TextView = itemView.findViewById(R.id.tv_list_release)!!
+        val tvReleaseDate: TextView = itemView.findViewById(R.id.tv_list_release)
         val tvGameMetacritic: TextView = itemView.findViewById(R.id.tv_game_score)
     }
 
