@@ -6,10 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.lifecycleScope
 import com.example.geizgames.adapter.GameAdapter
 import com.example.geizgames.databinding.FragmentGameBinding
-import kotlinx.coroutines.launch
 
 class GameFragment : Fragment() {
 
@@ -29,10 +27,6 @@ class GameFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-//        lifecycleScope.launch {
-//            viewModel.loadData()
-//        }
 
         binding.rvGames.setHasFixedSize(true)
 

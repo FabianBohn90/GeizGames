@@ -27,6 +27,13 @@ class GameAdapter(
         val tvPlatform2: TextView = itemView.findViewById(R.id.tv_list_platform2)
         val tvPlatform3: TextView = itemView.findViewById(R.id.tv_list_platform3)
         val tvPlatform4: TextView = itemView.findViewById(R.id.tv_list_platform4)
+        val ivPlatform1: ImageView = itemView.findViewById(R.id.iv_platform1)
+        val ivPlatform2: ImageView = itemView.findViewById(R.id.iv_platform2)
+        val ivPlatform3: ImageView = itemView.findViewById(R.id.iv_platform3)
+        val ivPlatform4: ImageView = itemView.findViewById(R.id.iv_platform4)
+        val ivPlatform5: ImageView = itemView.findViewById(R.id.iv_platform5)
+        val ivPlatform6: ImageView = itemView.findViewById(R.id.iv_platform6)
+        val ivPlatform7: ImageView = itemView.findViewById(R.id.iv_platform7)
 
         val tvGameMetacritic: TextView = itemView.findViewById(R.id.tv_game_score)
         val cardView: CardView = itemView.findViewById(R.id.cv_listitem_card)
@@ -59,6 +66,35 @@ class GameAdapter(
                 }
             }
         }
+
+        fun setPlatform(string: String, imageView: ImageView) {
+            when (string) {
+                "PC" -> imageView.setImageResource(R.drawable.windows_pc)
+                "Xbox One" -> imageView.setImageResource(R.drawable.xbox)
+                "PlayStation 4" -> imageView.setImageResource(R.drawable.sony_playstation)
+                "Nintendo Switch" -> imageView.setImageResource(R.drawable.nintendo_switch)
+                "macOS" -> imageView.setImageResource(R.drawable.mac_os)
+                "Android" -> imageView.setImageResource(R.drawable.android_os)
+                "Xbox" -> imageView.setImageResource(R.drawable.xbox)
+                "iOS" -> imageView.setImageResource(R.drawable.app_ios)
+                "Linux" -> imageView.setImageResource(R.drawable.linux_os)
+            }
+        }
+
+        val platforms = arrayListOf(
+            holder.ivPlatform1,
+            holder.ivPlatform2,
+            holder.ivPlatform3,
+            holder.ivPlatform4,
+            holder.ivPlatform5,
+            holder.ivPlatform6,
+            holder.ivPlatform7
+        )
+
+        for (i in 0..6)
+            if (i < game.platforms.size) {
+                setPlatform(game.platforms[i].platform.name, platforms[i])
+            }
 
         holder.tvGameMetacritic.text = game.metacritic.toString()
 
