@@ -20,7 +20,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface GameApiService {
-    @GET("games?&key=$API_TOKEN&genres=2")
+    @GET("games?&key=$API_TOKEN")
     suspend fun getGames(): GameList
 }
 

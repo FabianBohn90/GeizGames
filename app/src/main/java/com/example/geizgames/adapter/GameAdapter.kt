@@ -34,6 +34,8 @@ class GameAdapter(
         val ivPlatform5: ImageView = itemView.findViewById(R.id.iv_platform5)
         val ivPlatform6: ImageView = itemView.findViewById(R.id.iv_platform6)
         val ivPlatform7: ImageView = itemView.findViewById(R.id.iv_platform7)
+        val ivPlatform8: ImageView = itemView.findViewById(R.id.iv_platform8)
+        val ivPlatform9: ImageView = itemView.findViewById(R.id.iv_platform9)
 
         val tvGameMetacritic: TextView = itemView.findViewById(R.id.tv_game_score)
         val cardView: CardView = itemView.findViewById(R.id.cv_listitem_card)
@@ -71,13 +73,16 @@ class GameAdapter(
             when (string) {
                 "PC" -> imageView.setImageResource(R.drawable.windows_pc)
                 "Xbox One" -> imageView.setImageResource(R.drawable.xbox)
-                "PlayStation 4" -> imageView.setImageResource(R.drawable.sony_playstation)
+                "PlayStation 3" -> imageView.setImageResource(R.drawable.ps3)
+                "PlayStation 4" -> imageView.setImageResource(R.drawable.ps4)
+                "PlayStation 5" -> imageView.setImageResource(R.drawable.sony_playstation)
+                "PlayStation Vita" -> imageView.setImageResource(R.drawable.psvita)
                 "Nintendo Switch" -> imageView.setImageResource(R.drawable.nintendo_switch)
                 "macOS" -> imageView.setImageResource(R.drawable.mac_os)
                 "Android" -> imageView.setImageResource(R.drawable.android_os)
-                "Xbox" -> imageView.setImageResource(R.drawable.xbox)
                 "iOS" -> imageView.setImageResource(R.drawable.app_ios)
                 "Linux" -> imageView.setImageResource(R.drawable.linux_os)
+                "Xbox 360" -> imageView.setImageResource(R.drawable.xbox360)
             }
         }
 
@@ -88,10 +93,12 @@ class GameAdapter(
             holder.ivPlatform4,
             holder.ivPlatform5,
             holder.ivPlatform6,
-            holder.ivPlatform7
+            holder.ivPlatform7,
+            holder.ivPlatform8,
+            holder.ivPlatform9
         )
 
-        for (i in 0..6)
+        for (i in 0..8)
             if (i < game.platforms.size) {
                 setPlatform(game.platforms[i].platform.name, platforms[i])
             }
