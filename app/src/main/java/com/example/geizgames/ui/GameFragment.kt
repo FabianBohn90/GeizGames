@@ -22,6 +22,7 @@ class GameFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        viewModel.loadData()
         binding = FragmentGameBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -29,9 +30,9 @@ class GameFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        lifecycleScope.launch {
-            viewModel.loadData()
-        }
+//        lifecycleScope.launch {
+//            viewModel.loadData()
+//        }
 
         binding.rvGames.setHasFixedSize(true)
 

@@ -5,7 +5,6 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.geizgames.data.AppRepository
-import com.example.geizgames.data.local.getDatabase
 import com.example.geizgames.data.remote.GameApi
 import kotlinx.coroutines.launch
 
@@ -13,12 +12,11 @@ const val TAG = "GameViewModel"
 
 class GameViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val database = getDatabase(application)
-    private val repository = AppRepository(GameApi, database)
+    private val repository = AppRepository(GameApi)
 
-    val games = repository.games
+    val games = repository.gameData
 
-    suspend fun loadData() {
+    fun loadData() {
         viewModelScope.launch {
             try {
                 repository.getGames()

@@ -9,7 +9,20 @@
         android:id="@+id/detailFragment"
         android:name="com.example.geizgames.ui.DetailFragment"
         tools:layout="@layout/fragment_detail"
-        android:label="DetailFragment" />
+        android:label="DetailFragment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="background_image"
+            app:argType="string" />
+        <argument
+            android:name="metacritic"
+            app:argType="integer" />
+        <argument
+            android:name="released"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/searchFragment"
         tools:layout="@layout/fragment_search"

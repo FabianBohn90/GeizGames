@@ -1,22 +1,20 @@
 package com.example.geizgames.data
 
 import androidx.lifecycle.LiveData
-import com.example.geizgames.data.local.GameDatabase
+import androidx.lifecycle.MutableLiveData
 import com.example.geizgames.data.models.Game
 import com.example.geizgames.data.remote.GameApi
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 const val TAG = "AppRepository"
 
-class AppRepository(private val api: GameApi, private val database: GameDatabase) {
+class AppRepository(private val api: GameApi) {
 
-    val games: LiveData<List<Game>> = database.gameDatabaseDao.getAll()
+    private val _gameData = MutableLiveData<List<Game>>()
+    val gameData: LiveData<List<Game>>
+        get() = _gameData
 
     suspend fun getGames() {
-        withContext(Dispatchers.IO) {
-            val gameData = api.retrofitService.getGames().results
-            database.gameDatabaseDao.insertAll(gameData)
-        }
+        val gameList = api.retrofitService.getGames().results
+        _gameData.value = gameList
     }
 }

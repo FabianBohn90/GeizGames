@@ -23,7 +23,11 @@ class GameAdapter(
     inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val ivGame: ImageView = itemView.findViewById(R.id.imageView)
         val tvTitle: TextView = itemView.findViewById(R.id.tv_game_titel)
-        val tvReleaseDate: TextView = itemView.findViewById(R.id.tv_list_release)
+        val tvPlatform1: TextView = itemView.findViewById(R.id.tv_list_platform1)
+        val tvPlatform2: TextView = itemView.findViewById(R.id.tv_list_platform2)
+        val tvPlatform3: TextView = itemView.findViewById(R.id.tv_list_platform3)
+        val tvPlatform4: TextView = itemView.findViewById(R.id.tv_list_platform4)
+
         val tvGameMetacritic: TextView = itemView.findViewById(R.id.tv_game_score)
         val cardView: CardView = itemView.findViewById(R.id.cv_listitem_card)
     }
@@ -44,12 +48,28 @@ class GameAdapter(
             transformations(RoundedCornersTransformation(10f))
         }
         holder.tvTitle.text = game.name
-        holder.tvReleaseDate.text = game.released
+
+        for (i in 0..5) {
+            if (i < game.platforms.size) {
+                when (i) {
+                    0 -> holder.tvPlatform1.text = game.platforms[i].platform.name
+                    1 -> holder.tvPlatform2.text = game.platforms[i].platform.name
+                    2 -> holder.tvPlatform3.text = game.platforms[i].platform.name
+                    3 -> holder.tvPlatform4.text = game.platforms[i].platform.name
+                }
+            }
+        }
+
         holder.tvGameMetacritic.text = game.metacritic.toString()
 
         holder.cardView.setOnClickListener {
             holder.itemView.findNavController().navigate(
-                GameFragmentDirections.actionGameFragmentToDetailFragment()
+                GameFragmentDirections.actionGameFragmentToDetailFragment(
+                    game.name,
+                    game.background_image,
+                    game.metacritic,
+                    game.platforms[0].platform.name
+                )
             )
         }
     }
