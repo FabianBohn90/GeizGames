@@ -17,4 +17,8 @@ class AppRepository(private val api: GameApi) {
         val gameList = api.retrofitService.getGames().results
         _gameData.value = gameList
     }
+    suspend fun getResults(suchbegriff: String) {
+        val result = api.retrofitService.getResults(suchbegriff)
+        _gameData.value = result.results
+    }
 }

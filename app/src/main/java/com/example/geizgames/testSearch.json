@@ -1,0 +1,2975 @@
+
+
+{
+  "count": 238,
+  "next": "https://api.rawg.io/api/games?key=bdef87e302ac46b782ce7ec3f473df30&page=2&search=limbo",
+  "previous": null,
+  "results": [
+    {
+      "slug": "limbo",
+      "name": "Limbo",
+      "playtime": 3,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one"
+          }
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4"
+          }
+        },
+        {
+          "platform": {
+            "id": 7,
+            "name": "Nintendo Switch",
+            "slug": "nintendo-switch"
+          }
+        },
+        {
+          "platform": {
+            "id": 3,
+            "name": "iOS",
+            "slug": "ios"
+          }
+        },
+        {
+          "platform": {
+            "id": 21,
+            "name": "Android",
+            "slug": "android"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        },
+        {
+          "platform": {
+            "id": 14,
+            "name": "Xbox 360",
+            "slug": "xbox360"
+          }
+        },
+        {
+          "platform": {
+            "id": 16,
+            "name": "PlayStation 3",
+            "slug": "playstation3"
+          }
+        },
+        {
+          "platform": {
+            "id": 19,
+            "name": "PS Vita",
+            "slug": "ps-vita"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam"
+          }
+        },
+        {
+          "store": {
+            "id": 3,
+            "name": "PlayStation Store",
+            "slug": "playstation-store"
+          }
+        },
+        {
+          "store": {
+            "id": 2,
+            "name": "Xbox Store",
+            "slug": "xbox-store"
+          }
+        },
+        {
+          "store": {
+            "id": 4,
+            "name": "App Store",
+            "slug": "apple-appstore"
+          }
+        },
+        {
+          "store": {
+            "id": 5,
+            "name": "GOG",
+            "slug": "gog"
+          }
+        },
+        {
+          "store": {
+            "id": 6,
+            "name": "Nintendo Store",
+            "slug": "nintendo"
+          }
+        },
+        {
+          "store": {
+            "id": 7,
+            "name": "Xbox 360 Store",
+            "slug": "xbox360"
+          }
+        },
+        {
+          "store": {
+            "id": 8,
+            "name": "Google Play",
+            "slug": "google-play"
+          }
+        },
+        {
+          "store": {
+            "id": 11,
+            "name": "Epic Games",
+            "slug": "epic-games"
+          }
+        }
+      ],
+      "released": "2010-07-21",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg",
+      "rating": 4.16,
+      "rating_top": 4,
+      "ratings": [
+        {
+          "id": 4,
+          "title": "recommended",
+          "count": 1537,
+          "percent": 52.49
+        },
+        {
+          "id": 5,
+          "title": "exceptional",
+          "count": 1024,
+          "percent": 34.97
+        },
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 278,
+          "percent": 9.49
+        },
+        {
+          "id": 1,
+          "title": "skip",
+          "count": 89,
+          "percent": 3.04
+        }
+      ],
+      "ratings_count": 2894,
+      "reviews_text_count": 23,
+      "added": 11629,
+      "added_by_status": {
+        "yet": 488,
+        "owned": 7406,
+        "beaten": 2806,
+        "toplay": 250,
+        "dropped": 593,
+        "playing": 86
+      },
+      "metacritic": 88,
+      "suggestions_count": 179,
+      "updated": "2022-08-31T12:14:58",
+      "id": 1030,
+      "score": "64.26438",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 180326,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 42396,
+          "name": "Ð”Ð»Ñ Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð¸Ð³Ñ€Ð¾ÐºÐ°",
+          "slug": "dlia-odnogo-igroka",
+          "language": "rus",
+          "games_count": 27182,
+          "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg"
+        },
+        {
+          "id": 42417,
+          "name": "Ð­ÐºÑˆÐµÐ½",
+          "slug": "ekshen",
+          "language": "rus",
+          "games_count": 28254,
+          "image_background": "https://media.rawg.io/media/games/83f/83f6f70a7c1b86cd2637b029d8b42caa.jpg"
+        },
+        {
+          "id": 42392,
+          "name": "ÐŸÑ€Ð¸ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ",
+          "slug": "prikliuchenie",
+          "language": "rus",
+          "games_count": 26213,
+          "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+        },
+        {
+          "id": 42398,
+          "name": "Ð˜Ð½Ð´Ð¸",
+          "slug": "indi-2",
+          "language": "rus",
+          "games_count": 41750,
+          "image_background": "https://media.rawg.io/media/games/0be/0bea0a08a4d954337305391b778a7f37.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Atmospheric",
+          "slug": "atmospheric",
+          "language": "eng",
+          "games_count": 24329,
+          "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+        },
+        {
+          "id": 40836,
+          "name": "Full controller support",
+          "slug": "full-controller-support",
+          "language": "eng",
+          "games_count": 12620,
+          "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+        },
+        {
+          "id": 42400,
+          "name": "ÐÑ‚Ð¼Ð¾ÑÑ„ÐµÑ€Ð°",
+          "slug": "atmosfera",
+          "language": "rus",
+          "games_count": 6102,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        },
+        {
+          "id": 42435,
+          "name": "Ð¨ÐµÐ´ÐµÐ²Ñ€",
+          "slug": "shedevr",
+          "language": "rus",
+          "games_count": 1059,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 42399,
+          "name": "ÐšÐ°Ð·ÑƒÐ°Ð»ÑŒÐ½Ð°Ñ Ð¸Ð³Ñ€Ð°",
+          "slug": "kazualnaia-igra",
+          "language": "rus",
+          "games_count": 27122,
+          "image_background": "https://media.rawg.io/media/games/0fd/0fd84d36596a83ef2e5a35f63a072218.jpg"
+        },
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 174184,
+          "image_background": "https://media.rawg.io/media/screenshots/c97/c97b943741f5fbc936fe054d9d58851d.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Horror",
+          "slug": "horror",
+          "language": "eng",
+          "games_count": 36311,
+          "image_background": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg"
+        },
+        {
+          "id": 42465,
+          "name": "Ð“Ð¾Ð»Ð¾Ð²Ð¾Ð»Ð¾Ð¼ÐºÐ°",
+          "slug": "golovolomka",
+          "language": "rus",
+          "games_count": 9539,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        },
+        {
+          "id": 42420,
+          "name": "Ð¡Ð»Ð¾Ð¶Ð½Ð°Ñ",
+          "slug": "slozhnaia",
+          "language": "rus",
+          "games_count": 4053,
+          "image_background": "https://media.rawg.io/media/games/83f/83f6f70a7c1b86cd2637b029d8b42caa.jpg"
+        },
+        {
+          "id": 49,
+          "name": "Difficult",
+          "slug": "difficult",
+          "language": "eng",
+          "games_count": 11622,
+          "image_background": "https://media.rawg.io/media/games/da1/da1b267764d77221f07a4386b6548e5a.jpg"
+        },
+        {
+          "id": 42463,
+          "name": "ÐŸÐ»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼ÐµÑ€",
+          "slug": "platformer-2",
+          "language": "rus",
+          "games_count": 5459,
+          "image_background": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg"
+        },
+        {
+          "id": 115,
+          "name": "Controller",
+          "slug": "controller",
+          "language": "eng",
+          "games_count": 7986,
+          "image_background": "https://media.rawg.io/media/games/b6b/b6b20bfc4b34e312dbc8aac53c95a348.jpg"
+        },
+        {
+          "id": 42477,
+          "name": "ÐœÑ€Ð°Ñ‡Ð½Ð°Ñ",
+          "slug": "mrachnaia",
+          "language": "rus",
+          "games_count": 2750,
+          "image_background": "https://media.rawg.io/media/games/be0/be084b850302abe81675bc4ffc08a0d0.jpg"
+        },
+        {
+          "id": 41,
+          "name": "Dark",
+          "slug": "dark",
+          "language": "eng",
+          "games_count": 11885,
+          "image_background": "https://media.rawg.io/media/games/b54/b54598d1d5cc31899f4f0a7e3122a7b0.jpg"
+        },
+        {
+          "id": 336,
+          "name": "controller support",
+          "slug": "controller-support",
+          "language": "eng",
+          "games_count": 293,
+          "image_background": "https://media.rawg.io/media/games/37a/37a9536e92cf8fe3b60045aa75dbd41f.jpg"
+        },
+        {
+          "id": 111,
+          "name": "Short",
+          "slug": "short",
+          "language": "eng",
+          "games_count": 49339,
+          "image_background": "https://media.rawg.io/media/games/b17/b17485d757ca36b5f1ad376b6b096885.jpg"
+        },
+        {
+          "id": 42457,
+          "name": "ÐšÐ¾Ñ€Ð¾Ñ‚ÐºÐ°Ñ",
+          "slug": "korotkaia",
+          "language": "rus",
+          "games_count": 1208,
+          "image_background": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg"
+        },
+        {
+          "id": 42469,
+          "name": "Ð’Ð¸Ð´ ÑÐ±Ð¾ÐºÑƒ",
+          "slug": "vid-sboku",
+          "language": "rus",
+          "games_count": 2457,
+          "image_background": "https://media.rawg.io/media/screenshots/12e/12ee2600684863837596c0dbb1923fca.jpg"
+        },
+        {
+          "id": 113,
+          "name": "Side Scroller",
+          "slug": "side-scroller",
+          "language": "eng",
+          "games_count": 8315,
+          "image_background": "https://media.rawg.io/media/games/226/2262cea0b385db6cf399f4be831603b0.jpg"
+        },
+        {
+          "id": 42500,
+          "name": "Ð¤Ð¸Ð·Ð¸ÐºÐ°",
+          "slug": "fizika",
+          "language": "rus",
+          "games_count": 2970,
+          "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+        },
+        {
+          "id": 114,
+          "name": "Physics",
+          "slug": "physics",
+          "language": "eng",
+          "games_count": 16553,
+          "image_background": "https://media.rawg.io/media/games/c88/c88463dcf1b3fc79c54a59c30076344a.jpg"
+        },
+        {
+          "id": 110,
+          "name": "Cinematic",
+          "slug": "cinematic",
+          "language": "eng",
+          "games_count": 1036,
+          "image_background": "https://media.rawg.io/media/games/07a/07a74470a2618fd71945db0619602baf.jpg"
+        },
+        {
+          "id": 42468,
+          "name": "Ð“Ð¾Ð»Ð¾Ð²Ð¾Ð»Ð¾Ð¼ÐºÐ°-Ð¿Ð»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼ÐµÑ€",
+          "slug": "golovolomka-platformer",
+          "language": "rus",
+          "games_count": 2288,
+          "image_background": "https://media.rawg.io/media/games/ba0/ba006ef12175ad4773e5964c320099c4.jpg"
+        },
+        {
+          "id": 42623,
+          "name": "ÐšÐ¸Ð½ÐµÐ¼Ð°Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ñ‡Ð½Ð°Ñ",
+          "slug": "kinematografichnaia",
+          "language": "rus",
+          "games_count": 951,
+          "image_background": "https://media.rawg.io/media/games/5bf/5bf88a28de96321c86561a65ee48e6c2.jpg"
+        },
+        {
+          "id": 42672,
+          "name": "Ð¡ÑŽÑ€Ñ€ÐµÐ°Ð»Ð¸ÑÑ‚Ð¸Ñ‡Ð½Ð°Ñ",
+          "slug": "siurrealistichnaia",
+          "language": "rus",
+          "games_count": 1274,
+          "image_background": "https://media.rawg.io/media/screenshots/9d2/9d22689a1c2a7ced9d1690e0c5c66871.jpg"
+        },
+        {
+          "id": 83,
+          "name": "Puzzle-Platformer",
+          "slug": "puzzle-platformer",
+          "language": "eng",
+          "games_count": 9211,
+          "image_background": "https://media.rawg.io/media/games/d5a/d5a24f9f71315427fa6e966fdd98dfa6.jpg"
+        },
+        {
+          "id": 46,
+          "name": "Surreal",
+          "slug": "surreal",
+          "language": "eng",
+          "games_count": 4027,
+          "image_background": "https://media.rawg.io/media/screenshots/332/3327c47e0abc76882fc96c434d2e06bd.jpg"
+        },
+        {
+          "id": 42582,
+          "name": "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»Ð¸Ð·Ð¼",
+          "slug": "minimalizm",
+          "language": "rus",
+          "games_count": 2943,
+          "image_background": "https://media.rawg.io/media/screenshots/112/112c9ecfe850e318bb999660361782bb.jpeg"
+        },
+        {
+          "id": 112,
+          "name": "Minimalist",
+          "slug": "minimalist",
+          "language": "eng",
+          "games_count": 12541,
+          "image_background": "https://media.rawg.io/media/screenshots/fb9/fb9314ab3b1f2c38243b9bc8b4ebf150.jpg"
+        }
+      ],
+      "esrb_rating": {
+        "id": 3,
+        "name": "Teen",
+        "slug": "teen",
+        "name_en": "Teen",
+        "name_ru": "Ð¡ 13 Ð»ÐµÑ‚"
+      },
+      "user_game": null,
+      "reviews_count": 2928,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+        },
+        {
+          "id": 30985,
+          "image": "https://media.rawg.io/media/screenshots/512/512f4bc2092016478ddcb9e7e60aeec0.jpg"
+        },
+        {
+          "id": 30986,
+          "image": "https://media.rawg.io/media/screenshots/63d/63d30699e8fcab9c808e6714d9d3fd59.jpg"
+        },
+        {
+          "id": 30987,
+          "image": "https://media.rawg.io/media/screenshots/de0/de04bbc0fd9904071ef25bf23113c8c4.jpg"
+        },
+        {
+          "id": 30988,
+          "image": "https://media.rawg.io/media/screenshots/eed/eedbbca4ae2debf2d4e23e55d1f6cff7.jpg"
+        },
+        {
+          "id": 30989,
+          "image": "https://media.rawg.io/media/screenshots/59f/59f472b3ed7b414777a29213d70b4d17.jpg"
+        },
+        {
+          "id": 30991,
+          "image": "https://media.rawg.io/media/screenshots/e58/e58d31146e4a9e3786dabcbfc30126bc.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 2,
+            "name": "PlayStation",
+            "slug": "playstation"
+          }
+        },
+        {
+          "platform": {
+            "id": 3,
+            "name": "Xbox",
+            "slug": "xbox"
+          }
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "iOS",
+            "slug": "ios"
+          }
+        },
+        {
+          "platform": {
+            "id": 8,
+            "name": "Android",
+            "slug": "android"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        },
+        {
+          "platform": {
+            "id": 7,
+            "name": "Nintendo",
+            "slug": "nintendo"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie"
+        },
+        {
+          "id": 83,
+          "name": "Platformer",
+          "slug": "platformer"
+        },
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure"
+        },
+        {
+          "id": 7,
+          "name": "Puzzle",
+          "slug": "puzzle"
+        }
+      ]
+    },
+    {
+      "slug": "zimbo",
+      "name": "Zimbo",
+      "playtime": 1,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam"
+          }
+        }
+      ],
+      "released": "2018-05-04",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/dc9/dc95e53ba423fb5d99db88300139c5a0.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        {
+          "id": 5,
+          "title": "exceptional",
+          "count": 1,
+          "percent": 100.0
+        }
+      ],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 141,
+      "added_by_status": {
+        "yet": 2,
+        "owned": 137,
+        "beaten": 2
+      },
+      "metacritic": null,
+      "suggestions_count": 74,
+      "updated": "2019-09-17T10:36:24",
+      "id": 64250,
+      "score": "19.411507",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 170743,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 42417,
+          "name": "Ð­ÐºÑˆÐµÐ½",
+          "slug": "ekshen",
+          "language": "rus",
+          "games_count": 27473,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 42392,
+          "name": "ÐŸÑ€Ð¸ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ",
+          "slug": "prikliuchenie",
+          "language": "rus",
+          "games_count": 25479,
+          "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg"
+        },
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 26364,
+          "image_background": "https://media.rawg.io/media/games/6cd/6cd653e0aaef5ff8bbd295bf4bcb12eb.jpg"
+        },
+        {
+          "id": 42398,
+          "name": "Ð˜Ð½Ð´Ð¸",
+          "slug": "indi-2",
+          "language": "rus",
+          "games_count": 40849,
+          "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+        },
+        {
+          "id": 42399,
+          "name": "ÐšÐ°Ð·ÑƒÐ°Ð»ÑŒÐ½Ð°Ñ Ð¸Ð³Ñ€Ð°",
+          "slug": "kazualnaia-igra",
+          "language": "rus",
+          "games_count": 26233,
+          "image_background": "https://media.rawg.io/media/games/93e/93ee6101e1c943732f06080dddb0fe4c.jpg"
+        },
+        {
+          "id": 42413,
+          "name": "Ð¡Ð¸Ð¼ÑƒÐ»ÑÑ‚Ð¾Ñ€",
+          "slug": "simuliator",
+          "language": "rus",
+          "games_count": 12652,
+          "image_background": "https://media.rawg.io/media/games/27b/27b02ffaab6b250cc31bf43baca1fc34.jpg"
+        },
+        {
+          "id": 42496,
+          "name": "Ð“Ð¾Ð½ÐºÐ¸",
+          "slug": "gonki",
+          "language": "rus",
+          "games_count": 2432,
+          "image_background": "https://media.rawg.io/media/games/082/082365507ff04d456c700157072d35db.jpg"
+        },
+        {
+          "id": 42531,
+          "name": "Ð¡Ð¿Ð¾Ñ€Ñ‚Ð¸Ð²Ð½Ð°Ñ Ð¸Ð³Ñ€Ð°",
+          "slug": "sportivnaia-igra",
+          "language": "rus",
+          "games_count": 2979,
+          "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/dc9/dc95e53ba423fb5d99db88300139c5a0.jpg"
+        },
+        {
+          "id": 861241,
+          "image": "https://media.rawg.io/media/screenshots/757/757efb9db342acfd02c88b31a023f085.jpg"
+        },
+        {
+          "id": 861242,
+          "image": "https://media.rawg.io/media/screenshots/a00/a00842c6e8714bb5b4ca783f87d266ee.jpg"
+        },
+        {
+          "id": 861243,
+          "image": "https://media.rawg.io/media/screenshots/045/0450949662ce05517a0be8918754bc17.jpg"
+        },
+        {
+          "id": 861244,
+          "image": "https://media.rawg.io/media/screenshots/0e8/0e8b211a38667a99d0777d22584282b0.jpg"
+        },
+        {
+          "id": 861245,
+          "image": "https://media.rawg.io/media/screenshots/dc9/dc95e53ba423fb5d99db88300139c5a0.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "Racing",
+          "slug": "racing"
+        },
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure"
+        },
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action"
+        },
+        {
+          "id": 40,
+          "name": "Casual",
+          "slug": "casual"
+        },
+        {
+          "id": 14,
+          "name": "Simulation",
+          "slug": "simulation"
+        },
+        {
+          "id": 15,
+          "name": "Sports",
+          "slug": "sports"
+        },
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie"
+        }
+      ]
+    },
+    {
+      "slug": "limo-limbo",
+      "name": "Limo Limbo",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 171,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2020-07-12",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/518/51878690b65835ef6175f660c4d04b8e.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 22,
+      "updated": "2020-07-17T06:35:51",
+      "id": 469967,
+      "score": "19.281479",
+      "clip": null,
+      "tags": [
+        {
+          "id": 583,
+          "name": "Narrative",
+          "slug": "narrative",
+          "language": "eng",
+          "games_count": 3424,
+          "image_background": "https://media.rawg.io/media/screenshots/b87/b87b22058445cffc563abd469efe771c.jpg"
+        },
+        {
+          "id": 881,
+          "name": "Twine",
+          "slug": "twine",
+          "language": "eng",
+          "games_count": 3437,
+          "image_background": "https://media.rawg.io/media/screenshots/43c/43cbc1302abae9a4552b081c5a0c9663.jpg"
+        },
+        {
+          "id": 53464,
+          "name": "out-of-control",
+          "slug": "out-of-control",
+          "language": "eng",
+          "games_count": 114,
+          "image_background": "https://media.rawg.io/media/screenshots/f76/f760175ca14272cf835bae6cf662b720.jpg"
+        },
+        {
+          "id": 53869,
+          "name": "time-loop",
+          "slug": "time-loop-2",
+          "language": "eng",
+          "games_count": 4,
+          "image_background": "https://media.rawg.io/media/screenshots/651/6511f886bb979c7e0c5a60b05706a1d6.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/518/51878690b65835ef6175f660c4d04b8e.jpg"
+        },
+        {
+          "id": 2453339,
+          "image": "https://media.rawg.io/media/screenshots/518/51878690b65835ef6175f660c4d04b8e.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 14,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "loreleis-limbo",
+      "name": "Lorelei's Limbo",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2020-02-23",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/26b/26bcd48b0f8e1072d79e2352171fc12a.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 85,
+      "updated": "2020-02-28T05:06:25",
+      "id": 415849,
+      "score": "18.23175",
+      "clip": null,
+      "tags": [
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 85731,
+          "image_background": "https://media.rawg.io/media/games/14a/14a83c56ff668baaced6e8c8704b6391.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Horror",
+          "slug": "horror",
+          "language": "eng",
+          "games_count": 17748,
+          "image_background": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg"
+        },
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 94283,
+          "image_background": "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg"
+        },
+        {
+          "id": 46,
+          "name": "Surreal",
+          "slug": "surreal",
+          "language": "eng",
+          "games_count": 2317,
+          "image_background": "https://media.rawg.io/media/games/c89/c89ca70716080733d03724277df2c6c7.jpg"
+        },
+        {
+          "id": 617,
+          "name": "weird",
+          "slug": "weird",
+          "language": "eng",
+          "games_count": 3333,
+          "image_background": "https://media.rawg.io/media/screenshots/026/02624fe3d2efc749135ae0fa790a491a.jpg"
+        },
+        {
+          "id": 662,
+          "name": "RPG Maker",
+          "slug": "rpg-maker",
+          "language": "eng",
+          "games_count": 5094,
+          "image_background": "https://media.rawg.io/media/screenshots/07d/07db693969f2d918aaba6adfbb0a4819.jpg"
+        },
+        {
+          "id": 668,
+          "name": "creepy",
+          "slug": "creepy",
+          "language": "eng",
+          "games_count": 1335,
+          "image_background": "https://media.rawg.io/media/screenshots/f2b/f2b98d0bc22c5e87c743e9d4b7797ed5.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/26b/26bcd48b0f8e1072d79e2352171fc12a.jpg"
+        },
+        {
+          "id": 2302584,
+          "image": "https://media.rawg.io/media/screenshots/73a/73a49e86a235f4afee42de31480fbde2.jpg"
+        },
+        {
+          "id": 2302585,
+          "image": "https://media.rawg.io/media/screenshots/241/241da298611d3b54203500d26118556d.jpg"
+        },
+        {
+          "id": 2302586,
+          "image": "https://media.rawg.io/media/screenshots/148/148aeb691ea0bacec0e230b0df93584c.jpg"
+        },
+        {
+          "id": 2302587,
+          "image": "https://media.rawg.io/media/screenshots/ef9/ef9dded7898d4e696b6ec095b74d2196.jpg"
+        },
+        {
+          "id": 2302588,
+          "image": "https://media.rawg.io/media/screenshots/26b/26bcd48b0f8e1072d79e2352171fc12a.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 7,
+          "name": "Puzzle",
+          "slug": "puzzle"
+        }
+      ]
+    },
+    {
+      "slug": "depths-of-limbo",
+      "name": "Depths of Limbo",
+      "playtime": 1,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 1,
+            "name": "Steam",
+            "slug": "steam"
+          }
+        }
+      ],
+      "released": "2017-02-01",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/045/045fbc91a4643626d4abd8964279d977.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        {
+          "id": 3,
+          "title": "meh",
+          "count": 2,
+          "percent": 100.0
+        }
+      ],
+      "ratings_count": 2,
+      "reviews_text_count": 0,
+      "added": 84,
+      "added_by_status": {
+        "yet": 1,
+        "owned": 83
+      },
+      "metacritic": null,
+      "suggestions_count": 134,
+      "updated": "2019-08-28T22:13:05",
+      "id": 12779,
+      "score": "18.191463",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 179107,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 42417,
+          "name": "Ð­ÐºÑˆÐµÐ½",
+          "slug": "ekshen",
+          "language": "rus",
+          "games_count": 28151,
+          "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg"
+        },
+        {
+          "id": 42392,
+          "name": "ÐŸÑ€Ð¸ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ",
+          "slug": "prikliuchenie",
+          "language": "rus",
+          "games_count": 26118,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 42398,
+          "name": "Ð˜Ð½Ð´Ð¸",
+          "slug": "indi-2",
+          "language": "rus",
+          "games_count": 41647,
+          "image_background": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg"
+        },
+        {
+          "id": 40836,
+          "name": "Full controller support",
+          "slug": "full-controller-support",
+          "language": "eng",
+          "games_count": 12570,
+          "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+        },
+        {
+          "id": 40849,
+          "name": "Steam Cloud",
+          "slug": "steam-cloud",
+          "language": "eng",
+          "games_count": 12276,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        },
+        {
+          "id": 42420,
+          "name": "Ð¡Ð»Ð¾Ð¶Ð½Ð°Ñ",
+          "slug": "slozhnaia",
+          "language": "rus",
+          "games_count": 4043,
+          "image_background": "https://media.rawg.io/media/games/67f/67f62d1f062a6164f57575e0604ee9f6.jpg"
+        },
+        {
+          "id": 42491,
+          "name": "ÐœÑÑÐ¾",
+          "slug": "miaso",
+          "language": "rus",
+          "games_count": 3565,
+          "image_background": "https://media.rawg.io/media/games/f6b/f6bed028b02369d4cab548f4f9337e81.jpg"
+        },
+        {
+          "id": 49,
+          "name": "Difficult",
+          "slug": "difficult",
+          "language": "eng",
+          "games_count": 11561,
+          "image_background": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg"
+        },
+        {
+          "id": 26,
+          "name": "Gore",
+          "slug": "gore",
+          "language": "eng",
+          "games_count": 4606,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        },
+        {
+          "id": 198,
+          "name": "Split Screen",
+          "slug": "split-screen",
+          "language": "eng",
+          "games_count": 5036,
+          "image_background": "https://media.rawg.io/media/games/33b/33b825c76382931df0fd8ecddf5caebe.jpg"
+        },
+        {
+          "id": 75,
+          "name": "Local Co-Op",
+          "slug": "local-co-op",
+          "language": "eng",
+          "games_count": 4620,
+          "image_background": "https://media.rawg.io/media/games/fc8/fc838d98c9b944e6a15176eabf40bee8.jpg"
+        },
+        {
+          "id": 72,
+          "name": "Local Multiplayer",
+          "slug": "local-multiplayer",
+          "language": "eng",
+          "games_count": 11773,
+          "image_background": "https://media.rawg.io/media/games/a92/a92272ea5cfc35b8ad6317fbd81ce0f6.jpg"
+        },
+        {
+          "id": 42411,
+          "name": "Ð Ð°Ð½Ð½Ð¸Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿",
+          "slug": "rannii-dostup",
+          "language": "rus",
+          "games_count": 10063,
+          "image_background": "https://media.rawg.io/media/games/c92/c9207a31f0eeb9904a840fc26eae6afb.jpg"
+        },
+        {
+          "id": 14,
+          "name": "Early Access",
+          "slug": "early-access",
+          "language": "eng",
+          "games_count": 10545,
+          "image_background": "https://media.rawg.io/media/screenshots/2b9/2b9a49e89c1ba892a648620194dcf327.jpg"
+        },
+        {
+          "id": 42419,
+          "name": "Ð Ð¾Ð³Ð°Ð»Ð¸Ðº",
+          "slug": "rogalik",
+          "language": "rus",
+          "games_count": 2057,
+          "image_background": "https://media.rawg.io/media/games/fd9/fd92f105dcd6491bc5d61135033d1f19.jpg"
+        },
+        {
+          "id": 639,
+          "name": "Roguelike",
+          "slug": "roguelike",
+          "language": "eng",
+          "games_count": 9480,
+          "image_background": "https://media.rawg.io/media/games/dd5/dd50d4266915d56dd5b63ae1bf72606a.jpg"
+        },
+        {
+          "id": 270,
+          "name": "Blood",
+          "slug": "blood",
+          "language": "eng",
+          "games_count": 1791,
+          "image_background": "https://media.rawg.io/media/games/a79/a79d2fc90c4dbf07a8580b19600fd61d.jpg"
+        },
+        {
+          "id": 42577,
+          "name": "ÐšÑ€Ð¾Ð²ÑŒ",
+          "slug": "krov",
+          "language": "rus",
+          "games_count": 322,
+          "image_background": "https://media.rawg.io/media/screenshots/a97/a97b0e257daca77c23cf93ac9fff7487.jpg"
+        },
+        {
+          "id": 42607,
+          "name": "Ð¨ÑƒÑ‚ÐµÑ€ Ñ Ð²Ð¸Ð´Ð¾Ð¼ ÑÐ²ÐµÑ€Ñ…Ñƒ",
+          "slug": "shuter-s-vidom-sverkhu",
+          "language": "rus",
+          "games_count": 1291,
+          "image_background": "https://media.rawg.io/media/screenshots/80a/80a0d07be6109fde6b92ac5283e7056c.jpg"
+        },
+        {
+          "id": 236,
+          "name": "Top-Down Shooter",
+          "slug": "top-down-shooter",
+          "language": "eng",
+          "games_count": 1161,
+          "image_background": "https://media.rawg.io/media/screenshots/245/245579c536d2a06e69d391573d911679.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 2,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/045/045fbc91a4643626d4abd8964279d977.jpg"
+        },
+        {
+          "id": 108077,
+          "image": "https://media.rawg.io/media/screenshots/373/373e2b8ed86fefae4e3197d1fdb68699.jpg"
+        },
+        {
+          "id": 108078,
+          "image": "https://media.rawg.io/media/screenshots/5c9/5c9ca2bff2fdde098dc5a07d46d03797.jpg"
+        },
+        {
+          "id": 108079,
+          "image": "https://media.rawg.io/media/screenshots/4c4/4c4b41e3ecfa1b4dcd83e8fa200e08b6.jpg"
+        },
+        {
+          "id": 108080,
+          "image": "https://media.rawg.io/media/screenshots/830/8305c98e3458af1163339d40e64f8918.jpg"
+        },
+        {
+          "id": 108081,
+          "image": "https://media.rawg.io/media/screenshots/045/045fbc91a4643626d4abd8964279d977.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 51,
+          "name": "Indie",
+          "slug": "indie"
+        },
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure"
+        },
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action"
+        }
+      ]
+    },
+    {
+      "slug": "limbo-between-heaven-hell",
+      "name": "Limbo: Between Heaven & Hell!",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2022-01-28",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/981/98126752c76fed18366bd8301ff479f9.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-01-31T15:34:17",
+      "id": 732375,
+      "score": "17.601692",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 148276,
+          "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+        },
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 145811,
+          "image_background": "https://media.rawg.io/media/games/226/2262cea0b385db6cf399f4be831603b0.jpg"
+        },
+        {
+          "id": 122,
+          "name": "Pixel Graphics",
+          "slug": "pixel-graphics",
+          "language": "eng",
+          "games_count": 66176,
+          "image_background": "https://media.rawg.io/media/games/d37/d37e110ddcc0bd52d99f0f647b737a0a.jpg"
+        },
+        {
+          "id": 111,
+          "name": "Short",
+          "slug": "short",
+          "language": "eng",
+          "games_count": 36822,
+          "image_background": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg"
+        },
+        {
+          "id": 218,
+          "name": "Multiple Endings",
+          "slug": "multiple-endings",
+          "language": "eng",
+          "games_count": 4529,
+          "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+        },
+        {
+          "id": 112,
+          "name": "Minimalist",
+          "slug": "minimalist",
+          "language": "eng",
+          "games_count": 10595,
+          "image_background": "https://media.rawg.io/media/screenshots/560/560f7bd45d2f8ce3deb42c97fd1d1f49.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/981/98126752c76fed18366bd8301ff479f9.jpg"
+        },
+        {
+          "id": 3219762,
+          "image": "https://media.rawg.io/media/screenshots/066/06641f65d0a7b962bb8dea069ed84e35.jpg"
+        },
+        {
+          "id": 3219763,
+          "image": "https://media.rawg.io/media/screenshots/981/98126752c76fed18366bd8301ff479f9.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 83,
+          "name": "Platformer",
+          "slug": "platformer"
+        }
+      ]
+    },
+    {
+      "slug": "wilburs-limbo",
+      "name": "wilbur's limbo",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2022-04-12",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/94e/94eb0a6f14be1aeebf723d4f09df3416.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-04-15T11:11:05",
+      "id": 770279,
+      "score": "16.590078",
+      "clip": null,
+      "tags": [
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 155060,
+          "image_background": "https://media.rawg.io/media/games/cef/cefedf18016cbab466861eb698daf988.jpg"
+        },
+        {
+          "id": 597,
+          "name": "artgame",
+          "slug": "artgame",
+          "language": "eng",
+          "games_count": 5102,
+          "image_background": "https://media.rawg.io/media/screenshots/f7f/f7f120cb62c7bdc27c5b4fc78bef3731.jpg"
+        },
+        {
+          "id": 1067,
+          "name": "Fangame",
+          "slug": "fangame",
+          "language": "eng",
+          "games_count": 2575,
+          "image_background": "https://media.rawg.io/media/screenshots/c5e/c5eb9190b27075f8c7affb53edacba88.jpg"
+        },
+        {
+          "id": 78715,
+          "name": "wilbur-soot",
+          "slug": "wilbur-soot",
+          "language": "eng",
+          "games_count": 0,
+          "image_background": null
+        },
+        {
+          "id": 63790,
+          "name": "dream-smp",
+          "slug": "dream-smp",
+          "language": "eng",
+          "games_count": 1,
+          "image_background": "https://media.rawg.io/media/screenshots/76e/76e9a8af283f4c6c08c1641547afe230.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/94e/94eb0a6f14be1aeebf723d4f09df3416.jpg"
+        },
+        {
+          "id": 3329917,
+          "image": "https://media.rawg.io/media/screenshots/596/596cd12ab6f57043c20e8774b0e49bd6.jpg"
+        },
+        {
+          "id": 3329918,
+          "image": "https://media.rawg.io/media/screenshots/508/508cbc983152685ec217d9c052e5c35f.jpg"
+        },
+        {
+          "id": 3329919,
+          "image": "https://media.rawg.io/media/screenshots/94e/94eb0a6f14be1aeebf723d4f09df3416.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "loading-limbo",
+      "name": "Loading Limbo...",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 171,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": null,
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/8bc/8bc63af647cdac640945f8c9adb1fc0b.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-08-26T10:16:03",
+      "id": 841423,
+      "score": "16.556536",
+      "clip": null,
+      "tags": [
+        {
+          "id": 246,
+          "name": "Clicker",
+          "slug": "clicker",
+          "language": "eng",
+          "games_count": 6213,
+          "image_background": "https://media.rawg.io/media/games/11b/11b81edff7f45024e36b88e880d86585.jpg"
+        },
+        {
+          "id": 1180,
+          "name": "idle",
+          "slug": "idle",
+          "language": "eng",
+          "games_count": 1793,
+          "image_background": "https://media.rawg.io/media/screenshots/f36/f362e2a81c5bf545d23287f30ed4ce2e.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/8bc/8bc63af647cdac640945f8c9adb1fc0b.jpg"
+        },
+        {
+          "id": 3537074,
+          "image": "https://media.rawg.io/media/screenshots/8bc/8bc63af647cdac640945f8c9adb1fc0b.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 14,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 14,
+          "name": "Simulation",
+          "slug": "simulation"
+        }
+      ]
+    },
+    {
+      "slug": "limbo-train",
+      "name": "Limbo Train",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 171,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2017-09-29",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/74b/74b8432ce22be91f9f1d76f0d42f2e79.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 18,
+      "updated": "2019-01-09T12:41:06",
+      "id": 93743,
+      "score": "15.637932",
+      "clip": null,
+      "tags": [
+        {
+          "id": 1369,
+          "name": "Bitsy",
+          "slug": "bitsy",
+          "language": "eng",
+          "games_count": 2890,
+          "image_background": "https://media.rawg.io/media/screenshots/a59/a5984efbe68f2f7b21506ec4c8b6b3c1.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/74b/74b8432ce22be91f9f1d76f0d42f2e79.jpg"
+        },
+        {
+          "id": 1006185,
+          "image": "https://media.rawg.io/media/screenshots/74b/74b8432ce22be91f9f1d76f0d42f2e79.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 14,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "limbo-loop",
+      "name": "Limbo Loop",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 171,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2020-10-05",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/c5d/c5d8a2f46cb4b5e0ddcbb8d21acd8e53.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 20,
+      "updated": "2020-10-19T04:37:50",
+      "id": 507693,
+      "score": "15.447496",
+      "clip": null,
+      "tags": [
+        {
+          "id": 974,
+          "name": "death",
+          "slug": "death",
+          "language": "eng",
+          "games_count": 2559,
+          "image_background": "https://media.rawg.io/media/games/8aa/8aaf27d0868658ccfafb8df8b7cc3e85.jpg"
+        },
+        {
+          "id": 1529,
+          "name": "fight",
+          "slug": "fight",
+          "language": "eng",
+          "games_count": 5729,
+          "image_background": "https://media.rawg.io/media/screenshots/2e6/2e69114048671c3a53f841a9abe5c0bd.jpg"
+        },
+        {
+          "id": 2774,
+          "name": "learn",
+          "slug": "learn",
+          "language": "eng",
+          "games_count": 309,
+          "image_background": "https://media.rawg.io/media/screenshots/cfe/cfec9366f0203c4f72557ea51819d29e_pnnzFjj.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/c5d/c5d8a2f46cb4b5e0ddcbb8d21acd8e53.jpg"
+        },
+        {
+          "id": 2571731,
+          "image": "https://media.rawg.io/media/screenshots/c5d/c5d8a2f46cb4b5e0ddcbb8d21acd8e53.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 14,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "limbo-squared",
+      "name": "Limbo Squared",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2019-04-29",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/35b/35b8dbfe6bfceb3ee3a9e9c39f900a66.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 26,
+      "updated": "2019-05-03T05:22:02",
+      "id": 314282,
+      "score": "15.447496",
+      "clip": null,
+      "tags": [
+        {
+          "id": 40031,
+          "name": "Ludum Dare 44",
+          "slug": "ludum-dare-44-2",
+          "language": "eng",
+          "games_count": 1293,
+          "image_background": "https://media.rawg.io/media/screenshots/aaa/aaa8f36810613f881936523f210d3cad.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/35b/35b8dbfe6bfceb3ee3a9e9c39f900a66.jpg"
+        },
+        {
+          "id": 1915047,
+          "image": "https://media.rawg.io/media/screenshots/06c/06cb9b24cac2f8601efdaf9aaad9ce3d.jpg"
+        },
+        {
+          "id": 1915048,
+          "image": "https://media.rawg.io/media/screenshots/35b/35b8dbfe6bfceb3ee3a9e9c39f900a66.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 7,
+          "name": "Puzzle",
+          "slug": "puzzle"
+        }
+      ]
+    },
+    {
+      "slug": "limbo-line",
+      "name": "Limbo Line",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2021-10-02",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/f3c/f3c5ce71736a504294f2e2a0924a76a6.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2021-10-04T09:19:00",
+      "id": 673777,
+      "score": "15.447496",
+      "clip": null,
+      "tags": [
+        {
+          "id": 16,
+          "name": "Horror",
+          "slug": "horror",
+          "language": "eng",
+          "games_count": 24773,
+          "image_background": "https://media.rawg.io/media/games/aa3/aa36ba4b486a03ddfaef274fb4f5afd4.jpg"
+        },
+        {
+          "id": 41,
+          "name": "Dark",
+          "slug": "dark",
+          "language": "eng",
+          "games_count": 8472,
+          "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+        },
+        {
+          "id": 117,
+          "name": "Mystery",
+          "slug": "mystery",
+          "language": "eng",
+          "games_count": 7847,
+          "image_background": "https://media.rawg.io/media/games/9e5/9e5b91a6d02e66b8d450a977a59ae123.jpg"
+        },
+        {
+          "id": 148,
+          "name": "Dark Humor",
+          "slug": "dark-humor",
+          "language": "eng",
+          "games_count": 1703,
+          "image_background": "https://media.rawg.io/media/screenshots/891/8910274c8fe4ae2a5808ca4c31b4640e.jpg"
+        },
+        {
+          "id": 620,
+          "name": "Spooky",
+          "slug": "spooky",
+          "language": "eng",
+          "games_count": 2710,
+          "image_background": "https://media.rawg.io/media/screenshots/638/63834d29807a378f2bd11fb635c04c51.jpg"
+        },
+        {
+          "id": 832,
+          "name": "Halloween",
+          "slug": "halloween",
+          "language": "eng",
+          "games_count": 2124,
+          "image_background": "https://media.rawg.io/media/screenshots/ce4/ce457564de1d62bbcabfb1ea4284a7f2.jpg"
+        },
+        {
+          "id": 592,
+          "name": "Voice Acting",
+          "slug": "voice-acting",
+          "language": "eng",
+          "games_count": 607,
+          "image_background": "https://media.rawg.io/media/screenshots/dbb/dbb534957b3af76c357f287c19058dae.jpg"
+        },
+        {
+          "id": 42220,
+          "name": "Meaningful Choices",
+          "slug": "meaningful-choices-2",
+          "language": "eng",
+          "games_count": 837,
+          "image_background": "https://media.rawg.io/media/screenshots/4d2/4d29dd10e7061e56e99297e476d287c9.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/f3c/f3c5ce71736a504294f2e2a0924a76a6.jpg"
+        },
+        {
+          "id": 3050010,
+          "image": "https://media.rawg.io/media/screenshots/80c/80c27f512597aea3e2e95fc716b2858d.jpg"
+        },
+        {
+          "id": 3050011,
+          "image": "https://media.rawg.io/media/screenshots/baa/baa0011154054e34af83822133e5c895.jpg"
+        },
+        {
+          "id": 3050012,
+          "image": "https://media.rawg.io/media/screenshots/1ae/1aeb1cf886b53b4694e093a90462d5e1.jpg"
+        },
+        {
+          "id": 3050013,
+          "image": "https://media.rawg.io/media/screenshots/9b1/9b1e127c88a2d8e381e40e1192e57d99.jpg"
+        },
+        {
+          "id": 3050014,
+          "image": "https://media.rawg.io/media/screenshots/a25/a25f658eea0b2916504af9db38249b12.jpg"
+        },
+        {
+          "id": 3050015,
+          "image": "https://media.rawg.io/media/screenshots/bec/bec305a2335aeb5c0108801706b9c57f.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "limbo-library",
+      "name": "Limbo Library",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        },
+        {
+          "platform": {
+            "id": 171,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2020-10-05",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/ef2/ef26d8795c4117b28618620a5457f874.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 51,
+      "updated": "2020-10-09T08:12:14",
+      "id": 503589,
+      "score": "15.426767",
+      "clip": null,
+      "tags": [
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 86094,
+          "image_background": "https://media.rawg.io/media/games/35b/35b47c4d85cd6e08f3e2ca43ea5ce7bb.jpg"
+        },
+        {
+          "id": 122,
+          "name": "Pixel Graphics",
+          "slug": "pixel-graphics",
+          "language": "eng",
+          "games_count": 40078,
+          "image_background": "https://media.rawg.io/media/games/ffe/ffed87105b14f5beff72ff44a7793fd5.jpg"
+        },
+        {
+          "id": 586,
+          "name": "Ludum Dare",
+          "slug": "ludum-dare",
+          "language": "eng",
+          "games_count": 3746,
+          "image_background": "https://media.rawg.io/media/screenshots/421/4212e9851d14d7d8f5180fecec5ef629.jpg"
+        },
+        {
+          "id": 639,
+          "name": "Roguelike",
+          "slug": "roguelike",
+          "language": "eng",
+          "games_count": 5054,
+          "image_background": "https://media.rawg.io/media/games/fad/fadc4be043ed07904012d47cd02671e4.jpg"
+        },
+        {
+          "id": 803,
+          "name": "Top down shooter",
+          "slug": "top-down-shooter-2",
+          "language": "eng",
+          "games_count": 5746,
+          "image_background": "https://media.rawg.io/media/screenshots/7e8/7e8e901d8d3a9450f83038956e5cdc1a.jpg"
+        },
+        {
+          "id": 56698,
+          "name": "ludum-dare-47",
+          "slug": "ludum-dare-47",
+          "language": "eng",
+          "games_count": 1101,
+          "image_background": "https://media.rawg.io/media/screenshots/08c/08c09bc65ed01d948ffef45d7ca3a5b7.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/ef2/ef26d8795c4117b28618620a5457f874.jpg"
+        },
+        {
+          "id": 2560069,
+          "image": "https://media.rawg.io/media/screenshots/2fc/2fc5a88cdac789713b81f97b7b141da9.jpg"
+        },
+        {
+          "id": 2560070,
+          "image": "https://media.rawg.io/media/screenshots/98f/98f3dea0bfb26b132c65cb6be2d9c383.jpg"
+        },
+        {
+          "id": 2560071,
+          "image": "https://media.rawg.io/media/screenshots/ef2/ef26d8795c4117b28618620a5457f874.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "Apple Macintosh",
+            "slug": "mac"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        },
+        {
+          "platform": {
+            "id": 14,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action"
+        }
+      ]
+    },
+    {
+      "slug": "limbo-party",
+      "name": "Limbo Party",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2018-12-16",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/6c9/6c97a11295c178a93b388a8fda154082.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 3,
+      "updated": "2019-01-09T12:41:06",
+      "id": 277074,
+      "score": "15.426767",
+      "clip": null,
+      "tags": [
+        {
+          "id": 36821,
+          "name": "scream-season",
+          "slug": "scream-season",
+          "language": "eng",
+          "games_count": 2,
+          "image_background": "https://media.rawg.io/media/screenshots/b15/b15ec290eb47197f188de9cfa0a41612.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/6c9/6c97a11295c178a93b388a8fda154082.jpg"
+        },
+        {
+          "id": 1778183,
+          "image": "https://media.rawg.io/media/screenshots/6c9/6c97a11295c178a93b388a8fda154082.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 6,
+            "name": "Linux",
+            "slug": "linux"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 5,
+          "name": "RPG",
+          "slug": "role-playing-games-rpg"
+        }
+      ]
+    },
+    {
+      "slug": "limbo-letters",
+      "name": "Limbo Letters",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2021-05-08",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/7d5/7d504f311c9426c4a25007f9450b3748.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2021-05-10T06:09:24",
+      "id": 601593,
+      "score": "15.426767",
+      "clip": null,
+      "tags": [
+        {
+          "id": 710,
+          "name": "Global Game Jam",
+          "slug": "global-game-jam",
+          "language": "eng",
+          "games_count": 3538,
+          "image_background": "https://media.rawg.io/media/screenshots/de0/de0fa2b440abbc97262c8eb13df2f916.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/7d5/7d504f311c9426c4a25007f9450b3748.jpg"
+        },
+        {
+          "id": 2838530,
+          "image": "https://media.rawg.io/media/screenshots/8fa/8fac92c8a39e53dc30b721aef0841906.jpg"
+        },
+        {
+          "id": 2838531,
+          "image": "https://media.rawg.io/media/screenshots/842/84292fbde2b744c49ee37974482b9971.jpg"
+        },
+        {
+          "id": 2838532,
+          "image": "https://media.rawg.io/media/screenshots/7d5/7d504f311c9426c4a25007f9450b3748.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "limbo-jump",
+      "name": "Limbo Jump",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 171,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2022-03-30",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/b5d/b5df5717c131ed5b3f74006bd1f320b1.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-04-22T18:57:49",
+      "id": 774020,
+      "score": "15.426767",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 159021,
+          "image_background": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg"
+        },
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 156048,
+          "image_background": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg"
+        },
+        {
+          "id": 122,
+          "name": "Pixel Graphics",
+          "slug": "pixel-graphics",
+          "language": "eng",
+          "games_count": 71280,
+          "image_background": "https://media.rawg.io/media/games/e40/e40cc9d1957b0a0ed7e389834457b524.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/b5d/b5df5717c131ed5b3f74006bd1f320b1.jpg"
+        },
+        {
+          "id": 3341165,
+          "image": "https://media.rawg.io/media/screenshots/1f6/1f647a455d41411b4b8ca269421eed2b.jpg"
+        },
+        {
+          "id": 3341166,
+          "image": "https://media.rawg.io/media/screenshots/291/2916d9cc9cc092d057ce134f6bc0ea19.jpg"
+        },
+        {
+          "id": 3341167,
+          "image": "https://media.rawg.io/media/screenshots/b5d/b5df5717c131ed5b3f74006bd1f320b1.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 14,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 83,
+          "name": "Platformer",
+          "slug": "platformer"
+        }
+      ]
+    },
+    {
+      "slug": "limboo",
+      "name": "Limboo",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 171,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2022-05-04",
+      "tba": false,
+      "background_image": null,
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-05-06T11:19:17",
+      "id": 780462,
+      "score": "15.252085",
+      "clip": null,
+      "tags": [
+        {
+          "id": 604,
+          "name": "simple",
+          "slug": "simple",
+          "language": "eng",
+          "games_count": 6938,
+          "image_background": "https://media.rawg.io/media/screenshots/ecb/ecb006692227e6d5edb063d2a44b1f97.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 14,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 83,
+          "name": "Platformer",
+          "slug": "platformer"
+        }
+      ]
+    },
+    {
+      "slug": "limbo-life",
+      "name": "Limbo Life",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 171,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2020-03-29",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/aa6/aa6db536b40c1967ec769dea96433f79.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 20,
+      "updated": "2020-04-03T06:17:19",
+      "id": 425058,
+      "score": "14.786449",
+      "clip": null,
+      "tags": [
+        {
+          "id": 57,
+          "name": "Bullet Hell",
+          "slug": "bullet-hell",
+          "language": "eng",
+          "games_count": 3709,
+          "image_background": "https://media.rawg.io/media/games/5a4/5a44112251d70a25291cc33757220fce.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/aa6/aa6db536b40c1967ec769dea96433f79.jpg"
+        },
+        {
+          "id": 2327266,
+          "image": "https://media.rawg.io/media/screenshots/aa6/aa6db536b40c1967ec769dea96433f79.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 14,
+            "name": "Web",
+            "slug": "web"
+          }
+        }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "limbo-demo",
+      "name": "LIMBO demo",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4"
+          }
+        },
+        {
+          "platform": {
+            "id": 21,
+            "name": "Android",
+            "slug": "android"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 3,
+            "name": "PlayStation Store",
+            "slug": "playstation-store"
+          }
+        },
+        {
+          "store": {
+            "id": 8,
+            "name": "Google Play",
+            "slug": "google-play"
+          }
+        }
+      ],
+      "released": "2015-02-24",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/ce5/ce546840847189be069def1244d4b8de.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 1,
+      "added_by_status": {
+        "owned": 1
+      },
+      "metacritic": null,
+      "suggestions_count": 176,
+      "updated": "2020-10-23T02:12:33",
+      "id": 220641,
+      "score": "14.786449",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/ce5/ce546840847189be069def1244d4b8de.jpg"
+        },
+        {
+          "id": 2574051,
+          "image": "https://media.rawg.io/media/screenshots/b6e/b6e3df17912ed8aa0cef600741b7dbb8.jpg"
+        },
+        {
+          "id": 2574052,
+          "image": "https://media.rawg.io/media/screenshots/f02/f02734dd899209fdfdf0766f07495de3.jpg"
+        },
+        {
+          "id": 2574053,
+          "image": "https://media.rawg.io/media/screenshots/b7c/b7c9b41c753d9a2194bd56f375b1d173.jpg"
+        },
+        {
+          "id": 2574054,
+          "image": "https://media.rawg.io/media/screenshots/ec7/ec7c14b34c5c13655644073ae0fc6327.jpg"
+        },
+        {
+          "id": 2574055,
+          "image": "https://media.rawg.io/media/screenshots/ac0/ac087f8528a1b16ee3ca13353ff89072.jpg"
+        },
+        {
+          "id": 2574056,
+          "image": "https://media.rawg.io/media/screenshots/108/10810e2fe4d1764308824b4e353083ad.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 2,
+            "name": "PlayStation",
+            "slug": "playstation"
+          }
+        },
+        {
+          "platform": {
+            "id": 8,
+            "name": "Android",
+            "slug": "android"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "Adventure",
+          "slug": "adventure"
+        },
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action"
+        },
+        {
+          "id": 7,
+          "name": "Puzzle",
+          "slug": "puzzle"
+        }
+      ]
+    },
+    {
+      "slug": "limbo-itch",
+      "name": "Limbo (itch)",
+      "playtime": 0,
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "stores": [
+        {
+          "store": {
+            "id": 9,
+            "name": "itch.io",
+            "slug": "itch"
+          }
+        }
+      ],
+      "released": "2016-08-08",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/4f3/4f373f146e0ec667063ea8b4ebd95cb6.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 10,
+      "updated": "2019-01-09T12:41:06",
+      "id": 187127,
+      "score": "14.5894165",
+      "clip": null,
+      "tags": [
+        {
+          "id": 2209,
+          "name": "ghost",
+          "slug": "ghost",
+          "language": "eng",
+          "games_count": 902,
+          "image_background": "https://media.rawg.io/media/screenshots/6c9/6c9c15f6164b96546a126cc8b65cc7bd.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        {
+          "id": -1,
+          "image": "https://media.rawg.io/media/screenshots/4f3/4f373f146e0ec667063ea8b4ebd95cb6.jpg"
+        },
+        {
+          "id": 1269635,
+          "image": "https://media.rawg.io/media/screenshots/4f3/4f373f146e0ec667063ea8b4ebd95cb6.jpg"
+        }
+      ],
+      "parent_platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "PC",
+            "slug": "pc"
+          }
+        }
+      ],
+      "genres": [
+        {
+          "id": 7,
+          "name": "Puzzle",
+          "slug": "puzzle"
+        }
+      ]
+    }
+  ],
+  "user_platforms": false
+}

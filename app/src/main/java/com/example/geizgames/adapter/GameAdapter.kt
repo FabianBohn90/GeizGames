@@ -48,10 +48,15 @@ class GameAdapter(
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val game = dataset[position]
 
-        val imgUri = game.background_image.toUri().buildUpon().scheme("https").build()
+        val imgUri = game.background_image?.toUri()?.buildUpon()?.scheme("https")?.build()
 
         holder.ivGame.load(imgUri) {
             transformations(RoundedCornersTransformation(10f))
+            error(R.drawable.broken_img)
+        }
+
+        if (game.background_image == null) {
+            holder.ivGame.setImageResource(R.drawable.broken_img)
         }
         holder.tvTitle.text = game.name
 
@@ -133,25 +138,30 @@ class GameAdapter(
         )
 
         for (i in 0..8) {
-            if (i < game.platforms.size) {
-                setPlatform(game.platforms[i].platform.id, platforms[i])
+            if (game.platforms != null) {
+                if (i < game.platforms?.size!!) {
+                    game.platforms?.get(i)?.platform?.id?.let { setPlatform(it, platforms[i]) }
+                }
             }
         }
 
-        // setzt die farben der umrandung & des textes
-        when (game.metacritic) {
-            in 70..100 -> {
-                holder.tvGameMetacritic.setTextColor(Color.parseColor("#80FEBC"))
-                holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_green)
+        if (game.metacritic != null) {
+            when (game.metacritic) {
+                in 70..100 -> {
+                    holder.tvGameMetacritic.setTextColor(Color.parseColor("#80FEBC"))
+                    holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_green)
+                }
+                in 40..69 -> {
+                    holder.tvGameMetacritic.setTextColor(Color.parseColor("#FAB753"))
+                    holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_orange)
+                }
+                in 0..39 -> {
+                    holder.tvGameMetacritic.setTextColor(Color.parseColor("#E33314"))
+                    holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_red)
+                }
             }
-            in 40..69 -> {
-                holder.tvGameMetacritic.setTextColor(Color.parseColor("#FAB753"))
-                holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_orange)
-            }
-            in 0..39 -> {
-                holder.tvGameMetacritic.setTextColor(Color.parseColor("#E33314"))
-                holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_red)
-            }
+        } else {
+            holder.tvGameMetacritic.visibility = View.INVISIBLE
         }
 
         holder.tvGameMetacritic.text = game.metacritic.toString()
@@ -160,9 +170,9 @@ class GameAdapter(
             holder.itemView.findNavController().navigate(
                 GameFragmentDirections.actionGameFragmentToDetailFragment(
                     game.name,
-                    game.background_image,
-                    game.metacritic,
-                    game.platforms[0].platform.name
+                    "game.background_image",
+                    0,
+                    "game.platforms?.get(0)?.platform?.name"
                 )
             )
         }
