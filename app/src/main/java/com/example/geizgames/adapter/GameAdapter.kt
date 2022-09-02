@@ -1,5 +1,6 @@
 package com.example.geizgames.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,10 +24,6 @@ class GameAdapter(
     inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val ivGame: ImageView = itemView.findViewById(R.id.imageView)
         val tvTitle: TextView = itemView.findViewById(R.id.tv_game_titel)
-        val tvPlatform1: TextView = itemView.findViewById(R.id.tv_list_platform1)
-        val tvPlatform2: TextView = itemView.findViewById(R.id.tv_list_platform2)
-        val tvPlatform3: TextView = itemView.findViewById(R.id.tv_list_platform3)
-        val tvPlatform4: TextView = itemView.findViewById(R.id.tv_list_platform4)
         val ivPlatform1: ImageView = itemView.findViewById(R.id.iv_platform1)
         val ivPlatform2: ImageView = itemView.findViewById(R.id.iv_platform2)
         val ivPlatform3: ImageView = itemView.findViewById(R.id.iv_platform3)
@@ -58,31 +55,23 @@ class GameAdapter(
         }
         holder.tvTitle.text = game.name
 
-        for (i in 0..5) {
-            if (i < game.platforms.size) {
-                when (i) {
-                    0 -> holder.tvPlatform1.text = game.platforms[i].platform.name
-                    1 -> holder.tvPlatform2.text = game.platforms[i].platform.name
-                    2 -> holder.tvPlatform3.text = game.platforms[i].platform.name
-                    3 -> holder.tvPlatform4.text = game.platforms[i].platform.name
-                }
-            }
-        }
-
-        fun setPlatform(string: String, imageView: ImageView) {
-            when (string) {
-                "PC" -> imageView.setImageResource(R.drawable.windows_pc)
-                "Xbox One" -> imageView.setImageResource(R.drawable.xbox)
-                "PlayStation 3" -> imageView.setImageResource(R.drawable.ps3)
-                "PlayStation 4" -> imageView.setImageResource(R.drawable.ps4)
-                "PlayStation 5" -> imageView.setImageResource(R.drawable.sony_playstation)
-                "PlayStation Vita" -> imageView.setImageResource(R.drawable.psvita)
-                "Nintendo Switch" -> imageView.setImageResource(R.drawable.nintendo_switch)
-                "macOS" -> imageView.setImageResource(R.drawable.mac_os)
-                "Android" -> imageView.setImageResource(R.drawable.android_os)
-                "iOS" -> imageView.setImageResource(R.drawable.app_ios)
-                "Linux" -> imageView.setImageResource(R.drawable.linux_os)
-                "Xbox 360" -> imageView.setImageResource(R.drawable.xbox360)
+        fun setPlatform(int: Int, imageView: ImageView) {
+            when (int) {
+                4 -> imageView.setImageResource(R.drawable.windows_pc)
+                1 -> imageView.setImageResource(R.drawable.xbox)
+                80 -> imageView.setImageResource(R.drawable.xbox)
+                186 -> imageView.setImageResource(R.drawable.xbox)
+                16 -> imageView.setImageResource(R.drawable.ps3)
+                18 -> imageView.setImageResource(R.drawable.ps4)
+                187 -> imageView.setImageResource(R.drawable.sony_playstation)
+                19 -> imageView.setImageResource(R.drawable.psvita)
+                7 -> imageView.setImageResource(R.drawable.nintendo_switch)
+                5 -> imageView.setImageResource(R.drawable.mac_os)
+                21 -> imageView.setImageResource(R.drawable.android_os)
+                3 -> imageView.setImageResource(R.drawable.app_ios)
+                6 -> imageView.setImageResource(R.drawable.linux_os)
+                14 -> imageView.setImageResource(R.drawable.xbox360)
+                171 -> imageView.setImageResource(R.drawable.web)
             }
         }
 
@@ -100,8 +89,12 @@ class GameAdapter(
 
         for (i in 0..8)
             if (i < game.platforms.size) {
-                setPlatform(game.platforms[i].platform.name, platforms[i])
+                setPlatform(game.platforms[i].platform.id, platforms[i])
             }
+
+        if (game.metacritic > 70) {
+            holder.tvGameMetacritic.setTextColor(Color.GREEN)
+        }
 
         holder.tvGameMetacritic.text = game.metacritic.toString()
 
@@ -115,6 +108,8 @@ class GameAdapter(
                 )
             )
         }
+//      stop das recyclen der views
+        holder.setIsRecyclable(false)
     }
 
     override fun getItemCount(): Int {

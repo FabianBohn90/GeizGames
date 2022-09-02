@@ -30,9 +30,9 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="4dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginBottom="8dp"
                 android:scaleType="centerCrop"
-                app:layout_constraintBottom_toTopOf="@+id/tv_list_platform1"
+                app:layout_constraintBottom_toTopOf="@+id/cv_platforms"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -44,11 +44,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="4dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="4dp"
                 android:textColor="@color/black"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/cv_platforms"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="Game Name" />
@@ -57,53 +57,13 @@
                 android:id="@+id/tv_game_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:text="86"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-            <TextView
-                android:id="@+id/tv_list_platform1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginBottom="4dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/tv_game_titel"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:text="tv" />
-
-            <TextView
-                android:id="@+id/tv_list_platform2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_marginBottom="4dp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_game_titel"
-                app:layout_constraintStart_toEndOf="@+id/tv_list_platform1"
-                tools:text="tv" />
-
-            <TextView
-                android:id="@+id/tv_list_platform3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_marginBottom="4dp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_game_titel"
-                app:layout_constraintStart_toEndOf="@+id/tv_list_platform2"
-                tools:text="tv" />
-
-            <TextView
-                android:id="@+id/tv_list_platform4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_marginBottom="4dp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_game_titel"
-                app:layout_constraintStart_toEndOf="@+id/tv_list_platform3"
-                tools:text="tv" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_platforms"
@@ -111,10 +71,10 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="64dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="4dp"
                 app:cardElevation="0dp"
                 app:cardMaxElevation="0dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tv_game_titel"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
