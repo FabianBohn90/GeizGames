@@ -57,21 +57,66 @@ class GameAdapter(
 
         fun setPlatform(int: Int, imageView: ImageView) {
             when (int) {
-                4 -> imageView.setImageResource(R.drawable.windows_pc)
-                1 -> imageView.setImageResource(R.drawable.xbox)
-                80 -> imageView.setImageResource(R.drawable.xbox)
-                186 -> imageView.setImageResource(R.drawable.xbox)
-                16 -> imageView.setImageResource(R.drawable.ps3)
-                18 -> imageView.setImageResource(R.drawable.ps4)
-                187 -> imageView.setImageResource(R.drawable.sony_playstation)
-                19 -> imageView.setImageResource(R.drawable.psvita)
-                7 -> imageView.setImageResource(R.drawable.nintendo_switch)
-                5 -> imageView.setImageResource(R.drawable.mac_os)
-                21 -> imageView.setImageResource(R.drawable.android_os)
-                3 -> imageView.setImageResource(R.drawable.app_ios)
-                6 -> imageView.setImageResource(R.drawable.linux_os)
-                14 -> imageView.setImageResource(R.drawable.xbox360)
-                171 -> imageView.setImageResource(R.drawable.web)
+                4 -> {
+                    imageView.setImageResource(R.drawable.windows_pc)
+                    imageView.visibility = View.VISIBLE
+                }
+                1 -> {
+                    imageView.setImageResource(R.drawable.xbox)
+                    imageView.visibility = View.VISIBLE
+                }
+                80 -> {
+                    imageView.setImageResource(R.drawable.xbox)
+                    imageView.visibility = View.VISIBLE
+                }
+                186 -> {
+                    imageView.setImageResource(R.drawable.xbox)
+                    imageView.visibility = View.VISIBLE
+                }
+                16 -> {
+                    imageView.setImageResource(R.drawable.ps3)
+                    imageView.visibility = View.VISIBLE
+                }
+                18 -> {
+                    imageView.setImageResource(R.drawable.ps4)
+                    imageView.visibility = View.VISIBLE
+                }
+                187 -> {
+                    imageView.setImageResource(R.drawable.sony_playstation)
+                    imageView.visibility = View.VISIBLE
+                }
+                19 -> {
+                    imageView.setImageResource(R.drawable.psvita)
+                    imageView.visibility = View.VISIBLE
+                }
+                7 -> {
+                    imageView.setImageResource(R.drawable.nintendo_switch)
+                    imageView.visibility = View.VISIBLE
+                }
+                5 -> {
+                    imageView.setImageResource(R.drawable.mac_os)
+                    imageView.visibility = View.VISIBLE
+                }
+                21 -> {
+                    imageView.setImageResource(R.drawable.android_os)
+                    imageView.visibility = View.VISIBLE
+                }
+                3 -> {
+                    imageView.setImageResource(R.drawable.app_ios)
+                    imageView.visibility = View.VISIBLE
+                }
+                6 -> {
+                    imageView.setImageResource(R.drawable.linux_os)
+                    imageView.visibility = View.VISIBLE
+                }
+                14 -> {
+                    imageView.setImageResource(R.drawable.xbox360)
+                    imageView.visibility = View.VISIBLE
+                }
+                171 -> {
+                    imageView.setImageResource(R.drawable.web)
+                    imageView.visibility = View.VISIBLE
+                }
             }
         }
 
@@ -87,13 +132,26 @@ class GameAdapter(
             holder.ivPlatform9
         )
 
-        for (i in 0..8)
+        for (i in 0..8) {
             if (i < game.platforms.size) {
                 setPlatform(game.platforms[i].platform.id, platforms[i])
             }
+        }
 
-        if (game.metacritic > 70) {
-            holder.tvGameMetacritic.setTextColor(Color.GREEN)
+        // setzt die farben der umrandung & des textes
+        when (game.metacritic) {
+            in 70..100 -> {
+                holder.tvGameMetacritic.setTextColor(Color.parseColor("#80FEBC"))
+                holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_green)
+            }
+            in 40..69 -> {
+                holder.tvGameMetacritic.setTextColor(Color.parseColor("#FAB753"))
+                holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_orange)
+            }
+            in 0..39 -> {
+                holder.tvGameMetacritic.setTextColor(Color.parseColor("#E33314"))
+                holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_red)
+            }
         }
 
         holder.tvGameMetacritic.text = game.metacritic.toString()
