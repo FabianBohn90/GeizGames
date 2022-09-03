@@ -21,10 +21,10 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface GameApiService {
-    @GET("games?&key=$API_TOKEN&search=league-of-legends")
+    @GET("games?&key=$API_TOKEN")
     suspend fun getGames(): GameList
 
-    @GET("games?&key$API_TOKEN")
+    @GET("games?&key=$API_TOKEN")
     suspend fun getResults(@Query("search") suchbegriff: String): GameList
 }
 
