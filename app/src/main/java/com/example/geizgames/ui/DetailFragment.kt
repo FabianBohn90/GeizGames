@@ -29,7 +29,7 @@ class DetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail,container,false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail, container, false)
         return binding.root
     }
 
@@ -48,7 +48,9 @@ class DetailFragment : Fragment() {
         }
 
         binding.tvGameName.text = name
+
         binding.tvMetacritic.text = metacritic.toString()
+
         binding.tvRealeseDate.text = released
     }
 }

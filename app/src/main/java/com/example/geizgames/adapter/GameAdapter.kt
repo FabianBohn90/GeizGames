@@ -167,15 +167,24 @@ class GameAdapter(
         holder.tvGameMetacritic.text = game.metacritic.toString()
 
         holder.cardView.setOnClickListener {
+            var img = ""
+            var metacritic = 0
+            var platformName = ""
+
+            if (game.metacritic != null) metacritic = game.metacritic
+            if (game.background_image != null) img = game.background_image
+            if (game.platforms?.get(0) != null) platformName = game.platforms!![0].platform.name
+
             holder.itemView.findNavController().navigate(
                 GameFragmentDirections.actionGameFragmentToDetailFragment(
                     game.name,
-                    "game.background_image",
-                    0,
-                    "game.platforms?.get(0)?.platform?.name"
+                    img,
+                    metacritic,
+                    platformName
                 )
             )
         }
+
 //      stop das recyclen der views
         holder.setIsRecyclable(false)
     }
