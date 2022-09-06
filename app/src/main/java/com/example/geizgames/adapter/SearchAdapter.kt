@@ -14,16 +14,16 @@ import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
 import com.example.geizgames.data.models.Game
-import com.example.geizgames.ui.GameFragmentDirections
+import com.example.geizgames.ui.SearchFragmentDirections
 
-class GameAdapter(
+class SearchAdapter(
     private val dataset: List<Game>
 
-) : RecyclerView.Adapter<GameAdapter.ItemViewHolder>() {
+) : RecyclerView.Adapter<SearchAdapter.ItemViewHolder>() {
 
     inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val ivGame: ImageView = itemView.findViewById(R.id.imageView)
-        val tvTitle: TextView = itemView.findViewById(R.id.tv_game_titel)
+        val ivGame: ImageView = itemView.findViewById(R.id.iv_game_splash_search)
+        val tvTitle: TextView = itemView.findViewById(R.id.tv_game_title_search)
         val ivPlatform1: ImageView = itemView.findViewById(R.id.iv_platform1_search)
         val ivPlatform2: ImageView = itemView.findViewById(R.id.iv_platform2_search)
         val ivPlatform3: ImageView = itemView.findViewById(R.id.iv_platform3_search)
@@ -35,12 +35,12 @@ class GameAdapter(
         val ivPlatform9: ImageView = itemView.findViewById(R.id.iv_platform9_search)
 
         val tvGameMetacritic: TextView = itemView.findViewById(R.id.tv_game_score_search)
-        val cardView: CardView = itemView.findViewById(R.id.cv_listitem_card)
+        val cardView: CardView = itemView.findViewById(R.id.cv_search_card)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val itemLayout = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_item, parent, false)
+            .inflate(R.layout.list_searchitem, parent, false)
 
         return ItemViewHolder(itemLayout)
     }
@@ -176,7 +176,7 @@ class GameAdapter(
             if (game.platforms?.get(0) != null) platformName = game.platforms!![0].platform.name
 
             holder.itemView.findNavController().navigate(
-                GameFragmentDirections.actionGameFragmentToDetailFragment(
+                SearchFragmentDirections.actionSearchFragmentToDetailFragment(
                     game.name,
                     img,
                     metacritic,

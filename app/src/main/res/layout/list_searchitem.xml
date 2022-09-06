@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:elevation="2dp">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
     </data>
 
-
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_listitem_card"
+        android:id="@+id/cv_search_card"
         android:layout_width="match_parent"
-        android:layout_height="330dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:cardCornerRadius="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,61 +24,29 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="0dp"
+                android:id="@+id/iv_game_splash_search"
+                android:layout_width="116dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:scaleType="centerCrop"
-                app:layout_constraintBottom_toTopOf="@+id/cv_platforms_search"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/broken_img"
-                tools:srcCompat="@drawable/test_splash" />
-
-            <TextView
-                android:id="@+id/tv_game_titel"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="4dp"
-                android:textColor="@color/black"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:text="Game Name" />
-
-            <TextView
-                android:id="@+id/tv_game_score_search"
-                android:layout_width="28dp"
-                android:layout_height="22dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/rounded_corner_green"
-                android:gravity="center|center_horizontal|center_vertical"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
-                tools:text="90" />
+                app:srcCompat="@drawable/test_splash" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_platforms_search"
                 android:layout_width="wrap_content"
                 android:layout_height="24dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:backgroundTint="@color/white"
                 app:cardElevation="2dp"
                 app:cardMaxElevation="0dp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_game_titel"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toEndOf="@+id/iv_game_splash_search"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -174,6 +140,36 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:id="@+id/tv_game_score_search"
+                android:layout_width="28dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_corner_green"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="90" />
+
+            <TextView
+                android:id="@+id/tv_game_title_search"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_game_score_search"
+                app:layout_constraintStart_toEndOf="@+id/iv_game_splash_search"
+                app:layout_constraintTop_toBottomOf="@+id/cv_platforms_search"
+                tools:text="Game Titel" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.geizgames.adapter.GameAdapter
+import com.example.geizgames.adapter.SearchAdapter
 import com.example.geizgames.databinding.FragmentSearchBinding
 
 class SearchFragment : Fragment() {
@@ -39,7 +40,7 @@ class SearchFragment : Fragment() {
 
         // Sobald die Daten aus der API geladen sind, setze einen neuen Adapter der RV
         viewModel.games.observe(viewLifecycleOwner) {
-            binding.rvGameSearch.adapter = GameAdapter(it)
+            binding.rvGameSearch.adapter = SearchAdapter(it)
         }
     }
 }
