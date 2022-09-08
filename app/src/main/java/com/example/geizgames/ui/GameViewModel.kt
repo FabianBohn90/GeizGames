@@ -1,37 +1,45 @@
 package com.example.geizgames.ui
 
-import android.app.Application
-import android.util.Log
-import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.paging.PagingData
+import androidx.paging.cachedIn
 import com.example.geizgames.data.AppRepository
-import com.example.geizgames.data.remote.GameApi
+import com.example.geizgames.data.models.Game
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 const val TAG = "GameViewModel"
 
-class GameViewModel(application: Application) : AndroidViewModel(application) {
+@HiltViewModel
+class GameViewModel @Inject constructor(
+    private val repository: AppRepository
+) : ViewModel() {
 
     val inputText = MutableLiveData<String>()
-
-    private val repository = AppRepository(GameApi)
 
     val games = repository.gameData
     private var searchJob: Job? = null
 
-    fun loadData() {
-        viewModelScope.launch {
-            try {
-                repository.getGames()
-            } catch (e: Exception) {
-                Log.e(TAG, "Error loading Data $e")
-            }
-        }
+    fun getGameList():LiveData<PagingData<Game>>{
+        return repository.pagingData().cachedIn(viewModelScope)
     }
+
+//    fun loadData() {
+//        viewModelScope.launch {
+//            try {
+//                repository.getGames(6)
+//            } catch (e: Exception) {
+//                Log.e(TAG, "Error loading Data $e")
+//            }
+//        }
+//    }
 
     fun loadSearchData(suchbegriff: String) {
         viewModelScope.launch {

@@ -5,63 +5,105 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.core.net.toUri
 import androidx.navigation.findNavController
+import androidx.paging.PagingDataAdapter
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
 import com.example.geizgames.data.models.Game
+import com.example.geizgames.databinding.ListItemBinding
 import com.example.geizgames.ui.GameFragmentDirections
+import kotlinx.coroutines.CoroutineScope
 
-class GameAdapter(
-    private val dataset: List<Game>
+class GameAdapter(lifecycleScope: CoroutineScope) : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCallback) {
 
-) : RecyclerView.Adapter<GameAdapter.ItemViewHolder>() {
+    inner class ItemViewHolder(val binding: ListItemBinding) :
+        RecyclerView.ViewHolder(binding.root)
 
-    inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val ivGame: ImageView = itemView.findViewById(R.id.imageView)
-        val tvTitle: TextView = itemView.findViewById(R.id.tv_game_titel)
-        val ivPlatform1: ImageView = itemView.findViewById(R.id.iv_platform1_search)
-        val ivPlatform2: ImageView = itemView.findViewById(R.id.iv_platform2_search)
-        val ivPlatform3: ImageView = itemView.findViewById(R.id.iv_platform3_search)
-        val ivPlatform4: ImageView = itemView.findViewById(R.id.iv_platform4_search)
-        val ivPlatform5: ImageView = itemView.findViewById(R.id.iv_platform5_search)
-        val ivPlatform6: ImageView = itemView.findViewById(R.id.iv_platform6_search)
-        val ivPlatform7: ImageView = itemView.findViewById(R.id.iv_platform7_search)
-        val ivPlatform8: ImageView = itemView.findViewById(R.id.iv_platform8_search)
-        val ivPlatform9: ImageView = itemView.findViewById(R.id.iv_platform9_search)
+    companion object {
+        val diffCallback = object : DiffUtil.ItemCallback<Game>() {
+            override fun areItemsTheSame(oldItem: Game, newItem: Game): Boolean {
+                return oldItem.id == newItem.id
+            }
 
-        val tvGameMetacritic: TextView = itemView.findViewById(R.id.tv_game_score_search)
-        val cardView: CardView = itemView.findViewById(R.id.cv_listitem_card)
+            override fun areContentsTheSame(oldItem: Game, newItem: Game): Boolean {
+                return oldItem == newItem
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        val itemLayout = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_item, parent, false)
-
-        return ItemViewHolder(itemLayout)
+        return ItemViewHolder(
+            ListItemBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val game = dataset[position]
+        val game = getItem(position)
 
-        val imgUri = game.background_image?.toUri()?.buildUpon()?.scheme("https")?.build()
+        val imgUri = game?.background_image?.toUri()?.buildUpon()?.scheme("https")?.build()
 
-        holder.ivGame.load(imgUri) {
+        holder.binding.ivGame.load(imgUri) {
             transformations(RoundedCornersTransformation(10f))
             error(R.drawable.broken_img)
         }
 
-        if (game.background_image == null) {
-            holder.ivGame.setImageResource(R.drawable.broken_img)
+        if (game != null) {
+            if (game.background_image == null) {
+                holder.binding.ivGame.setImageResource(R.drawable.broken_img)
+            }
         }
-        holder.tvTitle.text = game.name
+        if (game != null) {
+            holder.binding.tvGameTitel.text = game.name
+        }
 
         fun setPlatform(int: Int, imageView: ImageView) {
             when (int) {
+                15 -> {
+                    imageView.setImageResource(R.drawable.playstation_2)
+                    imageView.visibility = View.VISIBLE
+                }
+                106 -> {
+                    imageView.setImageResource(R.drawable.dreamcast)
+                    imageView.visibility = View.VISIBLE
+                }
+                24 -> {
+                    imageView.setImageResource(R.drawable.nintendo_game_boy)
+                    imageView.visibility = View.VISIBLE
+                }
+                105 -> {
+                    imageView.setImageResource(R.drawable.nintendo_gamecube)
+                    imageView.visibility = View.VISIBLE
+                }
+                10 -> {
+                    imageView.setImageResource(R.drawable.nintendo_wiiu)
+                    imageView.visibility = View.VISIBLE
+                }
+                83 -> {
+                    imageView.setImageResource(R.drawable.nintendo64)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                11 -> {
+                    imageView.setImageResource(R.drawable.nintendo_wii)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                8 -> {
+                    imageView.setImageResource(R.drawable.nintendo_ds)
+                    imageView.visibility = View.VISIBLE
+                }
+                9 -> {
+                    imageView.setImageResource(R.drawable.nintendo_ds)
+                    imageView.visibility = View.VISIBLE
+                }
                 4 -> {
                     imageView.setImageResource(R.drawable.windows_pc)
                     imageView.visibility = View.VISIBLE
@@ -75,7 +117,7 @@ class GameAdapter(
                     imageView.visibility = View.VISIBLE
                 }
                 186 -> {
-                    imageView.setImageResource(R.drawable.xbox)
+                    imageView.setImageResource(R.drawable.xbox_series_x_s)
                     imageView.visibility = View.VISIBLE
                 }
                 16 -> {
@@ -126,58 +168,60 @@ class GameAdapter(
         }
 
         val platforms = arrayListOf(
-            holder.ivPlatform1,
-            holder.ivPlatform2,
-            holder.ivPlatform3,
-            holder.ivPlatform4,
-            holder.ivPlatform5,
-            holder.ivPlatform6,
-            holder.ivPlatform7,
-            holder.ivPlatform8,
-            holder.ivPlatform9
+            holder.binding.ivPlatform1,
+            holder.binding.ivPlatform2,
+            holder.binding.ivPlatform3,
+            holder.binding.ivPlatform4,
+            holder.binding.ivPlatform5,
+            holder.binding.ivPlatform6,
+            holder.binding.ivPlatform7,
+            holder.binding.ivPlatform8,
+            holder.binding.ivPlatform9
         )
 
         for (i in 0..8) {
-            if (game.platforms != null) {
-                if (i < game.platforms?.size!!) {
-                    game.platforms?.get(i)?.platform?.id?.let { setPlatform(it, platforms[i]) }
+            if (game != null) {
+                if (game.platforms != null) {
+                    if (i < game.platforms?.size!!) {
+                        game.platforms?.get(i)?.platform?.id?.let { setPlatform(it, platforms[i]) }
+                    }
                 }
             }
         }
 
-        if (game.metacritic != null) {
+        if (game?.metacritic != null) {
             when (game.metacritic) {
                 in 70..100 -> {
-                    holder.tvGameMetacritic.setTextColor(Color.parseColor("#80FEBC"))
-                    holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_green)
+                    holder.binding.tvGameScore.setTextColor(Color.parseColor("#80FEBC"))
+                    holder.binding.tvGameScore.setBackgroundResource(R.drawable.rounded_corner_green)
                 }
                 in 40..69 -> {
-                    holder.tvGameMetacritic.setTextColor(Color.parseColor("#FAB753"))
-                    holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_orange)
+                    holder.binding.tvGameScore.setTextColor(Color.parseColor("#FAB753"))
+                    holder.binding.tvGameScore.setBackgroundResource(R.drawable.rounded_corner_orange)
                 }
                 in 0..39 -> {
-                    holder.tvGameMetacritic.setTextColor(Color.parseColor("#E33314"))
-                    holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_red)
+                    holder.binding.tvGameScore.setTextColor(Color.parseColor("#E33314"))
+                    holder.binding.tvGameScore.setBackgroundResource(R.drawable.rounded_corner_red)
                 }
             }
         } else {
-            holder.tvGameMetacritic.visibility = View.INVISIBLE
+            holder.binding.tvGameScore.visibility = View.INVISIBLE
         }
 
-        holder.tvGameMetacritic.text = game.metacritic.toString()
+        holder.binding.tvGameScore.text = game?.metacritic.toString()
 
-        holder.cardView.setOnClickListener {
+        holder.binding.cvListitemCard.setOnClickListener {
             var img = ""
             var metacritic = 0
             var platformName = ""
 
-            if (game.metacritic != null) metacritic = game.metacritic
-            if (game.background_image != null) img = game.background_image
-            if (game.platforms?.get(0) != null) platformName = game.platforms!![0].platform.name
+            if (game?.metacritic != null) metacritic = game.metacritic
+            if (game?.background_image != null) img = game.background_image
+            if (game?.platforms?.get(0) != null) platformName = game.platforms!![0].platform.name
 
             holder.itemView.findNavController().navigate(
                 GameFragmentDirections.actionGameFragmentToDetailFragment(
-                    game.name,
+                    game!!.name,
                     img,
                     metacritic,
                     platformName
@@ -187,9 +231,5 @@ class GameAdapter(
 
 //      stop das recyclen der views
         holder.setIsRecyclable(false)
-    }
-
-    override fun getItemCount(): Int {
-        return dataset.size
     }
 }

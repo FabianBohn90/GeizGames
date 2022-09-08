@@ -34,7 +34,7 @@ class SearchAdapter(
         val ivPlatform8: ImageView = itemView.findViewById(R.id.iv_platform8_search)
         val ivPlatform9: ImageView = itemView.findViewById(R.id.iv_platform9_search)
 
-        val tvGameMetacritic: TextView = itemView.findViewById(R.id.tv_game_score_search)
+        val tvGameMetacritic: TextView = itemView.findViewById(R.id.tv_game_score)
         val cardView: CardView = itemView.findViewById(R.id.cv_search_card)
     }
 
@@ -62,6 +62,42 @@ class SearchAdapter(
 
         fun setPlatform(int: Int, imageView: ImageView) {
             when (int) {
+                15 -> {
+                    imageView.setImageResource(R.drawable.playstation_2)
+                    imageView.visibility = View.VISIBLE
+                }
+                106 -> {
+                    imageView.setImageResource(R.drawable.dreamcast)
+                    imageView.visibility = View.VISIBLE
+                }
+                24 -> {
+                    imageView.setImageResource(R.drawable.nintendo_game_boy)
+                    imageView.visibility = View.VISIBLE
+                }
+                105 -> {
+                    imageView.setImageResource(R.drawable.nintendo_gamecube)
+                    imageView.visibility = View.VISIBLE
+                }
+                10 -> {
+                    imageView.setImageResource(R.drawable.nintendo_wiiu)
+                    imageView.visibility = View.VISIBLE
+                }
+                83 -> { imageView.setImageResource(R.drawable.nintendo64)
+                    imageView.visibility = View.VISIBLE}
+
+                11 -> {
+                    imageView.setImageResource(R.drawable.nintendo_wii)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                8 -> {
+                    imageView.setImageResource(R.drawable.nintendo_ds)
+                    imageView.visibility = View.VISIBLE
+                }
+                9 -> {
+                    imageView.setImageResource(R.drawable.nintendo_ds)
+                    imageView.visibility = View.VISIBLE
+                }
                 4 -> {
                     imageView.setImageResource(R.drawable.windows_pc)
                     imageView.visibility = View.VISIBLE
@@ -75,7 +111,7 @@ class SearchAdapter(
                     imageView.visibility = View.VISIBLE
                 }
                 186 -> {
-                    imageView.setImageResource(R.drawable.xbox)
+                    imageView.setImageResource(R.drawable.xbox_series_x_s)
                     imageView.visibility = View.VISIBLE
                 }
                 16 -> {

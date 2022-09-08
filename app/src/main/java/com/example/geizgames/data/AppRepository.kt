@@ -2,23 +2,37 @@ package com.example.geizgames.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
+import androidx.paging.liveData
 import com.example.geizgames.data.models.Game
-import com.example.geizgames.data.remote.GameApi
+import com.example.geizgames.data.remote.GameApiService
+import com.example.geizgames.paging.GamePagingSource
+import javax.inject.Inject
 
 const val TAG = "AppRepository"
 
-class AppRepository(private val api: GameApi) {
+class AppRepository @Inject constructor(private val api: GameApiService) {
 
     private val _gameData = MutableLiveData<List<Game>>()
     val gameData: LiveData<List<Game>>
         get() = _gameData
 
-    suspend fun getGames() {
-        val gameList = api.retrofitService.getGames().results
-        _gameData.value = gameList
+    fun pagingData(): LiveData<PagingData<Game>> {
+        return Pager(
+            config = PagingConfig(pageSize = 20)
+        ) {
+            GamePagingSource(api)
+        }.liveData
     }
+
+//    suspend fun getGames(page: Int) {
+//        val gameList = api.getGames(page).results
+//        _gameData.value = gameList
+//    }
     suspend fun getResults(suchbegriff: String) {
-        val result = api.retrofitService.getResults(suchbegriff)
+        val result = api.getResults(suchbegriff)
         _gameData.value = result.results
     }
 }
