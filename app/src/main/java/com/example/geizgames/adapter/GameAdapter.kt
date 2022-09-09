@@ -16,9 +16,8 @@ import com.example.geizgames.R
 import com.example.geizgames.data.models.Game
 import com.example.geizgames.databinding.ListItemBinding
 import com.example.geizgames.ui.GameFragmentDirections
-import kotlinx.coroutines.CoroutineScope
 
-class GameAdapter(lifecycleScope: CoroutineScope) : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCallback) {
+class GameAdapter() : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCallback) {
 
     inner class ItemViewHolder(val binding: ListItemBinding) :
         RecyclerView.ViewHolder(binding.root)

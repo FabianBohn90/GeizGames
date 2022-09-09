@@ -27,19 +27,9 @@ class GameViewModel @Inject constructor(
     val games = repository.gameData
     private var searchJob: Job? = null
 
-    fun getGameList():LiveData<PagingData<Game>>{
+    fun getGameList(): LiveData<PagingData<Game>> {
         return repository.pagingData().cachedIn(viewModelScope)
     }
-
-//    fun loadData() {
-//        viewModelScope.launch {
-//            try {
-//                repository.getGames(6)
-//            } catch (e: Exception) {
-//                Log.e(TAG, "Error loading Data $e")
-//            }
-//        }
-//    }
 
     fun loadSearchData(suchbegriff: String) {
         viewModelScope.launch {

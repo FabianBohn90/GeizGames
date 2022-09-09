@@ -22,7 +22,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
         super.onViewCreated(view, savedInstanceState)
 
         _binding = FragmentGameBinding.bind(view)
-        val adapter = GameAdapter(viewLifecycleOwner.lifecycleScope)
+        val adapter = GameAdapter()
 
         binding.apply {
             rvGames.apply {
@@ -37,10 +37,6 @@ class GameFragment : Fragment(R.layout.fragment_game) {
                 it?.let {
                     adapter.submitData(lifecycle, it)
                 }
-
-//        viewModel.games.observe(viewLifecycleOwner) {
-//            binding.rvGames.adapter = GameAdapter(it)
-//        }
             }
         }
     }

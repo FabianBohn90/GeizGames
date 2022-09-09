@@ -27,10 +27,6 @@ class AppRepository @Inject constructor(private val api: GameApiService) {
         }.liveData
     }
 
-//    suspend fun getGames(page: Int) {
-//        val gameList = api.getGames(page).results
-//        _gameData.value = gameList
-//    }
     suspend fun getResults(suchbegriff: String) {
         val result = api.getResults(suchbegriff)
         _gameData.value = result.results

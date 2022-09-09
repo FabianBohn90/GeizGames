@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.example.geizgames.adapter.GameAdapter
 import com.example.geizgames.adapter.SearchAdapter
 import com.example.geizgames.databinding.FragmentSearchBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SearchFragment : Fragment() {
 
     private val viewModel: GameViewModel by viewModels()

@@ -1,6 +1,5 @@
 package com.example.geizgames.data.models
 
-data class Genre(
+data class Tags(
     val name: String
-
 )
