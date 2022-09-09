@@ -20,11 +20,14 @@
             android:name="metacritic"
             app:argType="integer" />
         <argument
-            android:name="released"
-            app:argType="string" />
+            android:name="platform"
+            app:argType="string[]" />
         <action
             android:id="@+id/action_detailFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <argument
+            android:name="tags"
+            app:argType="string[]" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -35,11 +38,6 @@
             android:id="@+id/action_searchFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/shopFragment"
-        tools:layout="@layout/fragment_shop"
-        android:name="com.example.geizgames.ui.ShopFragment"
-        android:label="ShopFragment" />
     <fragment
         android:id="@+id/gameFragment"
         tools:layout="@layout/fragment_game"

@@ -22,7 +22,7 @@ class DetailFragment : Fragment() {
     private var name = ""
     private var backgroundImage = ""
     private var metacritic = 0
-    private var released = ""
+    private var platforms: Array<String> = arrayOf("" + "")
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,7 +39,7 @@ class DetailFragment : Fragment() {
         name = requireArguments().getString("name").toString()
         backgroundImage = requireArguments().getString("background_image").toString()
         metacritic = requireArguments().getInt("metacritic")
-        released = requireArguments().getString("released").toString()
+        platforms = requireArguments().getStringArray("platform") as Array<String>
 
         val imgUri = backgroundImage.toUri().buildUpon().scheme("https").build()
 
@@ -50,7 +50,19 @@ class DetailFragment : Fragment() {
         binding.tvGameName.text = name
 
         binding.tvMetacritic.text = metacritic.toString()
-
-        binding.tvRealeseDate.text = released
+        for (i in 0..9) {
+            if (platforms.size > i) {
+                binding.tvPlatformDetail1.text = platforms[i]
+                binding.tvPlatformDetail2.text = platforms[i]
+                binding.tvPlatformDetail3.text = platforms[i]
+                binding.tvPlatformDetail4.text = platforms[i]
+                binding.tvPlatformDetail5.text = platforms[i]
+                binding.tvPlatformDetail6.text = platforms[i]
+                binding.tvPlatformDetail7.text = platforms[i]
+                binding.tvPlatformDetail8.text = platforms[i]
+                binding.tvPlatformDetail9.text = platforms[i]
+                binding.tvPlatformDetail10.text = platforms[i]
+            }
+        }
     }
 }

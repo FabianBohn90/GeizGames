@@ -209,21 +209,33 @@ class GameAdapter() : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCa
 
         holder.binding.tvGameScore.text = game?.metacritic.toString()
 
+        val platformArray: Array<String> = arrayOf("lol", "uff")
+        val tagsArray: Array<String> = arrayOf("lol", "uff")
+        var img = ""
+        var metacritic = 0
+
+        for (i in 0..10) {
+            if (i < game?.tags?.size!!) {
+                tagsArray.plus(game.tags[i].name)
+            }
+        }
+        for (i in 0..10) {
+            if (game != null && i < game.platforms?.size!!) {
+                platformArray.plus(game.platforms!![i].platform.name)
+            }
+        }
+
+        if (game?.metacritic != null) metacritic = game.metacritic
+        if (game?.background_image != null) img = game.background_image
+
         holder.binding.cvListitemCard.setOnClickListener {
-            var img = ""
-            var metacritic = 0
-            var platformName = ""
-
-            if (game?.metacritic != null) metacritic = game.metacritic
-            if (game?.background_image != null) img = game.background_image
-            if (game?.platforms?.get(0) != null) platformName = game.platforms!![0].platform.name
-
             holder.itemView.findNavController().navigate(
                 GameFragmentDirections.actionGameFragmentToDetailFragment(
                     game!!.name,
                     img,
                     metacritic,
-                    platformName
+                    platformArray,
+                    tagsArray
                 )
             )
         }
