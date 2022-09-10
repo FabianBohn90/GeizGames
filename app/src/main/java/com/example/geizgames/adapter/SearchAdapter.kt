@@ -82,8 +82,10 @@ class SearchAdapter(
                     imageView.setImageResource(R.drawable.nintendo_wiiu)
                     imageView.visibility = View.VISIBLE
                 }
-                83 -> { imageView.setImageResource(R.drawable.nintendo64)
-                    imageView.visibility = View.VISIBLE}
+                83 -> {
+                    imageView.setImageResource(R.drawable.nintendo64)
+                    imageView.visibility = View.VISIBLE
+                }
 
                 11 -> {
                     imageView.setImageResource(R.drawable.nintendo_wii)
@@ -202,26 +204,26 @@ class SearchAdapter(
 
         holder.tvGameMetacritic.text = game.metacritic.toString()
 
+        val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
+        val tagsArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
+        var img = ""
+        var metacritic = 0
+
+        for (i in 0..30) {
+            if (i < game.tags.size - 1) {
+                tagsArray[i] = game.tags[i].name
+            }
+        }
+        for (i in 0..24) {
+            if (i < game.platforms?.size!! - 1) {
+                platformArray[i] = game.platforms!![i].platform.name
+            }
+        }
+
+        if (game.metacritic != null) metacritic = game.metacritic
+        if (game.background_image != null) img = game.background_image
+
         holder.cardView.setOnClickListener {
-            var img = ""
-            var metacritic = 0
-            val platformArray: Array<String> = arrayOf("lol" + "uff")
-            val tagsArray: Array<String> = arrayOf("lol" + "uff")
-            for (i in 0..10) {
-                if (i < game.tags.size) {
-                    tagsArray.plus(game.tags[i].name)
-                }
-            }
-
-            for (i in 0..10) {
-                if (i < game.platforms?.size!!) {
-                    game.platforms?.get(i)?.platform?.let { it1 -> tagsArray.plus(it1.name) }
-                }
-            }
-
-            if (game.metacritic != null) metacritic = game.metacritic
-            if (game.background_image != null) img = game.background_image
-
             holder.itemView.findNavController().navigate(
                 SearchFragmentDirections.actionSearchFragmentToDetailFragment(
                     game.name,

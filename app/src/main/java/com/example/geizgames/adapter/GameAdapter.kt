@@ -17,7 +17,7 @@ import com.example.geizgames.data.models.Game
 import com.example.geizgames.databinding.ListItemBinding
 import com.example.geizgames.ui.GameFragmentDirections
 
-class GameAdapter() : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCallback) {
+class GameAdapter : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCallback) {
 
     inner class ItemViewHolder(val binding: ListItemBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -209,19 +209,19 @@ class GameAdapter() : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCa
 
         holder.binding.tvGameScore.text = game?.metacritic.toString()
 
-        val platformArray: Array<String> = arrayOf("lol", "uff")
-        val tagsArray: Array<String> = arrayOf("lol", "uff")
+        val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
+        val tagsArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
         var img = ""
         var metacritic = 0
 
-        for (i in 0..10) {
-            if (i < game?.tags?.size!!) {
-                tagsArray.plus(game.tags[i].name)
+        for (i in 0..30) {
+            if (i < game?.tags?.size!! - 1) {
+                tagsArray[i] = game.tags[i].name
             }
         }
-        for (i in 0..10) {
-            if (game != null && i < game.platforms?.size!!) {
-                platformArray.plus(game.platforms!![i].platform.name)
+        for (i in 0..24) {
+            if (game != null && i < game.platforms?.size!! - 1) {
+                platformArray[i] = game.platforms!![i].platform.name
             }
         }
 
