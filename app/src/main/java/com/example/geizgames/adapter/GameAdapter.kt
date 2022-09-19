@@ -13,22 +13,22 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
-import com.example.geizgames.data.models.Game
-import com.example.geizgames.databinding.ListItemBinding
+import com.example.geizgames.data.models.Results
+import com.example.geizgames.databinding.ListGameitemBinding
 import com.example.geizgames.ui.GameFragmentDirections
 
-class GameAdapter : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCallback) {
+class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffCallback) {
 
-    inner class ItemViewHolder(val binding: ListItemBinding) :
+    inner class ItemViewHolder(val binding: ListGameitemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
     companion object {
-        val diffCallback = object : DiffUtil.ItemCallback<Game>() {
-            override fun areItemsTheSame(oldItem: Game, newItem: Game): Boolean {
+        val diffCallback = object : DiffUtil.ItemCallback<Results>() {
+            override fun areItemsTheSame(oldItem: Results, newItem: Results): Boolean {
                 return oldItem.id == newItem.id
             }
 
-            override fun areContentsTheSame(oldItem: Game, newItem: Game): Boolean {
+            override fun areContentsTheSame(oldItem: Results, newItem: Results): Boolean {
                 return oldItem == newItem
             }
         }
@@ -36,7 +36,7 @@ class GameAdapter : PagingDataAdapter<Game, GameAdapter.ItemViewHolder>(diffCall
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         return ItemViewHolder(
-            ListItemBinding.inflate(
+            ListGameitemBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false

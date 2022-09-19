@@ -1,6 +1,6 @@
 package com.example.geizgames.data.models
 
-data class Genre(
+data class Games(
+    val slug: String,
     val name: String
-
 )

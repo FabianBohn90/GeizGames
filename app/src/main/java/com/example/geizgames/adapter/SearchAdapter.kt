@@ -13,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
-import com.example.geizgames.data.models.Game
+import com.example.geizgames.data.models.Results
 import com.example.geizgames.ui.SearchFragmentDirections
 
 class SearchAdapter(
-    private val dataset: List<Game>
+    private val dataset: List<Results>
 
 ) : RecyclerView.Adapter<SearchAdapter.ItemViewHolder>() {
 
@@ -210,7 +210,7 @@ class SearchAdapter(
         var metacritic = 0
 
         for (i in 0..30) {
-            if (i < game.tags.size - 1) {
+            if (i < game.tags!!.size - 1) {
                 tagsArray[i] = game.tags[i].name
             }
         }

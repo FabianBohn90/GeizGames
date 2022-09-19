@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.example.geizgames.data.AppRepository
-import com.example.geizgames.data.models.Game
+import com.example.geizgames.data.models.Results
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelAndJoin
@@ -27,7 +27,7 @@ class GameViewModel @Inject constructor(
     val games = repository.gameData
     private var searchJob: Job? = null
 
-    fun getGameList(): LiveData<PagingData<Game>> {
+    fun getGameList(): LiveData<PagingData<Results>> {
         return repository.pagingData().cachedIn(viewModelScope)
     }
 
@@ -38,6 +38,12 @@ class GameViewModel @Inject constructor(
                 delay(500)
                 repository.getResults(suchbegriff)
             }
+        }
+    }
+
+    fun loadGenresData() {
+        viewModelScope.launch {
+            repository.getGenres()
         }
     }
 }

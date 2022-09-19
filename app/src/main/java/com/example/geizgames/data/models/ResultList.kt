@@ -1,6 +1,6 @@
 package com.example.geizgames.data.models
 
-data class GameList(
+data class ResultList(
     val count: Int,
-    val results: List<Game>
+    val results: List<Results>
 )

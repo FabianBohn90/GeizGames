@@ -51,4 +51,8 @@
             android:id="@+id/action_gameFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/genresFragment"
+        android:name="com.example.geizgames.ui.GenresFragment"
+        android:label="GenresFragment" />
 </navigation>
