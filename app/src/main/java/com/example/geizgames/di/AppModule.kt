@@ -28,5 +28,5 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun GameApi(retrofit: Retrofit): GameApiService = retrofit.create(GameApiService::class.java)
+    fun gameApi(retrofit: Retrofit): GameApiService = retrofit.create(GameApiService::class.java)
 }

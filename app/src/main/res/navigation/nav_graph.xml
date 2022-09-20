@@ -50,9 +50,16 @@
         <action
             android:id="@+id/action_gameFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <argument
+            android:name="genres"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/genresFragment"
         android:name="com.example.geizgames.ui.GenresFragment"
-        android:label="GenresFragment" />
+        android:label="GenresFragment" >
+        <action
+            android:id="@+id/action_genresFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
 </navigation>

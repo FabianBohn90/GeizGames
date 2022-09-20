@@ -65,6 +65,76 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
 
         fun setPlatform(int: Int, imageView: ImageView) {
             when (int) {
+                107 -> {
+                    imageView.setImageResource(R.drawable.sega)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                119 -> {
+                    imageView.setImageResource(R.drawable.sega)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                28 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                31 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                23 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                22 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                25 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                34 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                46 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                50 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                50 -> {
+                    imageView.setImageResource(R.drawable.atari)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                74 -> {
+                    imageView.setImageResource(R.drawable.sega)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                17 -> {
+                    imageView.setImageResource(R.drawable.psp)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                117 -> {
+                    imageView.setImageResource(R.drawable.sega)
+                    imageView.visibility = View.VISIBLE
+                }
+
                 15 -> {
                     imageView.setImageResource(R.drawable.playstation_2)
                     imageView.visibility = View.VISIBLE

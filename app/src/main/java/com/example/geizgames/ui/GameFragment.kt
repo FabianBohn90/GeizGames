@@ -18,8 +18,16 @@ class GameFragment : Fragment(R.layout.fragment_game) {
     private var _binding: FragmentGameBinding? = null
     private val binding get() = _binding!!
 
+    private var genre = 0
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        genre = requireArguments().getInt("genres")
+
+        if (genre != 0) {
+            viewModel.genres = genre
+        }
 
         _binding = FragmentGameBinding.bind(view)
         val adapter = GameAdapter()
@@ -33,7 +41,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
         }
 
         lifecycleScope.launch {
-            viewModel.getGameList().observe(viewLifecycleOwner) {
+            viewModel.getGameListGenre().observe(viewLifecycleOwner) {
                 it?.let {
                     adapter.submitData(lifecycle, it)
                 }

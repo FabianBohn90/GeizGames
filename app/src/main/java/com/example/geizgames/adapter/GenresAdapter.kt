@@ -3,12 +3,13 @@ package com.example.geizgames.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.net.toUri
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
 import com.example.geizgames.data.models.Results
 import com.example.geizgames.databinding.ListGenresitemBinding
+import com.example.geizgames.ui.GenresFragmentDirections
 
 class GenresAdapter(
     private val dataset: List<Results>
@@ -33,11 +34,18 @@ class GenresAdapter(
         val imgUri = genre.image_background?.toUri()?.buildUpon()?.scheme("https")?.build()
 
         holder.binding.ivGenresImg.load(imgUri) {
-            transformations(RoundedCornersTransformation(10f))
             error(R.drawable.broken_img)
         }
 
         holder.binding.tvGenresTitle.text = genre.name
+
+        holder.binding.cvGenres.setOnClickListener {
+            holder.itemView.findNavController().navigate(
+                GenresFragmentDirections.actionGenresFragmentToGameFragment(
+                    genre.id.toInt()
+                )
+            )
+        }
     }
 
     override fun getItemCount(): Int {
