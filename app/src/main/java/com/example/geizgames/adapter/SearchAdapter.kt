@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
-import com.example.geizgames.data.models.Results
+import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.ui.SearchFragmentDirections
 
 class SearchAdapter(
@@ -280,8 +280,8 @@ class SearchAdapter(
         var metacritic = 0
 
         for (i in 0..30) {
-            if (i < game.tags!!.size - 1) {
-                tagsArray[i] = game.tags[i].name
+            if (i < game.genres!!.size - 1) {
+                tagsArray[i] = game.genres[i].name
             }
         }
         for (i in 0..24) {
@@ -300,7 +300,10 @@ class SearchAdapter(
                     img,
                     metacritic,
                     platformArray,
-                    tagsArray
+                    tagsArray,
+                    game.released!!,
+                    game.slug,
+                    position
                 )
             )
         }

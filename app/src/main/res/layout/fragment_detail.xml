@@ -69,7 +69,7 @@
                     android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_gameName">
+                    app:layout_constraintTop_toBottomOf="@+id/rv_screenshots">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -169,6 +169,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -197,13 +198,8 @@
                                 android:id="@+id/tv_tag_detail_2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
+                                android:paddingLeft="8dp"
                                 android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/tv_tag_detail_3"
@@ -216,7 +212,7 @@
                                 android:id="@+id/tv_tag_detail_4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
+                                android:paddingLeft="8dp"
                                 android:text="TextView" />
                         </TableRow>
 
@@ -235,13 +231,8 @@
                                 android:id="@+id/tv_tag_detail_6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
+                                android:paddingLeft="8dp"
                                 android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/tv_tag_detail_7"
@@ -254,7 +245,7 @@
                                 android:id="@+id/tv_tag_detail_8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
+                                android:paddingLeft="8dp"
                                 android:text="TextView" />
                         </TableRow>
 
@@ -273,201 +264,52 @@
                                 android:id="@+id/tv_tag_detail_10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
                                 android:paddingLeft="8dp"
                                 android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_12"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
                         </TableRow>
 
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_13"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_14"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_15"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_16"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_17"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_18"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_19"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_20"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_21"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_22"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_23"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_25"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_26"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_27"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_28"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_29"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="TextView" />
-
-                            <TextView
-                                android:id="@+id/tv_tag_detail_30"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="16dp"
-                                android:text="TextView" />
-                        </TableRow>
                     </TableLayout>
                 </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_release"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_gameName"
+                    tools:text="releasedate" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_screenshots"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_release"
+                    tools:listitem="@layout/list_imageitem" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_shops"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                    tools:listitem="@layout/list_shopitem" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>

@@ -2,7 +2,7 @@ package com.example.geizgames.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.geizgames.data.models.Results
+import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.data.remote.GameApiService
 
 class GamePagingSource(

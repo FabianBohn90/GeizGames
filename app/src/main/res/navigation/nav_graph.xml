@@ -28,6 +28,15 @@
         <argument
             android:name="tags"
             app:argType="string[]" />
+        <argument
+            android:name="release"
+            app:argType="string" />
+        <argument
+            android:name="slug"
+            app:argType="string" />
+        <argument
+            android:name="index"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -56,6 +65,7 @@
     </fragment>
     <fragment
         android:id="@+id/genresFragment"
+        tools:layout="@layout/fragment_genres"
         android:name="com.example.geizgames.ui.GenresFragment"
         android:label="GenresFragment" >
         <action

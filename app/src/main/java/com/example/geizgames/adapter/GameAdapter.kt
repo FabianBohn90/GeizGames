@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
-import com.example.geizgames.data.models.Results
+import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.databinding.ListGameitemBinding
 import com.example.geizgames.ui.GameFragmentDirections
 
@@ -106,11 +106,6 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
                 }
 
                 46 -> {
-                    imageView.setImageResource(R.drawable.atari)
-                    imageView.visibility = View.VISIBLE
-                }
-
-                50 -> {
                     imageView.setImageResource(R.drawable.atari)
                     imageView.visibility = View.VISIBLE
                 }
@@ -279,14 +274,40 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
 
         holder.binding.tvGameScore.text = game?.metacritic.toString()
 
-        val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
-        val tagsArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
+        val platformArray: Array<String> = arrayOf(
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        )
+        val genreArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "")
         var img = ""
         var metacritic = 0
 
-        for (i in 0..30) {
-            if (i < game?.tags?.size!! - 1) {
-                tagsArray[i] = game.tags[i].name
+        for (i in 0..10) {
+            if (i < game?.genres?.size!! - 1) {
+                genreArray[i] = game.genres[i].name
             }
         }
         for (i in 0..24) {
@@ -305,7 +326,10 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
                     img,
                     metacritic,
                     platformArray,
-                    tagsArray
+                    genreArray,
+                    game.released!!,
+                    game.slug,
+                    position
                 )
             )
         }

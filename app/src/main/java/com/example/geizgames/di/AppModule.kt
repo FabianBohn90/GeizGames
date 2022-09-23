@@ -1,15 +1,17 @@
 package com.example.geizgames.di
 
-import com.example.geizgames.data.remote.BASE_URL
-import com.example.geizgames.data.remote.GameApiService
+import com.example.geizgames.data.remote.* // ktlint-disable no-wildcard-imports
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.OkHttpClient
+import okhttp3.Request
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import javax.inject.Named
 import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
@@ -21,6 +23,7 @@ object AppModule {
 
     @Provides
     @Singleton
+    @Named("GameApi")
     fun provideRetrofit(): Retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(MoshiConverterFactory.create(moshi))
@@ -28,5 +31,26 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun gameApi(retrofit: Retrofit): GameApiService = retrofit.create(GameApiService::class.java)
+    fun gameApi(@Named("GameApi") retrofit: Retrofit): GameApiService = retrofit.create(GameApiService::class.java)
+
+    private val client: OkHttpClient = OkHttpClient.Builder().addInterceptor {
+        val newRequest: Request = it.request().newBuilder()
+            .addHeader("X-RapidAPI-Key", API_TOKEN_SHOP)
+            .addHeader("X-RapidAPI-Host", "game-prices.p.rapidapi.com")
+            .build()
+        it.proceed(newRequest)
+    }.build()
+
+    @Provides
+    @Singleton
+    @Named("ShopApi")
+    fun provideRetrofitShop(): Retrofit = Retrofit.Builder()
+        .baseUrl(BASE_URL_SHOP)
+        .client(client)
+        .addConverterFactory(MoshiConverterFactory.create(moshi))
+        .build()
+
+    @Provides
+    @Singleton
+    fun shopApi(@Named("ShopApi") retrofit: Retrofit): ShopApiService = retrofit.create(ShopApiService::class.java)
 }

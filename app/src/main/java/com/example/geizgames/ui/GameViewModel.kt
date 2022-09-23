@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.example.geizgames.data.AppRepository
-import com.example.geizgames.data.models.Results
+import com.example.geizgames.data.models.gameResults.Results
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelAndJoin
@@ -23,10 +23,12 @@ class GameViewModel @Inject constructor(
 ) : ViewModel() {
 
     val inputText = MutableLiveData<String>()
-
+    val slug = MutableLiveData<String>()
     var genres: Int = 4
-
     val games = repository.gameData
+    val shops = repository.shopData
+    val images = repository.imageData
+
     private var searchJob: Job? = null
 
     fun getGameList(): LiveData<PagingData<Results>> {
@@ -50,6 +52,17 @@ class GameViewModel @Inject constructor(
     fun loadGenresData() {
         viewModelScope.launch {
             repository.getGenres()
+        }
+    }
+    fun loadImageData(i: Int) {
+        viewModelScope.launch {
+            repository.getImages(i)
+        }
+    }
+
+    fun loadShopData(gameName: String) {
+        viewModelScope.launch {
+            repository.getShops(gameName)
         }
     }
 }
