@@ -9,7 +9,6 @@ data class Results(
     val released: String?,
     val metacritic: Int?,
     var platforms: List<Platforms>?,
-    val short_screenshots: List<ScreenShots>?,
     val genres: List<Genres>?,
     val games: List<Games>?
 )

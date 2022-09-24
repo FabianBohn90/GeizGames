@@ -7,7 +7,7 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.liveData
 import com.example.geizgames.data.models.gameResults.Results
-import com.example.geizgames.data.models.gameResults.ScreenShots
+import com.example.geizgames.data.models.gameResults.Screens
 import com.example.geizgames.data.models.shopResults.Stores
 import com.example.geizgames.data.remote.GameApiService
 import com.example.geizgames.data.remote.ShopApiService
@@ -30,13 +30,13 @@ class AppRepository @Inject constructor(
     val shopData: LiveData<List<Stores>>
         get() = _shopData
 
-    private val _imageData = MutableLiveData<List<ScreenShots>?>()
-    val imageData: MutableLiveData<List<ScreenShots>?>
+    private val _imageData = MutableLiveData<List<Screens>>()
+    val imageData: MutableLiveData<List<Screens>>
         get() = _imageData
 
-    suspend fun getImages(i: Int) {
-        val images = api.getImages().results[i].short_screenshots
-        _imageData.value = images
+    suspend fun getGameImage(gameName: String) {
+        val images = api.getGameID(gameName)
+        _imageData.value = images.results
     }
 
     fun pagingData(): LiveData<PagingData<Results>> {
@@ -66,7 +66,7 @@ class AppRepository @Inject constructor(
     }
 
     suspend fun getShops(gameName: String) {
-        val shopResults = apiShop.getShops(gameName, "de", "game")
+        val shopResults = apiShop.getShops(gameName)
         _shopData.value = shopResults.stores
     }
 }

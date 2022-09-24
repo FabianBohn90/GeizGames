@@ -1,4 +1,4 @@
-package com.example.geizgames.ui
+package com.example.geizgames.ui.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -8,6 +8,7 @@ import androidx.lifecycle.lifecycleScope
 import com.example.geizgames.R
 import com.example.geizgames.adapter.GameAdapter
 import com.example.geizgames.databinding.FragmentGameBinding
+import com.example.geizgames.ui.GameViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

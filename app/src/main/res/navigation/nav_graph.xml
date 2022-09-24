@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.geizgames.ui.DetailFragment"
+        android:name="com.example.geizgames.ui.fragments.DetailFragment"
         tools:layout="@layout/fragment_detail"
         android:label="DetailFragment" >
         <argument
@@ -41,7 +41,7 @@
     <fragment
         android:id="@+id/searchFragment"
         tools:layout="@layout/fragment_search"
-        android:name="com.example.geizgames.ui.SearchFragment"
+        android:name="com.example.geizgames.ui.fragments.SearchFragment"
         android:label="SearchFragment" >
         <action
             android:id="@+id/action_searchFragment_to_detailFragment"
@@ -50,7 +50,7 @@
     <fragment
         android:id="@+id/gameFragment"
         tools:layout="@layout/fragment_game"
-        android:name="com.example.geizgames.ui.GameFragment"
+        android:name="com.example.geizgames.ui.fragments.GameFragment"
         android:label="GameFragment" >
         <action
             android:id="@+id/action_gameFragment_to_detailFragment"
@@ -66,7 +66,7 @@
     <fragment
         android:id="@+id/genresFragment"
         tools:layout="@layout/fragment_genres"
-        android:name="com.example.geizgames.ui.GenresFragment"
+        android:name="com.example.geizgames.ui.fragments.GenresFragment"
         android:label="GenresFragment" >
         <action
             android:id="@+id/action_genresFragment_to_gameFragment"

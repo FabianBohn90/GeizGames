@@ -9,7 +9,7 @@ import coil.load
 import com.example.geizgames.R
 import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.databinding.ListGenresitemBinding
-import com.example.geizgames.ui.GenresFragmentDirections
+import com.example.geizgames.ui.fragments.GenresFragmentDirections
 
 class GenresAdapter(
     private val dataset: List<Results>

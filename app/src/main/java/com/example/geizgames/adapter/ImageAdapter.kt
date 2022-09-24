@@ -7,11 +7,11 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
-import com.example.geizgames.data.models.gameResults.ScreenShots
+import com.example.geizgames.data.models.gameResults.Screens
 import com.example.geizgames.databinding.ListImageitemBinding
 
 class ImageAdapter(
-    private val dataset: List<ScreenShots>?
+    private val dataset: List<Screens>?
 ) : RecyclerView.Adapter<ImageAdapter.ItemViewHolder>() {
 
     inner class ItemViewHolder(val binding: ListImageitemBinding) :

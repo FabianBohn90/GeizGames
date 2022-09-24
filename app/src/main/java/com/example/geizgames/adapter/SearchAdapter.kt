@@ -14,7 +14,7 @@ import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
 import com.example.geizgames.data.models.gameResults.Results
-import com.example.geizgames.ui.SearchFragmentDirections
+import com.example.geizgames.ui.fragments.SearchFragmentDirections
 
 class SearchAdapter(
     private val dataset: List<Results>
@@ -103,11 +103,6 @@ class SearchAdapter(
                 }
 
                 46 -> {
-                    imageView.setImageResource(R.drawable.atari)
-                    imageView.visibility = View.VISIBLE
-                }
-
-                50 -> {
                     imageView.setImageResource(R.drawable.atari)
                     imageView.visibility = View.VISIBLE
                 }

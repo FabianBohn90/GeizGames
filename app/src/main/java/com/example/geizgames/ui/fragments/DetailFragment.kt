@@ -1,4 +1,4 @@
-package com.example.geizgames.ui
+package com.example.geizgames.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,6 +14,7 @@ import com.example.geizgames.R
 import com.example.geizgames.adapter.ImageAdapter
 import com.example.geizgames.adapter.ShopAdapter
 import com.example.geizgames.databinding.FragmentDetailBinding
+import com.example.geizgames.ui.GameViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -44,7 +45,7 @@ class DetailFragment : Fragment() {
             release = it.getString("release").toString()
             index = it.getInt("index")
         }
-        viewModel.slug.value = slug
+//        viewModel.slug.value = slug
     }
 
     override fun onCreateView(
@@ -55,7 +56,8 @@ class DetailFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         viewModel.slug.value = slug
-        viewModel.loadImageData(index)
+
+
         return binding.root
     }
 
@@ -70,6 +72,7 @@ class DetailFragment : Fragment() {
 
         viewModel.slug.observe(viewLifecycleOwner) {
             viewModel.loadShopData(it)
+            viewModel.loadImageData(it)
         }
 
         viewModel.shops.observe(viewLifecycleOwner) {

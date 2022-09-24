@@ -1,4 +1,4 @@
-package com.example.geizgames.ui
+package com.example.geizgames.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.geizgames.adapter.GenresAdapter
 import com.example.geizgames.databinding.FragmentGenresBinding
+import com.example.geizgames.ui.GameViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

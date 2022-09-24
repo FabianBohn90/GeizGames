@@ -15,7 +15,7 @@ import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
 import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.databinding.ListGameitemBinding
-import com.example.geizgames.ui.GameFragmentDirections
+import com.example.geizgames.ui.fragments.GameFragmentDirections
 
 class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffCallback) {
 

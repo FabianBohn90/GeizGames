@@ -45,8 +45,8 @@ object AppModule {
     @Singleton
     @Named("ShopApi")
     fun provideRetrofitShop(): Retrofit = Retrofit.Builder()
-        .baseUrl(BASE_URL_SHOP)
         .client(client)
+        .baseUrl(BASE_URL_SHOP)
         .addConverterFactory(MoshiConverterFactory.create(moshi))
         .build()
 

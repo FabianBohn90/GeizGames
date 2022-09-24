@@ -23,7 +23,8 @@ class GameViewModel @Inject constructor(
 ) : ViewModel() {
 
     val inputText = MutableLiveData<String>()
-    val slug = MutableLiveData<String>()
+
+    var slug = MutableLiveData<String>()
     var genres: Int = 4
     val games = repository.gameData
     val shops = repository.shopData
@@ -54,9 +55,9 @@ class GameViewModel @Inject constructor(
             repository.getGenres()
         }
     }
-    fun loadImageData(i: Int) {
+    fun loadImageData(gameName: String) {
         viewModelScope.launch {
-            repository.getImages(i)
+            repository.getGameImage(gameName)
         }
     }
 
