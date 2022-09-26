@@ -30,8 +30,10 @@ class DetailFragment : Fragment() {
     private var release = ""
     private var backgroundImage = ""
     private var metacritic = 0
-    private var platforms: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
-    private var tags: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
+    private var platforms: Array<String> = arrayOf(
+        "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
+    )
+    private var genre: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,11 +43,10 @@ class DetailFragment : Fragment() {
             backgroundImage = it.getString("background_image").toString()
             metacritic = it.getInt("metacritic")
             platforms = it.getStringArray("platform") as Array<String>
-            tags = it.getStringArray("tags") as Array<String>
+            genre = it.getStringArray("genre") as Array<String>
             release = it.getString("release").toString()
             index = it.getInt("index")
         }
-//        viewModel.slug.value = slug
     }
 
     override fun onCreateView(
@@ -56,7 +57,6 @@ class DetailFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         viewModel.slug.value = slug
-
 
         return binding.root
     }
@@ -72,11 +72,12 @@ class DetailFragment : Fragment() {
 
         viewModel.slug.observe(viewLifecycleOwner) {
             viewModel.loadShopData(it)
+
             viewModel.loadImageData(it)
         }
 
         viewModel.shops.observe(viewLifecycleOwner) {
-            binding.rvShops.adapter = ShopAdapter(it)
+            binding.rvShops.adapter = ShopAdapter(it, requireActivity())
         }
 
         viewModel.images.observe(viewLifecycleOwner) {
@@ -84,31 +85,49 @@ class DetailFragment : Fragment() {
         }
 
         binding.tvRelease.text = release
-
         binding.tvGameName.text = name
-
         binding.tvMetacritic.text = metacritic.toString()
 
-        binding.tvPlatformDetail1.text = platforms[0] ; if (platforms[0] == "") binding.tvPlatformDetail1.visibility = View.GONE
-        binding.tvPlatformDetail2.text = platforms[1] ; if (platforms[1] == "") binding.tvPlatformDetail2.visibility = View.GONE
-        binding.tvPlatformDetail3.text = platforms[2] ; if (platforms[2] == "") binding.tvPlatformDetail3.visibility = View.GONE
-        binding.tvPlatformDetail4.text = platforms[3] ; if (platforms[3] == "") binding.tvPlatformDetail4.visibility = View.GONE
-        binding.tvPlatformDetail5.text = platforms[4] ; if (platforms[4] == "") binding.tvPlatformDetail5.visibility = View.GONE
-        binding.tvPlatformDetail6.text = platforms[5] ; if (platforms[5] == "") binding.tvPlatformDetail6.visibility = View.GONE
-        binding.tvPlatformDetail7.text = platforms[6] ; if (platforms[6] == "") binding.tvPlatformDetail7.visibility = View.GONE
-        binding.tvPlatformDetail8.text = platforms[7] ; if (platforms[7] == "") binding.tvPlatformDetail8.visibility = View.GONE
-        binding.tvPlatformDetail9.text = platforms[8] ; if (platforms[8] == "") binding.tvPlatformDetail9.visibility = View.GONE
-        binding.tvPlatformDetail10.text = platforms[9] ; if (platforms[9] == "") binding.tvPlatformDetail10.visibility = View.GONE
+        binding.tvPlatformDetail1.text =
+            platforms[0]; if (platforms[0] == "") binding.tvPlatformDetail1.visibility = View.GONE
+        binding.tvPlatformDetail2.text =
+            platforms[1]; if (platforms[1] == "") binding.tvPlatformDetail2.visibility = View.GONE
+        binding.tvPlatformDetail3.text =
+            platforms[2]; if (platforms[2] == "") binding.tvPlatformDetail3.visibility = View.GONE
+        binding.tvPlatformDetail4.text =
+            platforms[3]; if (platforms[3] == "") binding.tvPlatformDetail4.visibility = View.GONE
+        binding.tvPlatformDetail5.text =
+            platforms[4]; if (platforms[4] == "") binding.tvPlatformDetail5.visibility = View.GONE
+        binding.tvPlatformDetail6.text =
+            platforms[5]; if (platforms[5] == "") binding.tvPlatformDetail6.visibility = View.GONE
+        binding.tvPlatformDetail7.text =
+            platforms[6]; if (platforms[6] == "") binding.tvPlatformDetail7.visibility = View.GONE
+        binding.tvPlatformDetail8.text =
+            platforms[7]; if (platforms[7] == "") binding.tvPlatformDetail8.visibility = View.GONE
+        binding.tvPlatformDetail9.text =
+            platforms[8]; if (platforms[8] == "") binding.tvPlatformDetail9.visibility = View.GONE
+        binding.tvPlatformDetail10.text =
+            platforms[9]; if (platforms[9] == "") binding.tvPlatformDetail10.visibility = View.GONE
 
-        binding.tvTagDetail1.text = tags[0] ; if (tags[0] == "") binding.tvTagDetail1.visibility = View.GONE
-        binding.tvTagDetail1.text = tags[1] ; if (tags[1] == "") binding.tvTagDetail2.visibility = View.GONE
-        binding.tvTagDetail3.text = tags[2] ; if (tags[2] == "") binding.tvTagDetail3.visibility = View.GONE
-        binding.tvTagDetail4.text = tags[3] ; if (tags[3] == "") binding.tvTagDetail4.visibility = View.GONE
-        binding.tvTagDetail5.text = tags[4] ; if (tags[4] == "") binding.tvTagDetail5.visibility = View.GONE
-        binding.tvTagDetail6.text = tags[5] ; if (tags[5] == "") binding.tvTagDetail6.visibility = View.GONE
-        binding.tvTagDetail7.text = tags[6] ; if (tags[6] == "") binding.tvTagDetail7.visibility = View.GONE
-        binding.tvTagDetail8.text = tags[7] ; if (tags[7] == "") binding.tvTagDetail8.visibility = View.GONE
-        binding.tvTagDetail9.text = tags[8] ; if (tags[8] == "") binding.tvTagDetail9.visibility = View.GONE
-        binding.tvTagDetail10.text = tags[9] ; if (tags[9] == "") binding.tvTagDetail10.visibility = View.GONE
+        binding.tvTagDetail1.text = genre[0]; if (genre[0] == "") binding.tvTagDetail1.visibility =
+            View.GONE
+        binding.tvTagDetail1.text = genre[1]; if (genre[1] == "") binding.tvTagDetail2.visibility =
+            View.GONE
+        binding.tvTagDetail3.text = genre[2]; if (genre[2] == "") binding.tvTagDetail3.visibility =
+            View.GONE
+        binding.tvTagDetail4.text = genre[3]; if (genre[3] == "") binding.tvTagDetail4.visibility =
+            View.GONE
+        binding.tvTagDetail5.text = genre[4]; if (genre[4] == "") binding.tvTagDetail5.visibility =
+            View.GONE
+        binding.tvTagDetail6.text = genre[5]; if (genre[5] == "") binding.tvTagDetail6.visibility =
+            View.GONE
+        binding.tvTagDetail7.text = genre[6]; if (genre[6] == "") binding.tvTagDetail7.visibility =
+            View.GONE
+        binding.tvTagDetail8.text = genre[7]; if (genre[7] == "") binding.tvTagDetail8.visibility =
+            View.GONE
+        binding.tvTagDetail9.text = genre[8]; if (genre[8] == "") binding.tvTagDetail9.visibility =
+            View.GONE
+        binding.tvTagDetail10.text =
+            genre[9]; if (genre[9] == "") binding.tvTagDetail10.visibility = View.GONE
     }
 }

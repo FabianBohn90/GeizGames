@@ -15,7 +15,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-const val TAG = "GameViewModel"
+const val TAG_View = "GameViewModel"
 
 @HiltViewModel
 class GameViewModel @Inject constructor(
