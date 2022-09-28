@@ -66,9 +66,7 @@ class DetailFragment : Fragment() {
 
         val imgUri = backgroundImage.toUri().buildUpon().scheme("https").build()
 
-        binding.ivGameCover.load(imgUri) {
-            transformations(RoundedCornersTransformation(10f))
-        }
+        binding.ivGameCover.load(imgUri)
 
         viewModel.slug.observe(viewLifecycleOwner) {
             viewModel.loadShopData(it)
@@ -111,7 +109,7 @@ class DetailFragment : Fragment() {
 
         binding.tvTagDetail1.text = genre[0]; if (genre[0] == "") binding.tvTagDetail1.visibility =
             View.GONE
-        binding.tvTagDetail1.text = genre[1]; if (genre[1] == "") binding.tvTagDetail2.visibility =
+        binding.tvTagDetail2.text = genre[1]; if (genre[1] == "") binding.tvTagDetail2.visibility =
             View.GONE
         binding.tvTagDetail3.text = genre[2]; if (genre[2] == "") binding.tvTagDetail3.visibility =
             View.GONE
