@@ -1,5 +1,6 @@
 package com.example.geizgames.ui
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -15,7 +16,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-const val TAG_View = "GameViewModel"
+const val TAG_VM = "GameViewModel"
+
+enum class ApiStatus { LOADING, DONE, ERROR }
 
 @HiltViewModel
 class GameViewModel @Inject constructor(
@@ -30,6 +33,10 @@ class GameViewModel @Inject constructor(
     val shops = repository.shopData
     val images = repository.imageData
 
+    private val _loading = MutableLiveData<ApiStatus>()
+    val loading: LiveData<ApiStatus>
+        get() = _loading
+
     private var searchJob: Job? = null
 
     fun getGameList(): LiveData<PagingData<Results>> {
@@ -43,8 +50,9 @@ class GameViewModel @Inject constructor(
     fun loadSearchData(suchbegriff: String) {
         viewModelScope.launch {
             searchJob?.cancelAndJoin()
+
             searchJob = this.launch {
-                delay(500)
+                delay(400)
                 repository.getResults(suchbegriff)
             }
         }
@@ -55,6 +63,7 @@ class GameViewModel @Inject constructor(
             repository.getGenres()
         }
     }
+
     fun loadImageData(gameName: String) {
         viewModelScope.launch {
             repository.getGameImage(gameName)
@@ -63,7 +72,14 @@ class GameViewModel @Inject constructor(
 
     fun loadShopData(gameName: String) {
         viewModelScope.launch {
-            repository.getShops(gameName)
+            _loading.value = ApiStatus.LOADING
+            try {
+                repository.getShops(gameName)
+                _loading.value = ApiStatus.DONE
+            } catch (e: Exception) {
+                Log.e(TAG_VM, "Error loading ShopData from API: $e")
+                _loading.value = ApiStatus.ERROR
+            }
         }
     }
 }

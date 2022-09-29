@@ -31,9 +31,10 @@ class ShopAdapter(
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
+        val twoD = "%.2f"
 
         holder.binding.tvShopName.text = item.seller
-        holder.binding.tvShopPrice.text = item.price.toString()
+        holder.binding.tvShopPrice.text = twoD.format(item.price)
 
         val uri = item.url
 

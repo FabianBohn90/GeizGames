@@ -269,18 +269,18 @@ class SearchAdapter(
 
         holder.tvGameMetacritic.text = game.metacritic.toString()
 
-        val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
-        val tagsArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
+        val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "")
+        val tagsArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "")
         var img = ""
         var metacritic = 0
 
-        for (i in 0..30) {
+        for (i in 0..10) {
             if (i < game.genres!!.size - 1) {
                 tagsArray[i] = game.genres[i].name
             }
         }
-        for (i in 0..24) {
-            if (i < game.platforms?.size!! - 1) {
+        for (i in 0..12) {
+            if (game.platforms != null && i < game.platforms?.size!! - 1) {
                 platformArray[i] = game.platforms!![i].platform.name
             }
         }

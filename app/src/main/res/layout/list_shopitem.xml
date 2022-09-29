@@ -14,7 +14,10 @@
         android:layout_marginLeft="2dp"
         android:layout_marginTop="2dp"
         android:layout_marginRight="2dp"
-        android:layout_marginBottom="2dp">
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="#A1000000"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -37,7 +40,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="shopname"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="2dp"
                 android:text="20.20"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -64,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:text="€"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

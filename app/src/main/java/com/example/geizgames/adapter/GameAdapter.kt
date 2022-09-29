@@ -256,7 +256,7 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
         if (game?.metacritic != null) {
             when (game.metacritic) {
                 in 70..100 -> {
-                    holder.binding.tvGameScore.setTextColor(Color.parseColor("#80FEBC"))
+                    holder.binding.tvGameScore.setTextColor(Color.parseColor("#24FF00"))
                     holder.binding.tvGameScore.setBackgroundResource(R.drawable.rounded_corner_green)
                 }
                 in 40..69 -> {
@@ -274,33 +274,7 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
 
         holder.binding.tvGameScore.text = game?.metacritic.toString()
 
-        val platformArray: Array<String> = arrayOf(
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        )
+        val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "")
         val genreArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "")
         var img = ""
         var metacritic = 0
@@ -310,7 +284,7 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
                 genreArray[i] = game.genres[i].name
             }
         }
-        for (i in 0..24) {
+        for (i in 0..12) {
             if (game != null && i < game.platforms?.size!! - 1) {
                 platformArray[i] = game.platforms!![i].platform.name
             }
