@@ -256,7 +256,7 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
         if (game?.metacritic != null) {
             when (game.metacritic) {
                 in 70..100 -> {
-                    holder.binding.tvGameScore.setTextColor(Color.parseColor("#24FF00"))
+                    holder.binding.tvGameScore.setTextColor(Color.parseColor("#00BC51"))
                     holder.binding.tvGameScore.setBackgroundResource(R.drawable.rounded_corner_green)
                 }
                 in 40..69 -> {

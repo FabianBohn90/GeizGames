@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.geizgames.R
 import com.example.geizgames.data.models.shopResults.Stores
 import com.example.geizgames.databinding.ListShopitemBinding
 
@@ -37,6 +38,25 @@ class ShopAdapter(
         holder.binding.tvShopPrice.text = twoD.format(item.price)
 
         val uri = item.url
+
+        when (item.seller) {
+            "Yuplay" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_yuplay)
+            "Eneba" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_eneba)
+            "Kinguin" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_kinguin)
+            "G2Play" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_g2play)
+            "HRK Game" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_hrko)
+            "MMOGA" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_mmoga)
+            "GAMIVO" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_gamivo)
+            "Instant Gaming" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_instant_gaming)
+            "G2A" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_g2a_com_logo)
+            "CDKeys.com" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_cdkeys)
+            "Wyrel.com" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_wyrel)
+            "Steam" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_steam)
+            "Origin" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_origin)
+            "GOG.com" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_gog)
+            "Humble Store" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_humblestore)
+            "Epic Games Store" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_epic_store)
+        }
 
         holder.binding.cvShop.setOnClickListener {
             uri.asUri()?.openInBrowser(context)
