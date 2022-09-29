@@ -17,7 +17,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:cardBackgroundColor="#65FFFFFF"
+        app:cardBackgroundColor="#A1FFFFFF"
         app:cardCornerRadius="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +26,16 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/gradiant_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_game" />
 
             <ImageView
                 android:id="@+id/iv_game"
@@ -44,6 +54,7 @@
                 android:id="@+id/view2"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+
                 android:background="@drawable/grandiant"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_game"
                 app:layout_constraintEnd_toEndOf="@+id/iv_game"
