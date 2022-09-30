@@ -63,166 +63,166 @@ class SearchAdapter(
         fun setPlatform(int: Int, imageView: ImageView) {
             when (int) {
                 107 -> {
-                    imageView.setImageResource(R.drawable.sega)
+                    imageView.setImageResource(R.drawable.sega_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 119 -> {
-                    imageView.setImageResource(R.drawable.sega)
+                    imageView.setImageResource(R.drawable.sega_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 28 -> {
-                    imageView.setImageResource(R.drawable.atari)
+                    imageView.setImageResource(R.drawable.atari_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 31 -> {
-                    imageView.setImageResource(R.drawable.atari)
+                    imageView.setImageResource(R.drawable.atari_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 23 -> {
-                    imageView.setImageResource(R.drawable.atari)
+                    imageView.setImageResource(R.drawable.atari_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 22 -> {
-                    imageView.setImageResource(R.drawable.atari)
+                    imageView.setImageResource(R.drawable.atari_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 25 -> {
-                    imageView.setImageResource(R.drawable.atari)
+                    imageView.setImageResource(R.drawable.atari_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 34 -> {
-                    imageView.setImageResource(R.drawable.atari)
+                    imageView.setImageResource(R.drawable.atari_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 46 -> {
-                    imageView.setImageResource(R.drawable.atari)
+                    imageView.setImageResource(R.drawable.atari_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 50 -> {
-                    imageView.setImageResource(R.drawable.atari)
+                    imageView.setImageResource(R.drawable.atari_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 74 -> {
-                    imageView.setImageResource(R.drawable.sega)
+                    imageView.setImageResource(R.drawable.sega_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 17 -> {
-                    imageView.setImageResource(R.drawable.psp)
+                    imageView.setImageResource(R.drawable.psp_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 117 -> {
-                    imageView.setImageResource(R.drawable.sega)
+                    imageView.setImageResource(R.drawable.sega_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 15 -> {
-                    imageView.setImageResource(R.drawable.playstation_2)
+                    imageView.setImageResource(R.drawable.playstation_2_white)
                     imageView.visibility = View.VISIBLE
                 }
                 106 -> {
-                    imageView.setImageResource(R.drawable.dreamcast)
+                    imageView.setImageResource(R.drawable.dreamcast_white)
                     imageView.visibility = View.VISIBLE
                 }
                 24 -> {
-                    imageView.setImageResource(R.drawable.nintendo_game_boy)
+                    imageView.setImageResource(R.drawable.nintendo_game_boy_white)
                     imageView.visibility = View.VISIBLE
                 }
                 105 -> {
-                    imageView.setImageResource(R.drawable.nintendo_gamecube)
+                    imageView.setImageResource(R.drawable.nintendo_gamecube_white)
                     imageView.visibility = View.VISIBLE
                 }
                 10 -> {
-                    imageView.setImageResource(R.drawable.nintendo_wiiu)
+                    imageView.setImageResource(R.drawable.nintendo_wiiu_white)
                     imageView.visibility = View.VISIBLE
                 }
                 83 -> {
-                    imageView.setImageResource(R.drawable.nintendo64)
+                    imageView.setImageResource(R.drawable.nintendo64_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 11 -> {
-                    imageView.setImageResource(R.drawable.nintendo_wii)
+                    imageView.setImageResource(R.drawable.nintendo_wiiu_white)
                     imageView.visibility = View.VISIBLE
                 }
 
                 8 -> {
-                    imageView.setImageResource(R.drawable.nintendo_ds)
+                    imageView.setImageResource(R.drawable.nintendo_ds_white)
                     imageView.visibility = View.VISIBLE
                 }
                 9 -> {
-                    imageView.setImageResource(R.drawable.nintendo_ds)
+                    imageView.setImageResource(R.drawable.nintendo_ds_white)
                     imageView.visibility = View.VISIBLE
                 }
                 4 -> {
-                    imageView.setImageResource(R.drawable.windows_pc)
+                    imageView.setImageResource(R.drawable.windows_pc_white)
                     imageView.visibility = View.VISIBLE
                 }
                 1 -> {
-                    imageView.setImageResource(R.drawable.xbox)
+                    imageView.setImageResource(R.drawable.xbox_white)
                     imageView.visibility = View.VISIBLE
                 }
                 80 -> {
-                    imageView.setImageResource(R.drawable.xbox)
+                    imageView.setImageResource(R.drawable.xbox_white)
                     imageView.visibility = View.VISIBLE
                 }
                 186 -> {
-                    imageView.setImageResource(R.drawable.xbox_series_x_s)
+                    imageView.setImageResource(R.drawable.xbox_series_x_s_white)
                     imageView.visibility = View.VISIBLE
                 }
                 16 -> {
-                    imageView.setImageResource(R.drawable.ps3)
+                    imageView.setImageResource(R.drawable.ps3_white)
                     imageView.visibility = View.VISIBLE
                 }
                 18 -> {
-                    imageView.setImageResource(R.drawable.ps4)
+                    imageView.setImageResource(R.drawable.ps4_white)
                     imageView.visibility = View.VISIBLE
                 }
                 187 -> {
-                    imageView.setImageResource(R.drawable.sony_playstation)
+                    imageView.setImageResource(R.drawable.sony_playstation_white)
                     imageView.visibility = View.VISIBLE
                 }
                 19 -> {
-                    imageView.setImageResource(R.drawable.psvita)
+                    imageView.setImageResource(R.drawable.psvita_white)
                     imageView.visibility = View.VISIBLE
                 }
                 7 -> {
-                    imageView.setImageResource(R.drawable.nintendo_switch)
+                    imageView.setImageResource(R.drawable.nintendo_switch_white)
                     imageView.visibility = View.VISIBLE
                 }
                 5 -> {
-                    imageView.setImageResource(R.drawable.mac_os)
+                    imageView.setImageResource(R.drawable.mac_os_white)
                     imageView.visibility = View.VISIBLE
                 }
                 21 -> {
-                    imageView.setImageResource(R.drawable.android_os)
+                    imageView.setImageResource(R.drawable.android_os_white)
                     imageView.visibility = View.VISIBLE
                 }
                 3 -> {
-                    imageView.setImageResource(R.drawable.app_ios)
+                    imageView.setImageResource(R.drawable.app_ios_white)
                     imageView.visibility = View.VISIBLE
                 }
                 6 -> {
-                    imageView.setImageResource(R.drawable.linux_os)
+                    imageView.setImageResource(R.drawable.linux_os_white)
                     imageView.visibility = View.VISIBLE
                 }
                 14 -> {
-                    imageView.setImageResource(R.drawable.xbox360)
+                    imageView.setImageResource(R.drawable.xbox360_white)
                     imageView.visibility = View.VISIBLE
                 }
                 171 -> {
-                    imageView.setImageResource(R.drawable.web)
+                    imageView.setImageResource(R.drawable.web_white)
                     imageView.visibility = View.VISIBLE
                 }
             }

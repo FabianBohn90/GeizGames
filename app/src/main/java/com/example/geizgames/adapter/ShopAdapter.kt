@@ -75,6 +75,7 @@ class ShopAdapter(
             "Noctre" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_noctre)
             "Indie Gala Store" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_indie_gala)
             "eTail.Market" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop__etaile_market)
+            "Punktid" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_punktid)
         }
 
         holder.binding.cvShop.setOnClickListener {

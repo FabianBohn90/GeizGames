@@ -17,7 +17,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:cardBackgroundColor="#CBFFFFFF"
+        app:cardBackgroundColor="#80000000"
         app:cardCornerRadius="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +32,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@drawable/gradiant_right"
+                android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -66,23 +67,27 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
                 android:layout_marginBottom="4dp"
                 android:textColor="@color/white"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_game"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/iv_game"
                 tools:text="Game Name" />
 
             <TextView
                 android:id="@+id/tv_game_score"
-                android:layout_width="29dp"
-                android:layout_height="22dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="5dp"
+                android:layout_width="32dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
                 android:background="@drawable/rounded_corner_green"
-                android:gravity="center|center_horizontal|center_vertical"
+                android:gravity="center"
+                android:textAlignment="gravity"
                 android:textColor="#00BC51"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +96,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_platforms_search"
                 android:layout_width="wrap_content"
-                android:layout_height="24dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginBottom="4dp"
                 app:cardBackgroundColor="#00FFFFFF"
@@ -114,82 +119,91 @@
                     <ImageView
                         android:id="@+id/iv_platform1"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/mac_os"
+                        tools:srcCompat="@drawable/mac_os_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform2"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/windows_pc"
+                        tools:srcCompat="@drawable/windows_pc_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform3"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/nintendo_gamecube"
+                        tools:srcCompat="@drawable/nintendo_gamecube_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform4"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/sony_playstation"
+                        tools:srcCompat="@drawable/sony_playstation_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform5"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/android_os"
+                        tools:srcCompat="@drawable/android_os_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform6"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/app_ios"
+                        tools:srcCompat="@drawable/app_ios_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform7"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/nintendo_switch"
+                        tools:srcCompat="@drawable/nintendo_switch_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform8"
                         android:layout_width="30dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/linux_os"
+                        tools:srcCompat="@drawable/linux_os_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform9"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="2dp"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/xbox"
+                        tools:srcCompat="@drawable/xbox_white"
                         tools:visibility="visible" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
