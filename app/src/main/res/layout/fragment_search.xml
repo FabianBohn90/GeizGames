@@ -12,28 +12,42 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/game_background"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:counterTextColor="@color/white"
+            app:helperTextTextColor="@color/white"
+            app:hintTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholderTextColor="@color/white"
+            app:prefixTextColor="@color/white"
+            app:suffixTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@={ViewModel.inputText}"
-                android:textSize="20sp"
                 android:hint="Suchbegriff"
-                />
+                android:text="@={ViewModel.inputText}"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -46,6 +60,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-            tools:listitem="@layout/list_gameitem" />
+            tools:listitem="@layout/list_searchitem" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

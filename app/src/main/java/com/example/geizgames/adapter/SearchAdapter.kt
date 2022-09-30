@@ -251,7 +251,7 @@ class SearchAdapter(
         if (game.metacritic != null) {
             when (game.metacritic) {
                 in 70..100 -> {
-                    holder.tvGameMetacritic.setTextColor(Color.parseColor("#80FEBC"))
+                    holder.tvGameMetacritic.setTextColor(Color.parseColor("#00BC51"))
                     holder.tvGameMetacritic.setBackgroundResource(R.drawable.rounded_corner_green)
                 }
                 in 40..69 -> {

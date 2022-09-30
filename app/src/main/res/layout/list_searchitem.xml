@@ -14,6 +14,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
+        android:backgroundTint="#B2090909"
         app:cardCornerRadius="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,12 +39,12 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_platforms_search"
-                android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                android:layout_marginStart="8dp"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="4dp"
-                android:backgroundTint="@color/white"
+                app:cardBackgroundColor="#00FFFFFF"
                 app:cardElevation="2dp"
                 app:cardMaxElevation="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,64 +64,64 @@
                     <ImageView
                         android:id="@+id/iv_platform1_search"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/mac_os"
+                        tools:srcCompat="@drawable/mac_os_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform2_search"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/windows_pc"
+                        tools:srcCompat="@drawable/windows_pc_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform3_search"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/nintendo_gamecube"
+                        tools:srcCompat="@drawable/nintendo_gamecube_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform4_search"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/sony_playstation"
+                        tools:srcCompat="@drawable/sony_playstation_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform5_search"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/android_os"
+                        tools:srcCompat="@drawable/android_os_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform6_search"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/app_ios"
+                        tools:srcCompat="@drawable/app_ios_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform7_search"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/nintendo_switch"
+                        tools:srcCompat="@drawable/nintendo_switch_white"
                         tools:visibility="visible" />
 
                     <ImageView
@@ -129,16 +130,16 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/linux_os"
+                        tools:srcCompat="@drawable/linux_os_white"
                         tools:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/iv_platform9_search"
                         android:layout_width="30dp"
-                        android:layout_height="20dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:visibility="gone"
-                        tools:srcCompat="@drawable/xbox"
+                        tools:srcCompat="@drawable/xbox_white"
                         tools:visibility="visible" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -165,7 +166,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="4dp"
                 android:text="TextView"
-                android:textColor="#000000"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -9,7 +9,10 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/game_background"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_genres"
@@ -21,7 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            app:spanCount="2"
+            app:spanCount="3"
             tools:listitem="@layout/list_genresitem" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
