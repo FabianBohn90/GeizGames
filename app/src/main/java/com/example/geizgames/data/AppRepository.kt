@@ -78,6 +78,15 @@ class AppRepository @Inject constructor(
         }
     }
 
+    suspend fun getPlatforms() {
+        try {
+            val result = api.getPlatforms()
+            _gameData.value = result.results
+        } catch (e: Exception) {
+            Log.e(TAG_REPO, "Error Loading PlatformData from Api $e")
+        }
+    }
+
     suspend fun getShops(gameName: String) {
         try {
             val shopResults = apiShop.getShops(gameName)

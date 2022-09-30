@@ -7,24 +7,26 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.geizgames.adapter.GenresAdapter
-import com.example.geizgames.databinding.FragmentGenresBinding
+import com.example.geizgames.adapter.PlatformAdapter
+import com.example.geizgames.databinding.FragmentFilterBinding
 import com.example.geizgames.ui.GameViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class GenresFragment : Fragment() {
+class FilterFragment : Fragment() {
 
     private val viewModel: GameViewModel by viewModels()
 
-    private lateinit var binding: FragmentGenresBinding
+    private lateinit var binding: FragmentFilterBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentGenresBinding.inflate(inflater, container, false)
+        binding = FragmentFilterBinding.inflate(inflater, container, false)
         viewModel.loadGenresData()
+        viewModel.loadPlatformData()
         return binding.root
     }
 
@@ -36,6 +38,9 @@ class GenresFragment : Fragment() {
         // Sobald die Daten aus der API geladen sind, setze einen neuen Adapter der RV
         viewModel.games.observe(viewLifecycleOwner) {
             binding.rvGenres.adapter = GenresAdapter(it)
+        }
+        viewModel.games.observe(viewLifecycleOwner) {
+            binding.rvPlatform.adapter = PlatformAdapter(it)
         }
     }
 }

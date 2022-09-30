@@ -11,9 +11,9 @@ import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.databinding.ListFilteritemBinding
 import com.example.geizgames.ui.fragments.FilterFragmentDirections
 
-class GenresAdapter(
+class PlatformAdapter(
     private val dataset: List<Results>
-) : RecyclerView.Adapter<GenresAdapter.ItemViewHolder>() {
+) : RecyclerView.Adapter<PlatformAdapter.ItemViewHolder>() {
 
     inner class ItemViewHolder(val binding: ListFilteritemBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -29,20 +29,20 @@ class GenresAdapter(
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val genre = dataset[position]
+        val platform = dataset[position]
 
-        val imgUri = genre.image_background?.toUri()?.buildUpon()?.scheme("https")?.build()
+        val imgUri = platform.image_background?.toUri()?.buildUpon()?.scheme("https")?.build()
 
         holder.binding.ivGenresImg.load(imgUri) {
             error(R.drawable.broken_img)
         }
 
-        holder.binding.tvGenresTitle.text = genre.name
+        holder.binding.tvGenresTitle.text = platform.name
 
         holder.binding.cvGenres.setOnClickListener {
             holder.itemView.findNavController().navigate(
                 FilterFragmentDirections.actionFilterFragmentToGameFragment(
-                    genre.id.toInt()
+                    platform.id.toInt()
                 )
             )
         }

@@ -64,12 +64,12 @@
             app:argType="integer" />
     </fragment>
     <fragment
-        android:id="@+id/genresFragment"
-        tools:layout="@layout/fragment_genres"
-        android:name="com.example.geizgames.ui.fragments.GenresFragment"
+        android:id="@+id/filterFragment"
+        tools:layout="@layout/fragment_filter"
+        android:name="com.example.geizgames.ui.fragments.FilterFragment"
         android:label="GenresFragment" >
         <action
-            android:id="@+id/action_genresFragment_to_gameFragment"
+            android:id="@+id/action_filterFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
     </fragment>
 </navigation>

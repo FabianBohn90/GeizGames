@@ -64,6 +64,12 @@ class GameViewModel @Inject constructor(
         }
     }
 
+    fun loadPlatformData() {
+        viewModelScope.launch {
+            repository.getPlatforms()
+        }
+    }
+
     fun loadImageData(gameName: String) {
         viewModelScope.launch {
             repository.getGameImage(gameName)

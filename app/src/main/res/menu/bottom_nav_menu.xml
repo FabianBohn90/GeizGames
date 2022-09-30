@@ -7,8 +7,8 @@
         android:title="search" />
 
     <item
-        android:id="@+id/genresFragment"
+        android:id="@+id/filterFragment"
         android:icon="@drawable/ic_baseline_sort_24"
-        android:title="genres" />
+        android:title="filter" />
 
 </menu>

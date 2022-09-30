@@ -22,9 +22,12 @@ interface GameApiService {
     @GET("games?&key=$API_TOKEN")
     suspend fun getResults(@Query("search") suchbegriff: String): ResultList
 
-    @GET("games?&key=$API_TOKEN")
-    suspend fun getImages(): ResultList
+//    @GET("games?&key=$API_TOKEN")
+//    suspend fun getImages(): ResultList
 
     @GET("genres?&key=$API_TOKEN")
     suspend fun getGenres(): ResultList
+
+    @GET("platforms?&key=$API_TOKEN")
+    suspend fun getPlatforms(): ResultList
 }
