@@ -60,7 +60,7 @@
             android:id="@+id/action_gameFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
         <argument
-            android:name="genres"
+            android:name="filterid"
             app:argType="integer" />
         <argument
             android:name="from"

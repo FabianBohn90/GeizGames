@@ -39,7 +39,7 @@ class FilterFragment : Fragment() {
         viewModel.games.observe(viewLifecycleOwner) {
             binding.rvGenres.adapter = GenresAdapter(it)
         }
-        viewModel.games.observe(viewLifecycleOwner) {
+        viewModel.games2.observe(viewLifecycleOwner) {
             binding.rvPlatform.adapter = PlatformAdapter(it)
         }
     }

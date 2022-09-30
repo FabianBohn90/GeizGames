@@ -17,13 +17,13 @@ interface GameApiService {
     suspend fun getGames(@Query("page") page: Int): ResultList
 
     @GET("games?&key=$API_TOKEN")
+    suspend fun getResults(@Query("search") suchbegriff: String): ResultList
+
+    @GET("games?&key=$API_TOKEN")
     suspend fun getGamesGenre(@Query("page") page: Int, @Query("genres") genre: Int): ResultList
 
     @GET("games?&key=$API_TOKEN")
-    suspend fun getResults(@Query("search") suchbegriff: String): ResultList
-
-//    @GET("games?&key=$API_TOKEN")
-//    suspend fun getImages(): ResultList
+    suspend fun getGamesPlatform(@Query("page") page: Int, @Query("platforms") genre: Int): ResultList
 
     @GET("genres?&key=$API_TOKEN")
     suspend fun getGenres(): ResultList

@@ -8,19 +8,19 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.geizgames.R
 import com.example.geizgames.data.models.gameResults.Results
-import com.example.geizgames.databinding.ListFilteritemBinding
+import com.example.geizgames.databinding.ListPlatformitemBinding
 import com.example.geizgames.ui.fragments.FilterFragmentDirections
 
 class PlatformAdapter(
     private val dataset: List<Results>
 ) : RecyclerView.Adapter<PlatformAdapter.ItemViewHolder>() {
 
-    inner class ItemViewHolder(val binding: ListFilteritemBinding) :
+    inner class ItemViewHolder(val binding: ListPlatformitemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         return ItemViewHolder(
-            ListFilteritemBinding.inflate(
+            ListPlatformitemBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -33,13 +33,13 @@ class PlatformAdapter(
 
         val imgUri = platform.image_background?.toUri()?.buildUpon()?.scheme("https")?.build()
 
-        holder.binding.ivGenresImg.load(imgUri) {
+        holder.binding.ivPlatform.load(imgUri) {
             error(R.drawable.broken_img)
         }
 
-        holder.binding.tvGenresTitle.text = platform.name
+        holder.binding.tvPlatform.text = platform.name
 
-        holder.binding.cvGenres.setOnClickListener {
+        holder.binding.cvPlatform.setOnClickListener {
             holder.itemView.findNavController().navigate(
                 FilterFragmentDirections.actionFilterFragmentToGameFragment(
                     platform.id.toInt(),

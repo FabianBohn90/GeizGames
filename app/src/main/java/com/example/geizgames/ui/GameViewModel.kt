@@ -28,8 +28,9 @@ class GameViewModel @Inject constructor(
     val inputText = MutableLiveData<String>()
 
     var slug = MutableLiveData<String>()
-    var genres: Int = 4
+    var filterid: Int = 4
     val games = repository.gameData
+    val games2 = repository.gameData2
     val shops = repository.shopData
     val images = repository.imageData
 
@@ -39,12 +40,12 @@ class GameViewModel @Inject constructor(
 
     private var searchJob: Job? = null
 
-    fun getGameList(): LiveData<PagingData<Results>> {
-        return repository.pagingData().cachedIn(viewModelScope)
+    fun getGameListGenre(): LiveData<PagingData<Results>> {
+        return repository.pagingDataGenre(filterid).cachedIn(viewModelScope)
     }
 
-    fun getGameListGenre(): LiveData<PagingData<Results>> {
-        return repository.pagingDataGenre(genres).cachedIn(viewModelScope)
+    fun getGameListPlatform(): LiveData<PagingData<Results>> {
+        return repository.pagingDataPlatform(filterid).cachedIn(viewModelScope)
     }
 
     fun loadSearchData(suchbegriff: String) {

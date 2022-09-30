@@ -5,7 +5,7 @@ import androidx.paging.PagingState
 import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.data.remote.GameApiService
 
-class GeneresPagingSource(
+class GenresPagingSource(
     private val apiService: GameApiService,
     private val genres: Int
 ) : PagingSource<Int, Results>() {

@@ -12,8 +12,8 @@ import com.example.geizgames.data.models.gameResults.Screens
 import com.example.geizgames.data.models.shopResults.Stores
 import com.example.geizgames.data.remote.GameApiService
 import com.example.geizgames.data.remote.ShopApiService
-import com.example.geizgames.paging.GamePagingSource
-import com.example.geizgames.paging.GeneresPagingSource
+import com.example.geizgames.paging.GenresPagingSource
+import com.example.geizgames.paging.PlatformPagingSource
 import javax.inject.Inject
 
 const val TAG_REPO = "AppRepository"
@@ -26,6 +26,10 @@ class AppRepository @Inject constructor(
     private val _gameData = MutableLiveData<List<Results>>()
     val gameData: LiveData<List<Results>>
         get() = _gameData
+
+    private val _gameData2 = MutableLiveData<List<Results>>()
+    val gameData2: LiveData<List<Results>>
+        get() = _gameData2
 
     private val _shopData = MutableLiveData<List<Stores>>()
     val shopData: LiveData<List<Stores>>
@@ -44,11 +48,11 @@ class AppRepository @Inject constructor(
         }
     }
 
-    fun pagingData(): LiveData<PagingData<Results>> {
+    fun pagingDataPlatform(platform: Int): LiveData<PagingData<Results>> {
         return Pager(
             config = PagingConfig(pageSize = 20)
         ) {
-            GamePagingSource(api)
+            PlatformPagingSource(api, platform)
         }.liveData
     }
 
@@ -56,7 +60,7 @@ class AppRepository @Inject constructor(
         return Pager(
             config = PagingConfig(pageSize = 20)
         ) {
-            GeneresPagingSource(api, genre)
+            GenresPagingSource(api, genre)
         }.liveData
     }
 
@@ -81,7 +85,7 @@ class AppRepository @Inject constructor(
     suspend fun getPlatforms() {
         try {
             val result = api.getPlatforms()
-            _gameData.value = result.results
+            _gameData2.value = result.results
         } catch (e: Exception) {
             Log.e(TAG_REPO, "Error Loading PlatformData from Api $e")
         }

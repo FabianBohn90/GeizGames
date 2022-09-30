@@ -5,8 +5,9 @@ import androidx.paging.PagingState
 import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.data.remote.GameApiService
 
-class GamePagingSource(
-    private val apiService: GameApiService
+class PlatformPagingSource(
+    private val apiService: GameApiService,
+    private val platform: Int
 ) : PagingSource<Int, Results>() {
 
     override fun getRefreshKey(state: PagingState<Int, Results>): Int? {
@@ -16,7 +17,7 @@ class GamePagingSource(
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Results> {
         return try {
             val page = params.key ?: 1
-            val response = apiService.getGames(page)
+            val response = apiService.getGamesPlatform(page, platform)
 
             LoadResult.Page(
                 data = response.results,

@@ -8,19 +8,19 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.geizgames.R
 import com.example.geizgames.data.models.gameResults.Results
-import com.example.geizgames.databinding.ListFilteritemBinding
+import com.example.geizgames.databinding.ListGenreitemBinding
 import com.example.geizgames.ui.fragments.FilterFragmentDirections
 
 class GenresAdapter(
     private val dataset: List<Results>
 ) : RecyclerView.Adapter<GenresAdapter.ItemViewHolder>() {
 
-    inner class ItemViewHolder(val binding: ListFilteritemBinding) :
+    inner class ItemViewHolder(val binding: ListGenreitemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         return ItemViewHolder(
-            ListFilteritemBinding.inflate(
+            ListGenreitemBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false

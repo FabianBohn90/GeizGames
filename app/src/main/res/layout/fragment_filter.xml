@@ -26,7 +26,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_genre_title"
             app:layout_constraintVertical_bias="1.0"
             app:spanCount="3"
-            tools:listitem="@layout/list_filteritem" />
+            tools:listitem="@layout/list_genreitem" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_platform"
@@ -39,7 +39,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_platform_titel"
-            tools:listitem="@layout/list_filteritem" />
+            tools:listitem="@layout/list_genreitem" />
 
         <TextView
             android:id="@+id/tv_platform_titel"
