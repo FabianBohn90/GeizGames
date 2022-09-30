@@ -66,7 +66,9 @@ class DetailFragment : Fragment() {
 
         val imgUri = backgroundImage.toUri().buildUpon().scheme("https").build()
 
-        binding.ivGameCover.load(imgUri)
+        binding.ivGameCover.load(imgUri) {
+            error(R.drawable.broken_img)
+        }
 
         viewModel.slug.observe(viewLifecycleOwner) {
             viewModel.loadShopData(it)
