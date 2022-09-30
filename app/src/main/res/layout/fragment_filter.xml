@@ -18,11 +18,13 @@
             android:id="@+id/rv_genres"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginTop="4dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rv_platform"
+            app:layout_constraintTop_toBottomOf="@+id/tv_genre_title"
+            app:layout_constraintVertical_bias="1.0"
             app:spanCount="3"
             tools:listitem="@layout/list_filteritem" />
 
@@ -30,12 +32,39 @@
             android:id="@+id/rv_platform"
             android:layout_width="409dp"
             android:layout_height="0dp"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal"
-            app:spanCount="2"
-            tools:listitem="@layout/list_filteritem"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_platform_titel"
+            tools:listitem="@layout/list_filteritem" />
+
+        <TextView
+            android:id="@+id/tv_platform_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Platform Filter"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_genre_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Genre Filter"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_platform" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

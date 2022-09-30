@@ -62,6 +62,9 @@
         <argument
             android:name="genres"
             app:argType="integer" />
+        <argument
+            android:name="from"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/filterFragment"
