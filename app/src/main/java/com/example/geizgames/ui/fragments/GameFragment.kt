@@ -20,7 +20,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
     private val binding get() = _binding!!
 
     private var filterId = 0
-    private var from = ""
+    private var from = "go"
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -42,7 +42,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
                 this.adapter = adapter
             }
         }
-        if (from == "Genres") {
+        if (from == "Genres" || from == "go") {
             lifecycleScope.launch {
                 viewModel.getGameListGenre().observe(viewLifecycleOwner) {
                     it?.let {

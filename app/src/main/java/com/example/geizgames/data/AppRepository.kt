@@ -47,20 +47,19 @@ class AppRepository @Inject constructor(
             Log.e(TAG_REPO, "Error Loading ImageData from Api $e")
         }
     }
+    fun pagingDataGenre(genre: Int): LiveData<PagingData<Results>> {
+        return Pager(
+            config = PagingConfig(pageSize = 20)
+        ) {
+            GenresPagingSource(api, genre)
+        }.liveData
+    }
 
     fun pagingDataPlatform(platform: Int): LiveData<PagingData<Results>> {
         return Pager(
             config = PagingConfig(pageSize = 20)
         ) {
             PlatformPagingSource(api, platform)
-        }.liveData
-    }
-
-    fun pagingDataGenre(genre: Int): LiveData<PagingData<Results>> {
-        return Pager(
-            config = PagingConfig(pageSize = 20)
-        ) {
-            GenresPagingSource(api, genre)
         }.liveData
     }
 
