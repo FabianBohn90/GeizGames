@@ -65,6 +65,8 @@ class DetailFragment : Fragment() {
         val imgUri = backgroundImage.toUri().buildUpon().scheme("https").build()
 
         binding.ivGameCover.load(imgUri) {
+            crossfade(true)
+            crossfade(1000)
             error(R.drawable.broken_img)
         }
 

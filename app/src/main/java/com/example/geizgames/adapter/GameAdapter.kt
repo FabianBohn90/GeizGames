@@ -50,6 +50,8 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
         val imgUri = game?.background_image?.toUri()?.buildUpon()?.scheme("https")?.build()
 
         holder.binding.ivGame.load(imgUri) {
+            crossfade(true)
+            crossfade(1000)
             transformations(RoundedCornersTransformation(10f))
             error(R.drawable.broken_img)
         }
@@ -140,6 +142,22 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
                 }
                 24 -> {
                     imageView.setImageResource(R.drawable.nintendo_game_boy_white)
+                    imageView.visibility = View.VISIBLE
+                }
+                43 -> {
+                    imageView.setImageResource(R.drawable.nintendo_game_boy_white)
+                    imageView.visibility = View.VISIBLE
+                }
+                26 -> {
+                    imageView.setImageResource(R.drawable.nintendo_game_boy_white)
+                    imageView.visibility = View.VISIBLE
+                }
+                79 -> {
+                    imageView.setImageResource(R.drawable.nintendo_white)
+                    imageView.visibility = View.VISIBLE
+                }
+                49 -> {
+                    imageView.setImageResource(R.drawable.nintendo_white)
                     imageView.visibility = View.VISIBLE
                 }
                 105 -> {
@@ -275,11 +293,11 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
         holder.binding.tvGameScore.text = game?.metacritic.toString()
 
         val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
-        val genreArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "")
+        val genreArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "","","","")
         var img = ""
         var metacritic = 0
 
-        for (i in 0..10) {
+        for (i in 0..12) {
             if (i < game?.genres?.size!! - 1) {
                 genreArray[i] = game.genres[i].name
             }

@@ -30,11 +30,11 @@ class ImageAdapter(
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset?.get(position)
 
-        holder.binding.ivImage.setImageResource(R.drawable.test_splash)
-
         val imgUri = item?.image?.toUri()?.buildUpon()?.scheme("https")?.build()
 
         holder.binding.ivImage.load(imgUri) {
+            crossfade(true)
+            crossfade(1000)
             transformations(RoundedCornersTransformation(10f))
             error(R.drawable.broken_img)
         }

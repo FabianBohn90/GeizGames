@@ -34,6 +34,8 @@ class PlatformAdapter(
         val imgUri = platform.image_background?.toUri()?.buildUpon()?.scheme("https")?.build()
 
         holder.binding.ivPlatform.load(imgUri) {
+            crossfade(true)
+            crossfade(1000)
             error(R.drawable.broken_img)
         }
 

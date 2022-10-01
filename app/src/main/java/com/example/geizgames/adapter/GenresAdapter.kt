@@ -34,6 +34,8 @@ class GenresAdapter(
         val imgUri = genre.image_background?.toUri()?.buildUpon()?.scheme("https")?.build()
 
         holder.binding.ivGenresImg.load(imgUri) {
+            crossfade(true)
+            crossfade(1000)
             error(R.drawable.broken_img)
         }
 

@@ -139,6 +139,23 @@ class SearchAdapter(
                     imageView.setImageResource(R.drawable.nintendo_game_boy_white)
                     imageView.visibility = View.VISIBLE
                 }
+                79 -> {
+                    imageView.setImageResource(R.drawable.nintendo_white)
+                    imageView.visibility = View.VISIBLE
+                }
+                49 -> {
+                    imageView.setImageResource(R.drawable.nintendo_white)
+                    imageView.visibility = View.VISIBLE
+                }
+
+                43 -> {
+                    imageView.setImageResource(R.drawable.nintendo_game_boy_white)
+                    imageView.visibility = View.VISIBLE
+                }
+                26 -> {
+                    imageView.setImageResource(R.drawable.nintendo_game_boy_white)
+                    imageView.visibility = View.VISIBLE
+                }
                 105 -> {
                     imageView.setImageResource(R.drawable.nintendo_gamecube_white)
                     imageView.visibility = View.VISIBLE
