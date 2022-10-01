@@ -42,15 +42,15 @@ class GameFragment : Fragment(R.layout.fragment_game) {
                 this.adapter = adapter
             }
         }
-        if (from == "Genres" || from == "go") {
-            lifecycleScope.launch {
-                viewModel.getGameListGenre().observe(viewLifecycleOwner) {
-                    it?.let {
-                        adapter.submitData(lifecycle, it)
-                    }
+
+        lifecycleScope.launch {
+            viewModel.getGameListGenre().observe(viewLifecycleOwner) {
+                it?.let {
+                    adapter.submitData(lifecycle, it)
                 }
             }
         }
+
         if (from == "Platform") {
             lifecycleScope.launch {
                 viewModel.getGameListPlatform().observe(viewLifecycleOwner) {

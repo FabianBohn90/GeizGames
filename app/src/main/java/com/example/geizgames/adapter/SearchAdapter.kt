@@ -144,7 +144,7 @@ class SearchAdapter(
                     imageView.visibility = View.VISIBLE
                 }
                 10 -> {
-                    imageView.setImageResource(R.drawable.nintendo_wiiu_white)
+                    imageView.setImageResource(R.drawable.nintendo_wii_white)
                     imageView.visibility = View.VISIBLE
                 }
                 83 -> {

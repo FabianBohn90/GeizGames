@@ -156,7 +156,7 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
                 }
 
                 11 -> {
-                    imageView.setImageResource(R.drawable.nintendo_wiiu_white)
+                    imageView.setImageResource(R.drawable.nintendo_wii_white)
                     imageView.visibility = View.VISIBLE
                 }
 
@@ -274,7 +274,7 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
 
         holder.binding.tvGameScore.text = game?.metacritic.toString()
 
-        val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "")
+        val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
         val genreArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "")
         var img = ""
         var metacritic = 0
@@ -284,7 +284,7 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
                 genreArray[i] = game.genres[i].name
             }
         }
-        for (i in 0..12) {
+        for (i in 0..14) {
             if (game != null && i < game.platforms?.size!! - 1) {
                 platformArray[i] = game.platforms!![i].platform.name
             }
