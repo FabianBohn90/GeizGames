@@ -76,6 +76,8 @@ class ShopAdapter(
             "Indie Gala Store" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_indie_gala)
             "eTail.Market" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop__etaile_market)
             "Punktid" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_punktid)
+            "Battle.net" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_battle_net)
+            "Ubisoft Store" -> holder.binding.ivStoreIcon.setImageResource(R.drawable.shop_ubisoft_store)
         }
 
         holder.binding.cvShop.setOnClickListener {

@@ -3,12 +3,14 @@ package com.example.geizgames.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.net.toUri
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
 import com.example.geizgames.data.models.gameResults.Screens
 import com.example.geizgames.databinding.ListImageitemBinding
+import com.example.geizgames.ui.fragments.DetailFragmentDirections
 
 class ImageAdapter(
     private val dataset: List<Screens>?
@@ -37,6 +39,17 @@ class ImageAdapter(
             crossfade(1000)
             transformations(RoundedCornersTransformation(10f))
             error(R.drawable.broken_img)
+        }
+        val imageUri = item?.image.toString()
+
+        holder.binding.cvImage.setOnClickListener {
+            if (item != null) {
+                it.findNavController().navigate(
+                    DetailFragmentDirections.actionDetailFragmentToImageDetailFragment(
+                        imageUri
+                    )
+                )
+            }
         }
     }
 

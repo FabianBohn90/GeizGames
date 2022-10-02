@@ -37,6 +37,9 @@
         <argument
             android:name="index"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_detailFragment_to_imageDetailFragment"
+            app:destination="@id/imageDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -74,5 +77,14 @@
         <action
             android:id="@+id/action_filterFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageDetailFragment"
+        tools:layout="@layout/fragment_imagedetail"
+        android:name="com.example.geizgames.ui.fragments.ImageDetailFragment"
+        android:label="ImageDetailFragment" >
+        <argument
+            android:name="imageuri"
+            app:argType="string" />
     </fragment>
 </navigation>

@@ -8,6 +8,7 @@
     </data>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_image"
         android:layout_width="200dp"
         android:layout_height="120dp"
         app:cardBackgroundColor="#00FFFFFF">
