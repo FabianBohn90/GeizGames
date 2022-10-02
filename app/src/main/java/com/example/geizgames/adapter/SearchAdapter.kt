@@ -11,7 +11,6 @@ import androidx.core.net.toUri
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import coil.transform.RoundedCornersTransformation
 import com.example.geizgames.R
 import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.ui.fragments.SearchFragmentDirections
@@ -51,7 +50,8 @@ class SearchAdapter(
         val imgUri = game.background_image?.toUri()?.buildUpon()?.scheme("https")?.build()
 
         holder.ivGame.load(imgUri) {
-            transformations(RoundedCornersTransformation(10f))
+            crossfade(true)
+            crossfade(1000)
             error(R.drawable.broken_img)
         }
 
