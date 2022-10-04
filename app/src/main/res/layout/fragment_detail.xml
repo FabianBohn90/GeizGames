@@ -71,12 +71,36 @@
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/divider_genre_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="0"
+                            android:text="|"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
                             android:id="@+id/tv_tag_detail_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="4dp"
                             android:text="TextView"
                             android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/divider_genre_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="0"
+                            android:text="|"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -89,12 +113,36 @@
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/divider_genre_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="0"
+                            android:text="|"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
                             android:id="@+id/tv_tag_detail_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="4dp"
                             android:text="TextView"
                             android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/divider_genre_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="0"
+                            android:text="|"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -196,7 +244,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/tv_release"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_metacritic_logo"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -216,7 +264,7 @@
                 </androidx.recyclerview.widget.RecyclerView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView"
+                    android:id="@+id/cv_platforms_detail"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -260,12 +308,34 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/divider_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0"
+                                android:text="|"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
                                 android:id="@+id/tv_platform_detail_2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="4dp"
                                 android:text="TextView"
                                 android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/divider_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0"
+                                android:text="|"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -278,6 +348,17 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/divider_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0"
+                                android:text="|"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
                                 android:id="@+id/tv_platform_detail_4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -286,16 +367,6 @@
                                 android:textColor="@color/white"
                                 android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/tv_platform_detail_5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="4dp"
-                                android:padding="2dp"
-                                android:paddingLeft="2dp"
-                                android:text="TextView"
-                                android:textColor="@color/white"
-                                android:textStyle="bold" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -305,12 +376,44 @@
                             android:orientation="horizontal">
 
                             <TextView
+                                android:id="@+id/tv_platform_detail_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp"
+                                android:paddingLeft="2dp"
+                                android:text="TextView"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/divider_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0"
+                                android:text="|"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
                                 android:id="@+id/tv_platform_detail_6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="4dp"
                                 android:text="TextView"
                                 android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/divider_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0"
+                                android:text="|"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -323,6 +426,17 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/divider_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0"
+                                android:text="|"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
                                 android:id="@+id/tv_platform_detail_8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -331,6 +445,13 @@
                                 android:textColor="@color/white"
                                 android:textStyle="bold" />
 
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
                             <TextView
                                 android:id="@+id/tv_platform_detail_9"
                                 android:layout_width="wrap_content"
@@ -338,6 +459,17 @@
                                 android:paddingLeft="4dp"
                                 android:text="TextView"
                                 android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/divider_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0"
+                                android:text="|"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -366,37 +498,25 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_platforms_detail"
                     app:layout_constraintVertical_bias="0.0"
                     tools:listitem="@layout/list_shopitem" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="8dp"
-                    app:cardBackgroundColor="#34FFFFFF"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-                </androidx.cardview.widget.CardView>
 
                 <ProgressBar
                     android:id="@+id/progressBar"
                     style="?android:attr/progressBarStyle"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:layout_marginTop="90dp"
+                    android:layout_marginTop="64dp"
                     android:indeterminateTint="#FFFFFF"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView2"
-                    tools:visibility="gone" />
+                    app:layout_constraintTop_toBottomOf="@+id/cv_platforms_detail"
+                    tools:visibility="visible" />
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/iv_metacritic_logo"
                     android:layout_width="22dp"
                     android:layout_height="20dp"
                     android:layout_marginEnd="4dp"

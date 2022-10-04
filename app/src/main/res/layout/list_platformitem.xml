@@ -34,7 +34,7 @@
                 android:id="@+id/view_dimmer"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="#4D090909"
+                android:background="#9A090909"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

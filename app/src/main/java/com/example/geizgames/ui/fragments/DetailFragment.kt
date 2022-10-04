@@ -96,36 +96,89 @@ class DetailFragment : Fragment() {
         binding.tvMetacritic.text = metacritic.toString()
 
         binding.tvPlatformDetail1.text = platforms[0]
-        if (platforms[0] == "") binding.tvPlatformDetail1.visibility = View.GONE
+        if (platforms[0] == "") {
+            binding.tvPlatformDetail1.visibility = View.GONE
+            binding.cvPlatformsDetail.visibility = View.GONE
+            binding.divider1.visibility = View.GONE
+        }
+
         binding.tvPlatformDetail2.text = platforms[1]
-        if (platforms[1] == "") binding.tvPlatformDetail2.visibility = View.GONE
+        if (platforms[1] == "") {
+            binding.tvPlatformDetail2.visibility = View.GONE
+            binding.divider1.visibility = View.GONE
+            binding.divider2.visibility = View.GONE
+        }
         binding.tvPlatformDetail3.text = platforms[2]
-        if (platforms[2] == "") binding.tvPlatformDetail3.visibility = View.GONE
+        if (platforms[2] == "") {
+            binding.tvPlatformDetail3.visibility = View.GONE
+            binding.divider2.visibility = View.GONE
+            binding.divider3.visibility = View.GONE
+        }
         binding.tvPlatformDetail4.text = platforms[3]
-        if (platforms[3] == "") binding.tvPlatformDetail4.visibility = View.GONE
+        if (platforms[3] == "") {
+            binding.tvPlatformDetail4.visibility = View.GONE
+            binding.divider3.visibility = View.GONE
+        }
         binding.tvPlatformDetail5.text = platforms[4]
-        if (platforms[4] == "") binding.tvPlatformDetail5.visibility = View.GONE
+        if (platforms[4] == "") {
+            binding.tvPlatformDetail5.visibility = View.GONE
+            binding.divider4.visibility = View.GONE
+        }
         binding.tvPlatformDetail6.text = platforms[5]
-        if (platforms[5] == "") binding.tvPlatformDetail6.visibility = View.GONE
+        if (platforms[5] == "") {
+            binding.tvPlatformDetail6.visibility = View.GONE
+            binding.divider4.visibility = View.GONE
+            binding.divider5.visibility = View.GONE
+        }
         binding.tvPlatformDetail7.text = platforms[6]
-        if (platforms[6] == "") binding.tvPlatformDetail7.visibility = View.GONE
+        if (platforms[6] == "") {
+            binding.tvPlatformDetail7.visibility = View.GONE
+            binding.divider5.visibility = View.GONE
+            binding.divider6.visibility = View.GONE
+        }
         binding.tvPlatformDetail8.text = platforms[7]
-        if (platforms[7] == "") binding.tvPlatformDetail8.visibility = View.GONE
+        if (platforms[7] == "") {
+            binding.divider6.visibility = View.GONE
+            binding.tvPlatformDetail8.visibility = View.GONE
+        }
+
         binding.tvPlatformDetail9.text = platforms[8]
         if (platforms[8] == "") binding.tvPlatformDetail9.visibility = View.GONE
+
         binding.tvPlatformDetail10.text = platforms[9]
-        if (platforms[9] == "") binding.tvPlatformDetail10.visibility = View.GONE
+        if (platforms[9] == "") {
+            binding.tvPlatformDetail10.visibility = View.GONE
+            binding.divider7.visibility = View.GONE
+        }
 
         binding.tvTagDetail1.text = genre[0]
-        if (genre[0] == "") binding.tvTagDetail1.visibility = View.GONE
+        if (genre[0] == "") {
+            binding.tvTagDetail1.visibility = View.GONE
+            binding.dividerGenre1.visibility = View.GONE
+        }
         binding.tvTagDetail2.text = genre[1]
-        if (genre[1] == "") binding.tvTagDetail2.visibility = View.GONE
+        if (genre[1] == "") {
+            binding.tvTagDetail2.visibility = View.GONE
+            binding.dividerGenre1.visibility = View.GONE
+            binding.dividerGenre2.visibility = View.GONE
+        }
         binding.tvTagDetail3.text = genre[2]
-        if (genre[2] == "") binding.tvTagDetail3.visibility = View.GONE
+        if (genre[2] == "") {
+            binding.tvTagDetail3.visibility = View.GONE
+            binding.dividerGenre2.visibility = View.GONE
+            binding.dividerGenre3.visibility = View.GONE
+        }
         binding.tvTagDetail4.text = genre[3]
-        if (genre[3] == "") binding.tvTagDetail4.visibility = View.GONE
+        if (genre[3] == "") {
+            binding.tvTagDetail4.visibility = View.GONE
+            binding.dividerGenre3.visibility = View.GONE
+            binding.dividerGenre4.visibility = View.GONE
+        }
         binding.tvTagDetail5.text = genre[4]
-        if (genre[4] == "") binding.tvTagDetail5.visibility = View.GONE
+        if (genre[4] == "") {
+            binding.tvTagDetail5.visibility = View.GONE
+            binding.dividerGenre4.visibility = View.GONE
+        }
         binding.tvTagDetail6.text = genre[5]
         if (genre[5] == "") binding.tvTagDetail6.visibility = View.GONE
         binding.tvTagDetail7.text = genre[6]
