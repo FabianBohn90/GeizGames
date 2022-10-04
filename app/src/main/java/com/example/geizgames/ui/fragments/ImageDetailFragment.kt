@@ -13,6 +13,7 @@ import coil.load
 import com.example.geizgames.R
 import com.example.geizgames.databinding.FragmentImagedetailBinding
 import com.example.geizgames.ui.GameViewModel
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -28,8 +29,15 @@ class ImageDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_imagedetail, container, false)
+        binding = DataBindingUtil.inflate(
+            inflater,
+            R.layout.fragment_imagedetail,
+            container,
+            false
+        )
+        val navBar: BottomNavigationView = requireActivity().findViewById(R.id.bottomNavigationView)
 
+        navBar.visibility = View.GONE
         return binding.root
     }
 
