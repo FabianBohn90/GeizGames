@@ -15,6 +15,7 @@ import com.example.geizgames.adapter.ShopAdapter
 import com.example.geizgames.databinding.FragmentDetailBinding
 import com.example.geizgames.ui.ApiStatus
 import com.example.geizgames.ui.GameViewModel
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -55,7 +56,8 @@ class DetailFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         viewModel.slug.value = slug
-
+        val navBar: BottomNavigationView = requireActivity().findViewById(R.id.bottomNavigationView)
+        navBar.visibility = View.VISIBLE
         return binding.root
     }
 
