@@ -4,11 +4,11 @@
     <item
         android:id="@+id/searchFragment"
         android:icon="@drawable/ic_baseline_search_24"
-        android:title="search" />
+        android:title="@string/Search" />
 
     <item
         android:id="@+id/filterFragment"
         android:icon="@drawable/ic_baseline_sort_24"
-        android:title="filter" />
+        android:title="@string/Filter" />
 
 </menu>
