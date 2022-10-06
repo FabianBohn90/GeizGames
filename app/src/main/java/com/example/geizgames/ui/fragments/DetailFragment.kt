@@ -31,7 +31,8 @@ class DetailFragment : Fragment() {
     private var release = ""
     private var backgroundImage = ""
     private var metacritic = 0
-    private var platforms: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
+    private var platforms: Array<String> =
+        arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
     private var genre: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "")
 
     override fun onCreate(savedInstanceState: Bundle?) {
