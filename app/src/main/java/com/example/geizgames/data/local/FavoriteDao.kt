@@ -13,10 +13,10 @@ interface FavoriteDao {
     fun insertFavorite(favorite: Favorite)
 
     @Query("DELETE FROM favorite_table WHERE id = :id")
-    fun deleteFavoriteById(id: String)
+    fun deleteFavoriteById(id: Int)
 
     @Query("SELECT * FROM favorite_table WHERE id = :id")
-    fun getFavoriteById(id: String): Favorite
+    fun getFavoriteById(id: Int): Favorite
 
     @Query("SELECT * FROM favorite_table order by name ASC")
     fun getAllFavorites(): LiveData<List<Favorite>>

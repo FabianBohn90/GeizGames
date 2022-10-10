@@ -8,9 +8,8 @@ data class Favorite(
 
     @PrimaryKey
     val id: Int?,
-
     val name: String?,
-
-    val imageLink: String?
+    val imageLink: String?,
+    val metacritic: Int?
 
 )

@@ -293,7 +293,7 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
         holder.binding.tvGameScore.text = game?.metacritic.toString()
 
         val platformArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
-        val genreArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "","","","")
+        val genreArray: Array<String> = arrayOf("", "", "", "", "", "", "", "", "", "", "", "", "")
         var img = ""
         var metacritic = 0
 
@@ -321,7 +321,8 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
                     genreArray,
                     game.released!!,
                     game.slug,
-                    position
+                    position,
+                    game.id
                 )
             )
         }

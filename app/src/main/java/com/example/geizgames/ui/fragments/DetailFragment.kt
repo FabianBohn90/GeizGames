@@ -12,6 +12,7 @@ import coil.load
 import com.example.geizgames.R
 import com.example.geizgames.adapter.ImageAdapter
 import com.example.geizgames.adapter.ShopAdapter
+import com.example.geizgames.data.models.Favorite
 import com.example.geizgames.databinding.FragmentDetailBinding
 import com.example.geizgames.ui.ApiStatus
 import com.example.geizgames.ui.GameViewModel
@@ -25,6 +26,7 @@ class DetailFragment : Fragment() {
 
     private lateinit var binding: FragmentDetailBinding
 
+    private var gameId = 0
     private var index = 0
     private var name = ""
     private var slug = ""
@@ -46,6 +48,7 @@ class DetailFragment : Fragment() {
             genre = it.getStringArray("genre") as Array<String>
             release = it.getString("release").toString()
             index = it.getInt("index")
+            gameId = it.getInt("id")
         }
     }
 
@@ -94,6 +97,33 @@ class DetailFragment : Fragment() {
             }
         }
 
+        fun insertFavorite() {
+            val favorite = Favorite(
+                id = gameId,
+                name = name,
+                imageLink = backgroundImage,
+                metacritic = metacritic
+            )
+            viewModel.insertFavorite(favorite)
+        }
+
+        fun deleteFavoriteById() {
+            viewModel.deleteFavoriteById(gameId)
+        }
+
+        fun isFavorite(): Boolean {
+            return viewModel.isFavorite(gameId)
+        }
+
+        binding.ibBookmarkFavo.setOnClickListener {
+            if (isFavorite()) {
+                deleteFavoriteById()
+                binding.ibBookmarkFavo.setImageResource(R.drawable.ic_baseline_bookmark_border_32)
+            } else {
+                insertFavorite()
+                binding.ibBookmarkFavo.setImageResource(R.drawable.ic_baseline_bookmark_24)
+            }
+        }
         binding.tvRelease.text = release
         binding.tvGameName.text = name
         binding.tvMetacritic.text = metacritic.toString()

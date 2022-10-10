@@ -6,12 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.geizgames.adapter.FavoriteAdapter
 import com.example.geizgames.databinding.FragmentFavoritenBinding
 import com.example.geizgames.ui.GameViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class FavoritenFragment : Fragment() {
+
     private val viewModel: GameViewModel by viewModels()
 
     private lateinit var binding: FragmentFavoritenBinding
@@ -27,5 +29,9 @@ class FavoritenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        viewModel.favorites.observe(viewLifecycleOwner) {
+            binding.rvFavoriten.adapter = FavoriteAdapter(it)
+        }
     }
 }

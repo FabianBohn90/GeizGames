@@ -44,7 +44,7 @@ class GenresAdapter(
         holder.binding.cvGenres.setOnClickListener {
             holder.itemView.findNavController().navigate(
                 FilterFragmentDirections.actionFilterFragmentToGameFragment(
-                    genre.id.toInt(),
+                    genre.id,
                     "Genres"
                 )
             )

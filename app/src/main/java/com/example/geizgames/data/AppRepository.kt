@@ -7,6 +7,8 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.liveData
+import com.example.geizgames.data.local.FavoriteDao
+import com.example.geizgames.data.models.Favorite
 import com.example.geizgames.data.models.gameResults.Results
 import com.example.geizgames.data.models.gameResults.Screens
 import com.example.geizgames.data.models.shopResults.Stores
@@ -20,7 +22,8 @@ const val TAG_REPO = "AppRepository"
 
 class AppRepository @Inject constructor(
     private val api: GameApiService,
-    private val apiShop: ShopApiService
+    private val apiShop: ShopApiService,
+    private val favoriteDao: FavoriteDao
 ) {
 
     private val _gameData = MutableLiveData<List<Results>>()
@@ -98,4 +101,20 @@ class AppRepository @Inject constructor(
             Log.e(TAG_REPO, "Error Loading ShopData from Api $e")
         }
     }
+
+    // Favoriten
+
+    fun insertFavorite(favorite: Favorite) {
+        favoriteDao.insertFavorite(favorite)
+    }
+
+    fun deleteFavoriteById(id: Int) {
+        favoriteDao.deleteFavoriteById(id)
+    }
+
+    fun getFavoriteById(id: Int): Favorite {
+        return favoriteDao.getFavoriteById(id)
+    }
+
+    val getAllFavorites: LiveData<List<Favorite>> = favoriteDao.getAllFavorites()
 }

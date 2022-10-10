@@ -8,12 +8,10 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.example.geizgames.data.AppRepository
+import com.example.geizgames.data.models.Favorite
 import com.example.geizgames.data.models.gameResults.Results
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancelAndJoin
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.* // ktlint-disable no-wildcard-imports
 import javax.inject.Inject
 
 const val TAG_VM = "GameViewModel"
@@ -26,7 +24,7 @@ class GameViewModel @Inject constructor(
 ) : ViewModel() {
 
     val inputText = MutableLiveData<String>()
-
+    var favorites = repository.getAllFavorites
     var slug = MutableLiveData<String>()
     var filterid: Int = 4
     val games = repository.gameData
@@ -88,5 +86,29 @@ class GameViewModel @Inject constructor(
                 _loading.value = ApiStatus.ERROR
             }
         }
+    }
+
+    fun insertFavorite(favorite: Favorite) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.insertFavorite(favorite)
+            withContext(Dispatchers.Main) {}
+        }
+    }
+
+    fun deleteFavoriteById(id: Int) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.deleteFavoriteById(id)
+        }
+    }
+
+    fun isFavorite(id: Int): Boolean {
+        var favorite: Favorite?
+
+        runBlocking(Dispatchers.IO) {
+            favorite = repository.getFavoriteById(id)
+        }
+
+        if (favorite == null) return false
+        return true
     }
 }

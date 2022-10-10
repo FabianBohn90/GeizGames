@@ -44,7 +44,7 @@ class PlatformAdapter(
         holder.binding.cvPlatform.setOnClickListener {
             holder.itemView.findNavController().navigate(
                 FilterFragmentDirections.actionFilterFragmentToGameFragment(
-                    platform.id.toInt(),
+                    platform.id,
                     "Platform"
                 )
             )

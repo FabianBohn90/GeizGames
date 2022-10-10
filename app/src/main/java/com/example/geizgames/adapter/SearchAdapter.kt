@@ -315,7 +315,8 @@ class SearchAdapter(
                     tagsArray,
                     game.released!!,
                     game.slug,
-                    position
+                    position,
+                    game.id
                 )
             )
         }
