@@ -27,7 +27,6 @@ class DetailFragment : Fragment() {
     private lateinit var binding: FragmentDetailBinding
 
     private var gameId = 0
-    private var index = 0
     private var name = ""
     private var slug = ""
     private var release = ""
@@ -47,7 +46,6 @@ class DetailFragment : Fragment() {
             platforms = it.getStringArray("platform") as Array<String>
             genre = it.getStringArray("genre") as Array<String>
             release = it.getString("release").toString()
-            index = it.getInt("index")
             gameId = it.getInt("id")
         }
     }
@@ -102,7 +100,29 @@ class DetailFragment : Fragment() {
                 id = gameId,
                 name = name,
                 imageLink = backgroundImage,
-                metacritic = metacritic
+                metacritic = metacritic,
+                slug = slug,
+                release = release,
+                platform1 = platforms[0],
+                platform2 = platforms[1],
+                platform3 = platforms[2],
+                platform4 = platforms[3],
+                platform5 = platforms[4],
+                platform6 = platforms[5],
+                platform7 = platforms[6],
+                platform8 = platforms[7],
+                platform9 = platforms[8],
+                platform10 = platforms[9],
+                genre1 = genre[0],
+                genre2 = genre[1],
+                genre3 = genre[2],
+                genre4 = genre[3],
+                genre5 = genre[4],
+                genre6 = genre[5],
+                genre7 = genre[6],
+                genre8 = genre[7],
+                genre9 = genre[8],
+                genre10 = genre[9]
             )
             viewModel.insertFavorite(favorite)
         }

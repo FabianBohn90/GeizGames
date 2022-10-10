@@ -321,7 +321,6 @@ class GameAdapter : PagingDataAdapter<Results, GameAdapter.ItemViewHolder>(diffC
                     genreArray,
                     game.released!!,
                     game.slug,
-                    position,
                     game.id
                 )
             )

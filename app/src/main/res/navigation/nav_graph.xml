@@ -34,9 +34,6 @@
         <argument
             android:name="slug"
             app:argType="string" />
-        <argument
-            android:name="index"
-            app:argType="integer" />
         <action
             android:id="@+id/action_detailFragment_to_imageDetailFragment"
             app:destination="@id/imageDetailFragment" />
