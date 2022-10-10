@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/favoritenFragment"
-        android:icon="@drawable/ic_baseline_bookmark_24"
+        android:icon="@drawable/ic_baseline_bookmark_32"
         android:title="@string/Favoriten" />
 
 </menu>

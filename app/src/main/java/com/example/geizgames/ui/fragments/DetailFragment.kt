@@ -135,13 +135,19 @@ class DetailFragment : Fragment() {
             return viewModel.isFavorite(gameId)
         }
 
+        if (isFavorite()) {
+            binding.ibBookmarkFavo.setImageResource(R.drawable.ic_baseline_bookmark_32)
+        } else {
+            binding.ibBookmarkFavo.setImageResource(R.drawable.ic_baseline_bookmark_border_32)
+        }
+
         binding.ibBookmarkFavo.setOnClickListener {
             if (isFavorite()) {
                 deleteFavoriteById()
                 binding.ibBookmarkFavo.setImageResource(R.drawable.ic_baseline_bookmark_border_32)
             } else {
                 insertFavorite()
-                binding.ibBookmarkFavo.setImageResource(R.drawable.ic_baseline_bookmark_24)
+                binding.ibBookmarkFavo.setImageResource(R.drawable.ic_baseline_bookmark_32)
             }
         }
         binding.tvRelease.text = release
