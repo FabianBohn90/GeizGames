@@ -1,7 +1,7 @@
 package com.example.geizgames.data.models.gameResults
 
 data class Results(
-    var id: Long,
+    var id: Int,
     val name: String,
     val slug: String,
     val background_image: String?,

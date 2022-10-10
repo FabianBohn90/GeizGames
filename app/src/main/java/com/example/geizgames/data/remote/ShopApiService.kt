@@ -4,7 +4,7 @@ import com.example.geizgames.data.models.shopResults.ShopResults
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-const val API_TOKEN_SHOP = "6fd287978cmshb3da3b00cdc65e8p122e81jsnc82726b23080"
+const val API_TOKEN_SHOP = "e0b23cd9a2msh93ed9ac4619764bp10fc17jsn0ad8f1cbac89"
 const val BASE_URL_SHOP = "https://game-prices.p.rapidapi.com/game/"
 
 interface ShopApiService {
