@@ -87,4 +87,13 @@
             android:name="imageuri"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/favoritenFragment"
+        tools:layout="@layout/fragment_favoriten"
+        android:name="com.example.geizgames.ui.fragments.FavoritenFragment"
+        android:label="FavoritenFragment" >
+        <action
+            android:id="@+id/action_favoritenFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
 </navigation>

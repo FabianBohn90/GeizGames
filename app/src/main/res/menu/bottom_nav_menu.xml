@@ -8,7 +8,12 @@
 
     <item
         android:id="@+id/filterFragment"
-        android:icon="@drawable/ic_baseline_sort_24"
-        android:title="@string/Filter" />
+        android:icon="@drawable/ic_baseline_category_28"
+        android:title="@string/Kategorie" />
+
+    <item
+        android:id="@+id/favoritenFragment"
+        android:icon="@drawable/ic_baseline_bookmark_24"
+        android:title="@string/Favoriten" />
 
 </menu>
