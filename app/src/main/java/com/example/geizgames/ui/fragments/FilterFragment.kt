@@ -42,5 +42,14 @@ class FilterFragment : Fragment() {
         viewModel.games2.observe(viewLifecycleOwner) {
             binding.rvPlatform.adapter = PlatformAdapter(it)
         }
+
+        binding.tvGenreFilter.setOnClickListener {
+            binding.rvPlatform.visibility = View.GONE
+            binding.rvGenres.visibility = View.VISIBLE
+        }
+        binding.tvPlatformFilter.setOnClickListener {
+            binding.rvPlatform.visibility = View.VISIBLE
+            binding.rvGenres.visibility = View.GONE
+        }
     }
 }
