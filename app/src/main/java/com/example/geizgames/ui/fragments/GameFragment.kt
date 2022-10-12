@@ -7,6 +7,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.geizgames.R
 import com.example.geizgames.adapter.GameAdapter
+import com.example.geizgames.adapter.GameLoadStateAdapter
 import com.example.geizgames.databinding.FragmentGameBinding
 import com.example.geizgames.ui.GameViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -39,7 +40,10 @@ class GameFragment : Fragment(R.layout.fragment_game) {
             rvGames.apply {
                 itemAnimator = null
                 setHasFixedSize(true)
-                this.adapter = adapter
+                this.adapter = adapter.withLoadStateHeaderAndFooter(
+                    header = GameLoadStateAdapter { adapter.retry() },
+                    footer = GameLoadStateAdapter { adapter.retry() }
+                )
             }
         }
 
