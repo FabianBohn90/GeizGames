@@ -33,9 +33,9 @@ class FilterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.tvGenreFilter.background.alpha = 150
         binding.lifecycleOwner = viewLifecycleOwner
 
-        // Sobald die Daten aus der API geladen sind, setze einen neuen Adapter der RV
         viewModel.games.observe(viewLifecycleOwner) {
             binding.rvGenres.adapter = GenresAdapter(it)
         }
@@ -44,10 +44,15 @@ class FilterFragment : Fragment() {
         }
 
         binding.tvGenreFilter.setOnClickListener {
+            binding.tvGenreFilter.background.alpha = 0
+            binding.tvPlatformFilter.background.alpha = 255
             binding.rvPlatform.visibility = View.GONE
             binding.rvGenres.visibility = View.VISIBLE
         }
         binding.tvPlatformFilter.setOnClickListener {
+//            binding.tvGenreFilter.setBackgroundColor(resources.getColor(R.color.orange))
+            binding.tvGenreFilter.background.alpha = 255
+            binding.tvPlatformFilter.background.alpha = 0
             binding.rvPlatform.visibility = View.VISIBLE
             binding.rvGenres.visibility = View.GONE
         }

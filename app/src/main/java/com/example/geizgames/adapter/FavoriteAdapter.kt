@@ -1,6 +1,8 @@
 package com.example.geizgames.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.net.toUri
 import androidx.navigation.findNavController
@@ -33,12 +35,31 @@ class FavoriteAdapter(
         holder.binding.tvTitelFavo.text = item.name
         holder.binding.tvMetacriticFavo.text = item.metacritic.toString()
 
-        val imgUri = item.imageLink?.toUri()?.buildUpon()?.scheme("https")?.build()
+        val imgUri = item.imageLink.toUri().buildUpon().scheme("https").build()
 
         holder.binding.imageView.load(imgUri) {
             crossfade(true)
             crossfade(1000)
             error(R.drawable.broken_img)
+        }
+
+        if (item.metacritic != 0) {
+            when (item.metacritic) {
+                in 70..100 -> {
+                    holder.binding.tvMetacriticFavo.setTextColor(Color.parseColor("#00BC51"))
+                    holder.binding.tvMetacriticFavo.setBackgroundResource(R.drawable.rounded_corner_green)
+                }
+                in 40..69 -> {
+                    holder.binding.tvMetacriticFavo.setTextColor(Color.parseColor("#FAB753"))
+                    holder.binding.tvMetacriticFavo.setBackgroundResource(R.drawable.rounded_corner_orange)
+                }
+                in 0..39 -> {
+                    holder.binding.tvMetacriticFavo.setTextColor(Color.parseColor("#E33314"))
+                    holder.binding.tvMetacriticFavo.setBackgroundResource(R.drawable.rounded_corner_red)
+                }
+            }
+        } else {
+            holder.binding.tvMetacriticFavo.visibility = View.INVISIBLE
         }
 
         val platformArray: Array<String> = arrayOf(
