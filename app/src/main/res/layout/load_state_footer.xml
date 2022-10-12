@@ -29,8 +29,9 @@
         <Button
             android:id="@+id/btn_retry"
             android:layout_width="wrap_content"
-            android:layout_margin="8dp"
             android:layout_height="wrap_content"
-            android:text="Retry" />
+            android:layout_margin="8dp"
+            android:text="Retry"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </layout>
