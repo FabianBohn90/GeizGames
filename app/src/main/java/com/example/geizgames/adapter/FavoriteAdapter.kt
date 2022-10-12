@@ -31,16 +31,40 @@ class FavoriteAdapter(
     }
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-
-        holder.binding.tvTitelFavo.text = item.name
-        holder.binding.tvMetacriticFavo.text = item.metacritic.toString()
-
         val imgUri = item.imageLink.toUri().buildUpon().scheme("https").build()
+        val platformArray: Array<String> = arrayOf(
+            item.platform1,
+            item.platform2,
+            item.platform3,
+            item.platform4,
+            item.platform5,
+            item.platform6,
+            item.platform7,
+            item.platform8,
+            item.platform9,
+            item.platform10
+        )
+        val genreArray: Array<String> = arrayOf(
+            item.genre1,
+            item.genre2,
+            item.genre3,
+            item.genre4,
+            item.genre5,
+            item.genre6,
+            item.genre7,
+            item.genre8,
+            item.genre9,
+            item.genre10
+        )
 
-        holder.binding.imageView.load(imgUri) {
-            crossfade(true)
-            crossfade(1000)
-            error(R.drawable.broken_img)
+        holder.binding.apply {
+            tvTitelFavo.text = item.name
+            tvMetacriticFavo.text = item.metacritic.toString()
+            imageView.load(imgUri) {
+                crossfade(true)
+                crossfade(1000)
+                error(R.drawable.broken_img)
+            }
         }
 
         if (item.metacritic != 0) {
@@ -61,32 +85,6 @@ class FavoriteAdapter(
         } else {
             holder.binding.tvMetacriticFavo.visibility = View.INVISIBLE
         }
-
-        val platformArray: Array<String> = arrayOf(
-            item.platform1,
-            item.platform2,
-            item.platform3,
-            item.platform4,
-            item.platform5,
-            item.platform6,
-            item.platform7,
-            item.platform8,
-            item.platform9,
-            item.platform10
-        )
-
-        val genreArray: Array<String> = arrayOf(
-            item.genre1,
-            item.genre2,
-            item.genre3,
-            item.genre4,
-            item.genre5,
-            item.genre6,
-            item.genre7,
-            item.genre8,
-            item.genre9,
-            item.genre10
-        )
 
         holder.binding.cvFavoItem.setOnClickListener {
             holder.itemView.findNavController().navigate(

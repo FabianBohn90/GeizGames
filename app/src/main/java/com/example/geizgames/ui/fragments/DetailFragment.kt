@@ -150,11 +150,14 @@ class DetailFragment : Fragment() {
                 binding.ibBookmarkFavo.setImageResource(R.drawable.ic_baseline_bookmark_32)
             }
         }
-        binding.tvRelease.text = release
-        binding.tvGameName.text = name
-        binding.tvMetacritic.text = metacritic.toString()
 
-        binding.tvPlatformDetail1.text = platforms[0]
+        binding.apply {
+            tvRelease.text = release
+            tvGameName.text = name
+            tvMetacritic.text = metacritic.toString()
+            tvPlatformDetail1.text = platforms[0]
+        }
+
         if (platforms[0] == "") {
             binding.tvPlatformDetail1.visibility = View.GONE
             binding.cvPlatformsDetail.visibility = View.GONE

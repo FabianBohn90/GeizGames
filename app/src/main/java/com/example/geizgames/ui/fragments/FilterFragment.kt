@@ -50,7 +50,6 @@ class FilterFragment : Fragment() {
             binding.rvGenres.visibility = View.VISIBLE
         }
         binding.tvPlatformFilter.setOnClickListener {
-//            binding.tvGenreFilter.setBackgroundColor(resources.getColor(R.color.orange))
             binding.tvGenreFilter.background.alpha = 255
             binding.tvPlatformFilter.background.alpha = 0
             binding.rvPlatform.visibility = View.VISIBLE
