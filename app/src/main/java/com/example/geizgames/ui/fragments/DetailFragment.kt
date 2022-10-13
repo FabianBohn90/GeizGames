@@ -91,7 +91,10 @@ class DetailFragment : Fragment() {
             when (it) {
                 ApiStatus.LOADING -> binding.progressBar.visibility = View.VISIBLE
                 ApiStatus.DONE -> binding.progressBar.visibility = View.GONE
-                ApiStatus.ERROR -> binding.progressBar.visibility = View.GONE
+                ApiStatus.ERROR -> {
+                    binding.progressBar.visibility = View.GONE
+                    binding.tvErrorMsg.visibility = View.VISIBLE
+                }
             }
         }
 
