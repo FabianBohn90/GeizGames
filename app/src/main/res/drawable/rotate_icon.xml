@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <rotate
-            android:drawable="@drawable/xbox_white"
+            android:drawable="@drawable/gg_circle_icon_white"
             android:fillAfter="true"
             android:fromDegrees="0"
             android:pivotX="50%"
